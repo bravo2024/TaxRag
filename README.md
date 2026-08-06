@@ -4,7 +4,7 @@ A Retrieval-Augmented Generation (RAG) assistant that answers questions about
 Indian income tax by retrieving the relevant provisions and generating a clear,
 **cited** answer. You can also **upload your own PDF** and ask questions about it.
 
-**Live app:** https://taxrag.streamlit.app · **CPU-only** · deploys free on Streamlit Cloud
+**Live app:** [https://indiataxrag.streamlit.app](https://indiataxrag.streamlit.app/) · **CPU-only** · deploys free on Streamlit Cloud
 
 ---
 
