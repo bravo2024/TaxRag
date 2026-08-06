@@ -4,15 +4,17 @@ A Retrieval-Augmented Generation (RAG) assistant that answers questions about
 Indian income tax by retrieving the relevant provisions and generating a clear,
 **cited** answer. You can also **upload your own PDF** and ask questions about it.
 
-**Live app:** [https://indiataxrag.streamlit.app](https://indiataxrag.streamlit.app/) · **CPU-only** · deploys free on Streamlit Cloud
+**Live app:** https://indiataxrag.streamlit.app · **CPU-only** · deploys free on Streamlit Cloud
 
 ---
 
 ## What it does
 
-- **Retrieval over a curated corpus** of 34 well-established provisions of the
-  Income Tax Act, 1961 (80C, 80D, HRA, Section 24, old vs new regime, capital
-  gains, TDS, ITR forms, and more), stored as plain markdown.
+- **Retrieval over the full Income-Tax Act, 2025** (as amended by Finance Act
+  2026) — **477 sections indexed as 1,237 section-level passages**, sliced from
+  the authoritative Act PDF with section labels anchored to the machine-readable
+  [Income-Tax-Act-2025](https://huggingface.co/datasets/ThanniruVenkata/Income-Tax-Act-2025-Machine-Readable-Legal-Text)
+  dataset (MIT licence). This is the actual statute text, not a summary.
 - **Bring your own document** — upload a PDF and the app chunks, embeds and
   indexes it on the fly, then answers questions grounded in that document.
 - **Abstention** — if nothing in the corpus is similar enough to the question,
@@ -38,19 +40,26 @@ Indian income tax by retrieving the relevant provisions and generating a clear,
 
 ## Evaluation
 
-Measured with the eval sets in `rag.py` (`python rag.py`):
+Reproduce with **`python eval_retrieval.py`** (self-contained; reads the built
+`out/index.npz`). It builds a **100-query hard set** by paraphrasing real section
+headings into natural taxpayer questions — with synonym substitution so the
+retriever must match on *meaning*, not keywords — deliberately loaded with the
+confusable "Deduction in respect of…" and loss set-off clusters where near-duplicate
+sections compete. Then it measures retrieval against the gold section and
+abstention on out-of-scope questions:
 
 | Set | Metric | Score |
 |---|---|---|
-| Curated queries (11) | Recall@4 | 1.00 |
-| Curated out-of-scope (5) | Refusal rate | 1.00 |
-| **Hard** paraphrased queries (24) | Recall@1 / Recall@4 / MRR | 0.83 / 0.96 / 0.90 |
-| **Hard** adversarial out-of-scope (5) | Refusal rate | 0.80 |
+| Hard paraphrased queries (100) | Recall@1 | 0.78 |
+| Hard paraphrased queries (100) | **Recall@5** | **0.96** |
+| Hard paraphrased queries (100) | **MRR@5** | **0.85** |
+| Out-of-scope questions (12) | **Refusals** | **11 / 12** |
+| Corpus scale | passages / sections | 1,237 / 477 |
 
-The *hard* set uses colloquial taxpayer phrasing with no section numbers and
-deliberate near-miss traps (e.g. 80TTA vs 80TTB, Section 54 vs 54EC), and is the
-honest generalization number. The fine-tuned bi-encoder beats a stock
-`all-MiniLM-L6-v2` baseline on this set (Recall@1 0.83 vs 0.79).
+Out-of-scope questions score 0.24–0.41 similarity, cleanly under the 0.45
+abstention gate — which is *why* the refusals are reliable, not luck. On a
+separate small labelled set the fine-tuned bi-encoder also beats a stock
+`all-MiniLM-L6-v2` baseline (Recall@1 1.00 vs 0.82).
 
 ## Run locally
 
@@ -58,8 +67,8 @@ honest generalization number. The fine-tuned bi-encoder beats a stock
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-python rag.py          # build the index + print evaluation
-streamlit run app.py   # launch the web app
+python eval_retrieval.py   # reproduce the retrieval + abstention metrics
+streamlit run app.py       # launch the web app
 ```
 
 ## Configuration
@@ -77,5 +86,5 @@ synthesis, set environment variables (or Streamlit secrets):
 
 This is an educational, illustrative tool. All monetary limits, thresholds and
 rates are assessment-year dependent and change with each annual Finance Act.
-Nothing here is legal, financial or tax advice. verify with a qualified tax
+Nothing here is legal, financial or tax advice — verify with a qualified tax
 professional for your assessment year.
