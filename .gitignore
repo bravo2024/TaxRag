@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Dev / build artifacts (NOT needed for deployment)
+build.log
+out_mini/
+*.log
+
+# OS / editor
+.DS_Store
+.ipynb_checkpoints/
+
+# Hugging Face model cache
+.hf_cache/
+
+# Local secrets — never commit API keys
+.streamlit/secrets.toml
+.env
+
+# NOTE: out/index.npz and out/metrics.json ARE committed on purpose —
+# the app loads the pre-built index at startup instead of re-embedding.

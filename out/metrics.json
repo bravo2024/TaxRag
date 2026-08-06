@@ -1,0 +1,16 @@
+{
+  "corpus_source": "pdf_section_parsed",
+  "act": "Income-Tax Act, 2025 as amended by Finance Act 2026",
+  "primary_pdf": "Income_Tax_Act_2025_as_amended_by_FA_Act_2026.pdf",
+  "bill_pdf": "Taxations_Bill_2026.pdf",
+  "labels_from": "ThanniruVenkata/Income-Tax-Act-2025-Machine-Readable-Legal-Text (MIT)",
+  "total_sections_in_labels": 479,
+  "sections_located": 477,
+  "sections_detected_in_pdf": 479,
+  "sections_missed": 0,
+  "sections_deleted_by_amendment": 2,
+  "num_chunks": 1237,
+  "model": "vivekkopthsd/fiqa-retriever-bge-small",
+  "similarity_threshold": 0.45,
+  "built": "2026-08-06"
+}
