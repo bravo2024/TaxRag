@@ -77,5 +77,5 @@ synthesis, set environment variables (or Streamlit secrets):
 
 This is an educational, illustrative tool. All monetary limits, thresholds and
 rates are assessment-year dependent and change with each annual Finance Act.
-Nothing here is legal, financial or tax advice — verify with a qualified tax
+Nothing here is legal, financial or tax advice. verify with a qualified tax
 professional for your assessment year.
