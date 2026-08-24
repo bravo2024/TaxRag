@@ -1,0 +1,4997 @@
+{
+ "summary": {
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "sections": 477,
+  "questions": 830,
+  "test_questions": 277,
+  "train_questions": 553,
+  "test_sections": 150,
+  "dropped": {
+   "parse": 0,
+   "section_number": 22,
+   "title_copy": 102
+  }
+ },
+ "rows": [
+  {
+   "section": 1,
+   "title": "Short title, extent and commencement",
+   "question": "What is the new name of the income tax law for 2025?",
+   "split": "test"
+  },
+  {
+   "section": 1,
+   "title": "Short title, extent and commencement",
+   "question": "When will the Income-tax Act 2025 start applying across India?",
+   "split": "test"
+  },
+  {
+   "section": 2,
+   "title": "Definitions",
+   "question": "What types of income are considered agricultural income according to the definition?",
+   "split": "train"
+  },
+  {
+   "section": 2,
+   "title": "Definitions",
+   "question": "Does income from a building used for agriculture count as agricultural income if it's on or near farmland and the land is taxed by the government?",
+   "split": "train"
+  },
+  {
+   "section": 3,
+   "title": "the International Financial Services Centres Authority Act,",
+   "question": "Are gold ornaments and precious stones considered personal effects for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 3,
+   "title": "the International Financial Services Centres Authority Act,",
+   "question": "Does a company with shares held by the government or a public body count as a company in which the public are substantially interested?",
+   "split": "train"
+  },
+  {
+   "section": 4,
+   "title": "Charge of Income-tax",
+   "question": "If my income is from a period other than the tax year, will I still have to pay income tax?",
+   "split": "train"
+  },
+  {
+   "section": 4,
+   "title": "Charge of Income-tax",
+   "question": "Does income tax apply to any extra tax that might be added under the law, like additional charges or penalties?",
+   "split": "train"
+  },
+  {
+   "section": 5,
+   "title": "Scope of total income",
+   "question": "If I earn money from a business outside India, do I have to include it in my income if I am not ordinarily resident in India?",
+   "split": "test"
+  },
+  {
+   "section": 5,
+   "title": "Scope of total income",
+   "question": "Does income that is received in India through a balance sheet prepared in India count as income received in India for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 6,
+   "title": "Residence in India",
+   "question": "If I am a citizen of India and I visit India for a short period, will I still be considered a resident in India for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 6,
+   "title": "Residence in India",
+   "question": "If my total income from sources in India is over 15 lakh rupees, will I automatically be considered a resident in India even if I am not physically present for a long time?",
+   "split": "test"
+  },
+  {
+   "section": 7,
+   "title": "Income deemed to be received and dividend deemed to be income in a tax year",
+   "question": "When is dividend income considered to be received for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 7,
+   "title": "Income deemed to be received and dividend deemed to be income in a tax year",
+   "question": "Is an interim dividend taxed in the year it is made available to shareholders?",
+   "split": "test"
+  },
+  {
+   "section": 8,
+   "title": "specified entity",
+   "question": "If a firm dissolves and gives its assets to a partner, is that treated as a transfer for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 8,
+   "title": "specified entity",
+   "question": "When a partner joins a firm or someone leaves, and the shares change, does that trigger tax on the value of the assets transferred?",
+   "split": "train"
+  },
+  {
+   "section": 9,
+   "title": "Income deemed to accrue or arise in India",
+   "question": "Is income from interest on a loan taken outside India still considered income from India if it's for a business done in India?",
+   "split": "train"
+  },
+  {
+   "section": 9,
+   "title": "Income deemed to accrue or arise in India",
+   "question": "Does royalty paid for using a software license in India count as income from India even if the software is used outside the country?",
+   "split": "train"
+  },
+  {
+   "section": 10,
+   "title": "Code",
+   "question": "If a husband and wife are living under the community of property system in Goa or Daman and Diu, will their income be taxed together?",
+   "split": "test"
+  },
+  {
+   "section": 10,
+   "title": "Code",
+   "question": "If one spouse earns salary and the other doesn't, how will the salary income be taxed under this system?",
+   "split": "test"
+  },
+  {
+   "section": 11,
+   "title": "Incomes not included in total income",
+   "question": "Will certain types of income be ignored when calculating my total taxable income?",
+   "split": "test"
+  },
+  {
+   "section": 11,
+   "title": "Incomes not included in total income",
+   "question": "If a political party or electoral trust doesn't meet the conditions mentioned, will their income still be taxed?",
+   "split": "test"
+  },
+  {
+   "section": 12,
+   "title": "Incomes not included in total income of political parties and electoral trusts",
+   "question": "Does income listed in Schedule VIII need to meet certain conditions to be excluded from a political party's total income?",
+   "split": "train"
+  },
+  {
+   "section": 12,
+   "title": "Incomes not included in total income of political parties and electoral trusts",
+   "question": "What happens if a political party or electoral trust doesn't meet the conditions for income listed in Schedule VIII?",
+   "split": "train"
+  },
+  {
+   "section": 13,
+   "title": "Heads of income",
+   "question": "What are the main types of income that are considered when calculating total income in India?",
+   "split": "train"
+  },
+  {
+   "section": 13,
+   "title": "Heads of income",
+   "question": "How is income classified for tax purposes under the Income-Tax Act?",
+   "split": "train"
+  },
+  {
+   "section": 15,
+   "title": "Salaries",
+   "question": "Is salary that is paid before it becomes due still considered part of my taxable income?",
+   "split": "train"
+  },
+  {
+   "section": 15,
+   "title": "Salaries",
+   "question": "Does a former employer count when calculating salary income for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 16,
+   "title": "16",
+   "question": "Does salary include payments made for unused leave?",
+   "split": "test"
+  },
+  {
+   "section": 16,
+   "title": "16",
+   "question": "Is the annual increase in a provident fund balance considered part of salary for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 17,
+   "title": "it in Part V of the Banking Regulation Act, 1949 (10 of 1949); and",
+   "question": "Is the value of rent-free accommodation provided by my employer taxable as perquisite?",
+   "split": "train"
+  },
+  {
+   "section": 17,
+   "title": "it in Part V of the Banking Regulation Act, 1949 (10 of 1949); and",
+   "question": "Are contributions to a provident fund above ₹750,000 in a year considered part of perquisites?",
+   "split": "train"
+  },
+  {
+   "section": 19,
+   "title": "Deductions from salaries",
+   "question": "What is the maximum amount I can get as a standard deduction if I am an employee working under the normal income tax rules?",
+   "split": "train"
+  },
+  {
+   "section": 19,
+   "title": "Deductions from salaries",
+   "question": "If I receive gratuity from more than one employer in the same year, what is the maximum total gratuity I can claim as a deduction?",
+   "split": "train"
+  },
+  {
+   "section": 20,
+   "title": "Income from house property",
+   "question": "Is the annual value of a house or land owned by me subject to income tax?",
+   "split": "train"
+  },
+  {
+   "section": 20,
+   "title": "Income from house property",
+   "question": "Does the tax apply to parts of the property I use for my business or profession?",
+   "split": "train"
+  },
+  {
+   "section": 21,
+   "title": "Determination of annual value",
+   "question": "If my house is vacant for part of the year, can I still claim the actual rent I received as the annual value?",
+   "split": "train"
+  },
+  {
+   "section": 21,
+   "title": "Determination of annual value",
+   "question": "If I own two houses and use one for my own residence, can I get zero annual value for both of them?",
+   "split": "train"
+  },
+  {
+   "section": 22,
+   "title": "Deductions from income from house property",
+   "question": "If I took a loan before buying my house, can I claim interest for the years before the purchase, and how is it calculated?",
+   "split": "train"
+  },
+  {
+   "section": 23,
+   "title": "Arrears of rent and unrealised rent received subsequently",
+   "question": "If I get rent for a property that was due in the past but I only receive it this year, how is that treated for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 23,
+   "title": "Arrears of rent and unrealised rent received subsequently",
+   "question": "Can I claim a deduction of 30% when I get rent that was overdue or rent that I didn’t collect earlier but got later?",
+   "split": "test"
+  },
+  {
+   "section": 24,
+   "title": "Property owned by co-owners",
+   "question": "If two people own a property together and can clearly say how much each owns, do they have to be treated as a single group for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 24,
+   "title": "Property owned by co-owners",
+   "question": "If one co-owner is eligible for a tax benefit like exemption on certain income, does each owner get that benefit separately?",
+   "split": "train"
+  },
+  {
+   "section": 25,
+   "title": "Interpretation",
+   "question": "If I transfer a property to my spouse without paying anything, does that make me the owner for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 25,
+   "title": "Interpretation",
+   "question": "If I become a member of a co-operative society and get a house under their scheme, am I considered the owner for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 26,
+   "title": "Income under head “Profits and gains of business or profession”",
+   "question": "Is compensation received when someone leaves a management role in a company in India considered business income?",
+   "split": "train"
+  },
+  {
+   "section": 26,
+   "title": "Income under head “Profits and gains of business or profession”",
+   "question": "Does getting a bonus from a keyman insurance policy fall under profits and gains of business or profession?",
+   "split": "train"
+  },
+  {
+   "section": 27,
+   "title": "Manner of computing profits and gains of business or profession",
+   "question": "How is the income from rent, rates, taxes, repairs, and insurance calculated in a business or profession?",
+   "split": "test"
+  },
+  {
+   "section": 27,
+   "title": "Manner of computing profits and gains of business or profession",
+   "question": "Are there any exceptions when calculating profits from a business or profession related to rent, rates, taxes, repairs, and insurance?",
+   "split": "test"
+  },
+  {
+   "section": 28,
+   "title": "Rent, rates, taxes, repairs and insurance",
+   "question": "Can I claim deduction for insurance on my business premises?",
+   "split": "train"
+  },
+  {
+   "section": 28,
+   "title": "Rent, rates, taxes, repairs and insurance",
+   "question": "If I own a building and only use part of it for my business, can I still claim rent or repair costs for that part?",
+   "split": "train"
+  },
+  {
+   "section": 29,
+   "title": "Deductions related to employee welfare",
+   "question": "Can an employer deduct contributions made to a pension scheme for employees if it is up to 14% of the employee's salary including dearness allowance?",
+   "split": "test"
+  },
+  {
+   "section": 29,
+   "title": "Deductions related to employee welfare",
+   "question": "Is there a limit on how much an employer can contribute to a gratuity fund for employees under this rule?",
+   "split": "test"
+  },
+  {
+   "section": 30,
+   "title": "Deduction on certain premium",
+   "question": "Can I claim a tax deduction for insurance paid on my business stocks or inventory?",
+   "split": "train"
+  },
+  {
+   "section": 30,
+   "title": "Deduction on certain premium",
+   "question": "Is it allowed to deduct health insurance premiums paid to an approved insurer for employees under a company scheme?",
+   "split": "train"
+  },
+  {
+   "section": 31,
+   "title": "Deduction for bad debt and provision for bad and doubtful debt",
+   "question": "If a non-banking financial company writes off a bad debt, how much of it can be deducted and what conditions must be met?",
+   "split": "train"
+  },
+  {
+   "section": 32,
+   "title": "Other deductions",
+   "question": "Can I claim a deduction for interest paid on capital borrowed for buying a machine if I use it immediately after purchase?",
+   "split": "train"
+  },
+  {
+   "section": 32,
+   "title": "Other deductions",
+   "question": "Is there a limit on how much I can put into a special reserve for a housing finance company, and what happens if I exceed it?",
+   "split": "train"
+  },
+  {
+   "section": 33,
+   "title": "Deduction for depreciation",
+   "question": "Can I claim depreciation for buildings or machinery that are only used part of the time for my business?",
+   "split": "test"
+  },
+  {
+   "section": 34,
+   "title": "General conditions for allowable deductions",
+   "question": "Can I deduct expenses that are related to a political party's advertisements in brochures or pamphlets?",
+   "split": "test"
+  },
+  {
+   "section": 34,
+   "title": "General conditions for allowable deductions",
+   "question": "Are expenses for paying a bribe or violating a law allowed as business expenses?",
+   "split": "test"
+  },
+  {
+   "section": 35,
+   "title": "Amounts not deductible in certain circumstances",
+   "question": "Can I claim a deduction for tax paid on income from my business?",
+   "split": "train"
+  },
+  {
+   "section": 35,
+   "title": "Amounts not deductible in certain circumstances",
+   "question": "If I didn't deduct TDS on a payment to a non-resident and paid it later, can I still claim that payment as a deduction?",
+   "split": "train"
+  },
+  {
+   "section": 36,
+   "title": "Expenses or payments not deductible in certain circumstances",
+   "question": "Can I claim a deduction if I pay more than the fair market value for goods or services from a relative?",
+   "split": "train"
+  },
+  {
+   "section": 36,
+   "title": "Expenses or payments not deductible in certain circumstances",
+   "question": "If I make a payment of over ₹10,000 to a business partner in cash on the same day, can I still claim that expense as a deduction?",
+   "split": "train"
+  },
+  {
+   "section": 37,
+   "title": "Certain deductions allowed on actual payment basis only",
+   "question": "Can I claim a deduction for employer contributions to a provident fund in the year I actually pay it, even if the liability was incurred in a previous year?",
+   "split": "test"
+  },
+  {
+   "section": 37,
+   "title": "Certain deductions allowed on actual payment basis only",
+   "question": "If I pay interest on a loan from a scheduled bank after the end of the tax year, can I still claim that deduction in the same year?",
+   "split": "test"
+  },
+  {
+   "section": 38,
+   "title": "Certain sums deemed as profits and gains of business or profession",
+   "question": "If I wrote off a trading liability in my previous year's accounts, do I need to pay tax when the liability is fully removed in a future year?",
+   "split": "train"
+  },
+  {
+   "section": 38,
+   "title": "Certain sums deemed as profits and gains of business or profession",
+   "question": "If I sold a business asset and the money received plus scrap value is more than the written down value, do I have to pay tax on the difference even if the business no longer exists?",
+   "split": "train"
+  },
+  {
+   "section": 39,
+   "title": "Computation of actual cost",
+   "question": "If I get a government grant for buying a machine, can I subtract that amount from the actual cost of the machine?",
+   "split": "train"
+  },
+  {
+   "section": 39,
+   "title": "Computation of actual cost",
+   "question": "If I transfer a building from my company to a subsidiary, what is the actual cost for the subsidiary company?",
+   "split": "train"
+  },
+  {
+   "section": 40,
+   "title": "Special provision for computation of cost of acquisition of certain assets",
+   "question": "If a company merges with another company, what cost should I use when selling an asset that was part of the business?",
+   "split": "train"
+  },
+  {
+   "section": 40,
+   "title": "Special provision for computation of cost of acquisition of certain assets",
+   "question": "When an asset is passed on through a will or family partition, what expenses can be added to its original cost when it's sold as part of the business?",
+   "split": "train"
+  },
+  {
+   "section": 41,
+   "title": "Written down value of depreciable asset",
+   "question": "When a company transfers a block of assets to another company, what happens to the written down value of those assets in the new company’s books?",
+   "split": "train"
+  },
+  {
+   "section": 42,
+   "title": "Capitalising impact of foreign exchange fluctuation",
+   "question": "If I pay more in Indian rupees for a foreign asset due to currency changes, can that extra amount be added to the cost of the asset?",
+   "split": "train"
+  },
+  {
+   "section": 42,
+   "title": "Capitalising impact of foreign exchange fluctuation",
+   "question": "Can I use a fixed exchange rate from a contract with a forex dealer to calculate how much I should add or subtract from the asset cost because of currency fluctuations?",
+   "split": "train"
+  },
+  {
+   "section": 43,
+   "title": "Taxation of foreign exchange fluctuation",
+   "question": "Does a change in foreign exchange rates affect the income or loss from foreign currency transactions?",
+   "split": "train"
+  },
+  {
+   "section": 43,
+   "title": "Taxation of foreign exchange fluctuation",
+   "question": "Are forward exchange contracts and translation of foreign company financial statements covered under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 44,
+   "title": "Amortisation of certain preliminary expenses",
+   "question": "Can I claim a deduction for expenses like market surveys or feasibility reports when starting a new business in India?",
+   "split": "test"
+  },
+  {
+   "section": 45,
+   "title": "Expenditure on scientific research",
+   "question": "Can I claim a deduction for salaries paid to employees working on scientific research in my business?",
+   "split": "train"
+  },
+  {
+   "section": 45,
+   "title": "Expenditure on scientific research",
+   "question": "If I spent money on research materials before starting my business, can I claim that as a deduction in the year I started the business?",
+   "split": "train"
+  },
+  {
+   "section": 46,
+   "title": "Capital expenditure of specified business",
+   "question": "Can I claim a full deduction for capital expenses if I start a new hotel of two stars or above as per government classification?",
+   "split": "train"
+  },
+  {
+   "section": 46,
+   "title": "Capital expenditure of specified business",
+   "question": "If I set up a new natural gas pipeline network after April 1, 2007, can I get a full deduction for all capital expenses spent on it?",
+   "split": "train"
+  },
+  {
+   "section": 47,
+   "title": "Expenditure on agricultural extension project and skill development project",
+   "question": "Can I claim a tax deduction for expenses on an agricultural extension project?",
+   "split": "test"
+  },
+  {
+   "section": 47,
+   "title": "Expenditure on agricultural extension project and skill development project",
+   "question": "If I claim deduction for a skill development project, can I also claim it under any other tax rule for the same year?",
+   "split": "test"
+  },
+  {
+   "section": 48,
+   "title": "development account",
+   "question": "Can I get a tax deduction if I deposit money into a special account for growing tea, coffee, or rubber in India?",
+   "split": "test"
+  },
+  {
+   "section": 48,
+   "title": "development account",
+   "question": "What happens if I sell an asset I bought under a government scheme for tea, coffee, or rubber production?",
+   "split": "test"
+  },
+  {
+   "section": 49,
+   "title": "Site Restoration Fund",
+   "question": "If I have a deal with the government to explore or produce oil or gas in India, can I get a tax deduction for money I put into a site restoration account?",
+   "split": "test"
+  },
+  {
+   "section": 49,
+   "title": "Site Restoration Fund",
+   "question": "If I sell an asset I bought under a government special scheme, will that sale be taxed in the year of the sale?",
+   "split": "test"
+  },
+  {
+   "section": 50,
+   "title": "Special provision in case of trade, profession or similar association",
+   "question": "If a trade association gets less money from members than the expenses it spends on their common interests, can the shortfall be treated as a business loss?",
+   "split": "train"
+  },
+  {
+   "section": 50,
+   "title": "Special provision in case of trade, profession or similar association",
+   "question": "Can an association deduct expenses for exploring minerals under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 51,
+   "title": "Amortisation of expenditure for prospecting certain minerals",
+   "question": "Can I claim a deduction for prospecting expenses if I'm not a company and my accounts haven't been audited?",
+   "split": "train"
+  },
+  {
+   "section": 51,
+   "title": "Amortisation of expenditure for prospecting certain minerals",
+   "question": "If I start producing a mineral after 2025, how many years can I carry forward my amortisation deduction?",
+   "split": "train"
+  },
+  {
+   "section": 52,
+   "title": "demerger, scheme of voluntary retirement, etc",
+   "question": "If a company pays an employee a voluntary retirement amount, can I claim a deduction for that over five years?",
+   "split": "train"
+  },
+  {
+   "section": 52,
+   "title": "demerger, scheme of voluntary retirement, etc",
+   "question": "If a telecom company transfers its spectrum license and gets less money than what was originally spent, can they claim a deduction for the remaining unallowed amount in the year of transfer?",
+   "split": "train"
+  },
+  {
+   "section": 53,
+   "title": "certain cases",
+   "question": "If I sell land and the amount I get is less than the stamp duty value, can the stamp duty value be used to calculate my profit?",
+   "split": "test"
+  },
+  {
+   "section": 53,
+   "title": "certain cases",
+   "question": "Can I use the amount I actually received when selling a building as the full value if it's less than the stamp duty value and the stamp duty value is under 110% of what I received?",
+   "split": "test"
+  },
+  {
+   "section": 54,
+   "title": "Business of prospecting for mineral oils",
+   "question": "Can I get a deduction for expenses spent on exploration before starting commercial production?",
+   "split": "test"
+  },
+  {
+   "section": 54,
+   "title": "Business of prospecting for mineral oils",
+   "question": "If I transfer my oil exploration business, how is profit or deduction calculated based on the money received and expenses?",
+   "split": "test"
+  },
+  {
+   "section": 56,
+   "title": "Special provision in case of interest income of specified financial institutions",
+   "question": "When is interest income from bad or doubtful debts considered taxable for a scheduled bank?",
+   "split": "test"
+  },
+  {
+   "section": 56,
+   "title": "Special provision in case of interest income of specified financial institutions",
+   "question": "Does a co-operative bank fall under the special tax rule for interest on bad debts?",
+   "split": "test"
+  },
+  {
+   "section": 57,
+   "title": "Revenue recognition for construction and service contracts",
+   "question": "When a service contract lasts less than 90 days, how is profit calculated?",
+   "split": "test"
+  },
+  {
+   "section": 57,
+   "title": "Revenue recognition for construction and service contracts",
+   "question": "Does retention money count towards contract revenue when using the percentage of completion method?",
+   "split": "test"
+  },
+  {
+   "section": 58,
+   "title": "on presumptive basis in case of certain residents",
+   "question": "If my business turnover is less than two crore and I receive less than 5% of my income in cash, can I calculate my profit at 6% of my total turnover?",
+   "split": "train"
+  },
+  {
+   "section": 58,
+   "title": "on presumptive basis in case of certain residents",
+   "question": "For a profession with gross receipts under fifty lakh, can I take 50% of my gross receipts or the actual profit earned, whichever is higher, as my taxable profit?",
+   "split": "train"
+  },
+  {
+   "section": 59,
+   "title": "Computation of royalty and fee for technical services in hands of nonresidents",
+   "question": "Can a non-resident who is not a company claim deductions for expenses paid to their head office when calculating royalty or technical fees income from an Indian company?",
+   "split": "train"
+  },
+  {
+   "section": 59,
+   "title": "Computation of royalty and fee for technical services in hands of nonresidents",
+   "question": "If a foreign company earns royalty income from an Indian government entity, does it need to maintain books of account and get its audit done as per Indian tax rules?",
+   "split": "train"
+  },
+  {
+   "section": 60,
+   "title": "Deduction of head office expenditure in case of non-residents",
+   "question": "Can a non-resident deduct head office expenses incurred outside India when calculating their business income in India?",
+   "split": "test"
+  },
+  {
+   "section": 60,
+   "title": "Deduction of head office expenditure in case of non-residents",
+   "question": "What is the maximum limit for deducting head office expenses for a non-resident if their total income is a loss?",
+   "split": "test"
+  },
+  {
+   "section": 61,
+   "title": "of certain business activities of certain non-residents",
+   "question": "How is the profit calculated for a non-resident operating cruise ships in India?",
+   "split": "train"
+  },
+  {
+   "section": 61,
+   "title": "of certain business activities of certain non-residents",
+   "question": "Can a foreign company claim actual profits instead of the 10% rule when providing construction services for a turnkey power project in India?",
+   "split": "train"
+  },
+  {
+   "section": 62,
+   "title": "Maintenance of books of account",
+   "question": "Do I need to keep proper books of account if I run a business or profession?",
+   "split": "test"
+  },
+  {
+   "section": 62,
+   "title": "Maintenance of books of account",
+   "question": "If I am a doctor or lawyer, do I have to maintain books of account even if my income is below certain limits?",
+   "split": "test"
+  },
+  {
+   "section": 63,
+   "title": "Tax audit",
+   "question": "If my business turnover is more than one crore but most of my payments and receipts are made by cheque or bank draft, do I still need to get my books audited?",
+   "split": "test"
+  },
+  {
+   "section": 63,
+   "title": "Tax audit",
+   "question": "If my profession income is over fifty lakh, do I need to get my accounts audited even if I don’t have any cash transactions?",
+   "split": "test"
+  },
+  {
+   "section": 64,
+   "title": "of co-operative banks",
+   "question": "If a co-operative bank reorganizes its business during the tax year, how is the deduction calculated for the old bank?",
+   "split": "train"
+  },
+  {
+   "section": 64,
+   "title": "of co-operative banks",
+   "question": "After a co-operative bank reorganizes, can the successor bank get the same tax deduction benefits as the original bank would have had?",
+   "split": "train"
+  },
+  {
+   "section": 65,
+   "title": "Interpretation for purposes of section 64",
+   "question": "What does it mean for a co-operative bank to be amalgamated with another co-operative bank?",
+   "split": "train"
+  },
+  {
+   "section": 65,
+   "title": "Interpretation for purposes of section 64",
+   "question": "What are the conditions for a demerger of a co-operative bank to be considered valid under the rules?",
+   "split": "train"
+  },
+  {
+   "section": 66,
+   "title": "Interpretation",
+   "question": "Does an agreement need to be in writing to be considered under tax rules?",
+   "split": "train"
+  },
+  {
+   "section": 66,
+   "title": "Interpretation",
+   "question": "What counts as long-term finance for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 68,
+   "title": "Capital gains on distribution of assets by companies in liquidation",
+   "question": "If a company distributes its assets to shareholders during liquidation, is that considered a transfer for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 68,
+   "title": "Capital gains on distribution of assets by companies in liquidation",
+   "question": "When a shareholder gets money or assets from a company during liquidation, how is the capital gain calculated?",
+   "split": "train"
+  },
+  {
+   "section": 69,
+   "title": "securities",
+   "question": "If a promoter sells shares back to the company, what tax rate applies to the capital gains?",
+   "split": "train"
+  },
+  {
+   "section": 69,
+   "title": "securities",
+   "question": "What is the additional tax rate for long-term capital gains when a promoter is not a domestic company?",
+   "split": "train"
+  },
+  {
+   "section": 70,
+   "title": "Transactions not regarded as transfer",
+   "question": "Is a transfer of shares during a company merger considered a taxable event if the new company is in India?",
+   "split": "test"
+  },
+  {
+   "section": 70,
+   "title": "Transactions not regarded as transfer",
+   "question": "Can a foreign company transfer shares in India to another foreign company without capital gains tax if at least 25% of original shareholders stay and the transfer doesn't trigger tax in the foreign country?",
+   "split": "test"
+  },
+  {
+   "section": 71,
+   "title": "Withdrawal of exemption in certain cases",
+   "question": "If a company transfers a capital asset and then changes it to stock in trade within eight years, will the gain be taxed in the year of transfer?",
+   "split": "train"
+  },
+  {
+   "section": 71,
+   "title": "Withdrawal of exemption in certain cases",
+   "question": "What happens if the parent company stops owning 100% of a subsidiary company and the transfer conditions are not met?",
+   "split": "train"
+  },
+  {
+   "section": 72,
+   "title": "Mode of computation of capital gains",
+   "question": "Can I deduct the interest paid on a home loan while calculating capital gains?",
+   "split": "train"
+  },
+  {
+   "section": 72,
+   "title": "Mode of computation of capital gains",
+   "question": "If I sell a property, can I reduce the cost of purchase by the amount I received from a business trust related to a unit?",
+   "split": "train"
+  },
+  {
+   "section": 73,
+   "title": "Cost with reference to certain modes of acquisition",
+   "question": "How is the cost of acquisition calculated for units in a segregated portfolio under a mutual fund?",
+   "split": "test"
+  },
+  {
+   "section": 75,
+   "title": "Special provision for cost of acquisition in case of depreciable asset",
+   "question": "If I have claimed depreciation on a capital asset, how do I calculate the cost of acquisition for capital gains?",
+   "split": "train"
+  },
+  {
+   "section": 75,
+   "title": "Special provision for cost of acquisition in case of depreciable asset",
+   "question": "When calculating capital gains on a market linked debenture, does the written down value after depreciation count as the cost of acquisition?",
+   "split": "train"
+  },
+  {
+   "section": 77,
+   "title": "Special provision for computation of capital gains in case of slump sale",
+   "question": "If I sell a business division that I owned for less than 36 months, will the profit be treated as short-term or long-term capital gain?",
+   "split": "train"
+  },
+  {
+   "section": 77,
+   "title": "Special provision for computation of capital gains in case of slump sale",
+   "question": "How is the net worth of a business division calculated when it is sold in a slump sale?",
+   "split": "train"
+  },
+  {
+   "section": 78,
+   "title": "Special provision for full value of consideration in certain cases",
+   "question": "If I sell land or a building and the amount I get is less than the stamp duty value, can the tax authority treat the stamp duty value as the full consideration for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 78,
+   "title": "Special provision for full value of consideration in certain cases",
+   "question": "Can the tax department ask a professional to value my property if I say the stamp duty value is higher than its actual market value and no one else has challenged it before?",
+   "split": "train"
+  },
+  {
+   "section": 79,
+   "title": "than quoted share",
+   "question": "If I sell a share in a company that is not listed on a stock exchange, and the amount I get is less than what the share is worth in the market, what value will be used for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 79,
+   "title": "than quoted share",
+   "question": "Are there any specific people or situations where I won’t have to use the market value of a non-listed share when calculating tax on the sale?",
+   "split": "train"
+  },
+  {
+   "section": 80,
+   "title": "Fair market value deemed to be full value of consideration in certain cases",
+   "question": "What happens if I can't figure out how much money I got from selling an asset?",
+   "split": "test"
+  },
+  {
+   "section": 80,
+   "title": "Fair market value deemed to be full value of consideration in certain cases",
+   "question": "If I receive advance payment for an asset but can't determine the exact amount, what value do I use for capital gains calculation?",
+   "split": "test"
+  },
+  {
+   "section": 81,
+   "title": "Advance money received",
+   "question": "If I received money earlier for discussing the sale of my property, can I subtract that money from the cost when I finally sell the property?",
+   "split": "train"
+  },
+  {
+   "section": 81,
+   "title": "Advance money received",
+   "question": "If I already included the advance money I got for property discussions in my income, can I still reduce the cost of the property when calculating profit on sale?",
+   "split": "train"
+  },
+  {
+   "section": 82,
+   "title": "Profit on sale of property used for residence",
+   "question": "If I sell my residential house and buy another one within three years, how is the capital gain calculated?",
+   "split": "train"
+  },
+  {
+   "section": 82,
+   "title": "Profit on sale of property used for residence",
+   "question": "Can I use the capital gain from selling my house to buy two residential homes instead of one?",
+   "split": "train"
+  },
+  {
+   "section": 83,
+   "title": "charged in certain cases",
+   "question": "If I sell agricultural land and buy another agricultural land within two years, how is the capital gain treated?",
+   "split": "train"
+  },
+  {
+   "section": 83,
+   "title": "charged in certain cases",
+   "question": "What happens if I don’t use the capital gain amount to buy new agricultural land within the time limit?",
+   "split": "train"
+  },
+  {
+   "section": 84,
+   "title": "charged in certain cases",
+   "question": "If I sell land that was part of my industrial business and then buy new land within three years, how is the capital gain treated?",
+   "split": "train"
+  },
+  {
+   "section": 84,
+   "title": "charged in certain cases",
+   "question": "What happens if I don’t use the capital gain amount to buy new land within three years and I don’t deposit it?",
+   "split": "train"
+  },
+  {
+   "section": 85,
+   "title": "Capital gains not to be charged on investment in certain bonds",
+   "question": "If I sell a piece of land and invest part of the capital gain in a bond issued by NHAI or RECL after April 2018, will I have to pay tax on the entire gain?",
+   "split": "train"
+  },
+  {
+   "section": 85,
+   "title": "Capital gains not to be charged on investment in certain bonds",
+   "question": "Can I avoid paying tax on capital gains from selling a building if I invest the gain in a long-term bond issued by NHAI or RECL within six months?",
+   "split": "train"
+  },
+  {
+   "section": 86,
+   "title": "investment in residential house",
+   "question": "If I sell a non-residential asset and buy a new house within one year before or two years after the sale, how is my capital gain treated?",
+   "split": "train"
+  },
+  {
+   "section": 86,
+   "title": "investment in residential house",
+   "question": "What happens if I don’t use the money from the sale to buy or build a new house within the time limit?",
+   "split": "train"
+  },
+  {
+   "section": 87,
+   "title": "undertaking from urban area",
+   "question": "What happens if I don’t use the capital gain amount for new assets within one year of moving my business?",
+   "split": "train"
+  },
+  {
+   "section": 88,
+   "title": "undertaking from urban area to any Special Economic Zone",
+   "question": "What happens if I don’t use the capital gains amount within one year after shifting my business to a SEZ?",
+   "split": "train"
+  },
+  {
+   "section": 89,
+   "title": "of capital gains",
+   "question": "If I lose the compensation money for my property that was taken by the government, when does the time start for me to buy a new asset or invest the capital gain?",
+   "split": "train"
+  },
+  {
+   "section": 89,
+   "title": "of capital gains",
+   "question": "If the government takes my property and gives me a compensation that I don’t get until later, does that delay when I have to use the capital gain for a new investment?",
+   "split": "train"
+  },
+  {
+   "section": 90,
+   "title": "Meaning of “adjusted”, “cost of improvement” and “cost of acquisition”",
+   "question": "What happens to the cost of improvement for a business goodwill or intangible assets?",
+   "split": "test"
+  },
+  {
+   "section": 90,
+   "title": "Meaning of “adjusted”, “cost of improvement” and “cost of acquisition”",
+   "question": "If a person bought a share before February 1, 2018, and the fair market value is higher than the original cost, what will be the cost of acquisition for capital gains calculation?",
+   "split": "test"
+  },
+  {
+   "section": 91,
+   "title": "Reference to Valuation Officer",
+   "question": "Can the tax officer ask a valuation expert to assess the value of my capital asset if I have given a value based on a registered valuer?",
+   "split": "train"
+  },
+  {
+   "section": 91,
+   "title": "Reference to Valuation Officer",
+   "question": "If my claimed value of an asset is too low compared to its actual market value, can the tax authority send it to a valuation officer to decide the correct value?",
+   "split": "train"
+  },
+  {
+   "section": 92,
+   "title": "Income from other sources",
+   "question": "If someone receives a gift of property worth more than 50,000 rupees without payment, is that income taxable?",
+   "split": "train"
+  },
+  {
+   "section": 93,
+   "title": "Deductions",
+   "question": "Can I claim a deduction for commission paid to a banker to collect interest on my securities?",
+   "split": "test"
+  },
+  {
+   "section": 93,
+   "title": "Deductions",
+   "question": "Is there a deduction allowed for family pension income, and if so, what is the limit?",
+   "split": "test"
+  },
+  {
+   "section": 94,
+   "title": "Amounts not deductible",
+   "question": "Can I deduct personal expenses when calculating my income from other sources?",
+   "split": "test"
+  },
+  {
+   "section": 94,
+   "title": "Amounts not deductible",
+   "question": "If I earn money from horse races, can I claim deductions for expenses related to maintaining the horses?",
+   "split": "test"
+  },
+  {
+   "section": 95,
+   "title": "Profits chargeable to tax",
+   "question": "Can I use the same rules for calculating business profits when computing my total income under the income tax act?",
+   "split": "train"
+  },
+  {
+   "section": 95,
+   "title": "Profits chargeable to tax",
+   "question": "Does the way we calculate profits from a business apply to other types of income that are included in my total income?",
+   "split": "train"
+  },
+  {
+   "section": 97,
+   "title": "Chargeability of income in transfer of assets",
+   "question": "If I give my property to someone through a trust that cannot be cancelled during their lifetime, will the income from that trust be taxed in my income?",
+   "split": "train"
+  },
+  {
+   "section": 98,
+   "title": "“Transfer” and “revocable transfer” defined",
+   "question": "Does a trust or agreement count as a transfer for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 98,
+   "title": "“Transfer” and “revocable transfer” defined",
+   "question": "If a person gives their property to a trust but can take it back later, is that considered a revocable transfer?",
+   "split": "train"
+  },
+  {
+   "section": 99,
+   "title": "Income of individual to include income of spouse, minor child, etc",
+   "question": "If my spouse earns income from a company I own, do I have to include that income in my tax return?",
+   "split": "train"
+  },
+  {
+   "section": 99,
+   "title": "Income of individual to include income of spouse, minor child, etc",
+   "question": "Can I exclude my minor child's income if they are working or have a skill that they use in their job?",
+   "split": "train"
+  },
+  {
+   "section": 100,
+   "title": "Liability of person in respect of income included in income of another person",
+   "question": "If income from an asset is included in my tax return, do I have to pay the tax on that part even if I didn't earn it myself?",
+   "split": "train"
+  },
+  {
+   "section": 100,
+   "title": "Liability of person in respect of income included in income of another person",
+   "question": "If two people own an asset together, are both of us responsible for paying the tax on income generated from it?",
+   "split": "train"
+  },
+  {
+   "section": 102,
+   "title": "Unexplained credits",
+   "question": "What happens if a company doesn't explain where the money in its books came from, like share capital or share premium?",
+   "split": "train"
+  },
+  {
+   "section": 102,
+   "title": "Unexplained credits",
+   "question": "If a loan or borrowing is shown in my books, do I still need to explain it if the person whose name is on the loan doesn't provide a clear explanation?",
+   "split": "train"
+  },
+  {
+   "section": 103,
+   "title": "Unexplained investment",
+   "question": "What happens if I made a investment but didn't record it in my books?",
+   "split": "train"
+  },
+  {
+   "section": 103,
+   "title": "Unexplained investment",
+   "question": "If I explain where my investment came from but the tax officer doesn't believe me, will it still be considered income?",
+   "split": "train"
+  },
+  {
+   "section": 104,
+   "title": "Unexplained asset",
+   "question": "What happens if I own an asset that isn't listed in my books of account and I can't explain how I got it?",
+   "split": "train"
+  },
+  {
+   "section": 104,
+   "title": "Unexplained asset",
+   "question": "If I spend more money on an asset than what I have recorded, and my explanation doesn't make sense to the tax officer, will that extra amount be treated as income?",
+   "split": "train"
+  },
+  {
+   "section": 105,
+   "title": "Unexplained expenditure",
+   "question": "What happens if I can't explain where my expenses came from?",
+   "split": "test"
+  },
+  {
+   "section": 105,
+   "title": "Unexplained expenditure",
+   "question": "Can I deduct expenses that I didn't explain or couldn't justify as coming from a legitimate source?",
+   "split": "test"
+  },
+  {
+   "section": 106,
+   "title": "Amount borrowed or repaid through negotiable instrument, hundi, etc",
+   "question": "If I borrow money through a hundi or a cheque that is not payable to a specific account holder, is that considered income for the year I borrowed it?",
+   "split": "test"
+  },
+  {
+   "section": 106,
+   "title": "Amount borrowed or repaid through negotiable instrument, hundi, etc",
+   "question": "If I repay a loan I borrowed through a hundi, will I have to pay tax again on that amount when I pay it back?",
+   "split": "test"
+  },
+  {
+   "section": 107,
+   "title": "Charge of tax",
+   "question": "Can losses from one type of income be offset against profits from a different type of income?",
+   "split": "train"
+  },
+  {
+   "section": 108,
+   "title": "Set off of losses under same head of income",
+   "question": "Can I use a loss from one type of business to offset income from another business?",
+   "split": "train"
+  },
+  {
+   "section": 108,
+   "title": "Set off of losses under same head of income",
+   "question": "If I have a loss on a long-term capital asset, can I use it to offset losses from another long-term capital asset?",
+   "split": "train"
+  },
+  {
+   "section": 109,
+   "title": "Set off of losses under any other head of income",
+   "question": "Can a loss from my business or profession be used to reduce my salary income?",
+   "split": "train"
+  },
+  {
+   "section": 109,
+   "title": "Set off of losses under any other head of income",
+   "question": "How much of a house property loss can I use to offset income from other sources?",
+   "split": "train"
+  },
+  {
+   "section": 110,
+   "title": "Carry forward and set off of loss from house property",
+   "question": "Can I use a loss from house property to offset income from other sources like salary or business?",
+   "split": "train"
+  },
+  {
+   "section": 110,
+   "title": "Carry forward and set off of loss from house property",
+   "question": "How many years can I carry forward a house property loss after it's first computed?",
+   "split": "train"
+  },
+  {
+   "section": 111,
+   "title": "Carry forward and set off of loss from Capital gains",
+   "question": "Can I use a loss from a short-term capital asset to offset gains from a long-term capital asset?",
+   "split": "test"
+  },
+  {
+   "section": 111,
+   "title": "Carry forward and set off of loss from Capital gains",
+   "question": "How many years can I carry forward a capital loss after it's first calculated?",
+   "split": "test"
+  },
+  {
+   "section": 112,
+   "title": "Carry forward and set off of business loss",
+   "question": "Can I carry forward my business loss if I don't have enough income in the current year to fully use it?",
+   "split": "train"
+  },
+  {
+   "section": 112,
+   "title": "Carry forward and set off of business loss",
+   "question": "How many years can I carry forward a business loss after it's first calculated?",
+   "split": "train"
+  },
+  {
+   "section": 113,
+   "title": "business",
+   "question": "If I have a loss from trading in shares, how many years can I carry it forward to offset future losses?",
+   "split": "train"
+  },
+  {
+   "section": 114,
+   "title": "Set off and carry forward of losses computed in respect of specified business",
+   "question": "Can I use a loss from one specified business to offset profits from a different specified business?",
+   "split": "test"
+  },
+  {
+   "section": 114,
+   "title": "Set off and carry forward of losses computed in respect of specified business",
+   "question": "If I don’t fully use my loss from a specified business in a year, can I carry it forward to the next year to use against future profits?",
+   "split": "test"
+  },
+  {
+   "section": 115,
+   "title": "Set off and carry forward of losses from specified activity",
+   "question": "Can I use losses from horse racing to offset income from other business activities?",
+   "split": "train"
+  },
+  {
+   "section": 115,
+   "title": "Set off and carry forward of losses from specified activity",
+   "question": "How many years can I carry forward a loss from owning race horses after it's first calculated?",
+   "split": "train"
+  },
+  {
+   "section": 116,
+   "title": "or demerger, etc",
+   "question": "If a public sector company sells its shares and loses control, can it still pass on its losses to another company after merging?",
+   "split": "test"
+  },
+  {
+   "section": 116,
+   "title": "or demerger, etc",
+   "question": "In a demerger, can the old company's losses be carried forward to the new company if those losses are directly linked to the business transferred?",
+   "split": "test"
+  },
+  {
+   "section": 117,
+   "title": "amalgamation in certain cases",
+   "question": "If a government company merges with another government company under a nationalisation scheme, can the unabsorbed depreciation from the old company be treated as depreciation for the new company?",
+   "split": "train"
+  },
+  {
+   "section": 118,
+   "title": "reorganization of co-operative banks",
+   "question": "Can a successor co-operative bank carry forward the losses of the previous bank if the amalgamation happened during the tax year?",
+   "split": "train"
+  },
+  {
+   "section": 118,
+   "title": "reorganization of co-operative banks",
+   "question": "If a co-operative bank splits into two and the loss is not directly linked to the part transferred, how is that loss divided between the two banks?",
+   "split": "train"
+  },
+  {
+   "section": 119,
+   "title": "Carry forward and set off of losses not permissible in certain cases",
+   "question": "Can a retired partner's share of loss be carried forward if the firm's structure changes during the year?",
+   "split": "train"
+  },
+  {
+   "section": 119,
+   "title": "Carry forward and set off of losses not permissible in certain cases",
+   "question": "If a company's ownership changes due to a death or gift, can losses from previous years still be carried forward?",
+   "split": "train"
+  },
+  {
+   "section": 120,
+   "title": "No set off of losses against undisclosed income consequent to search, requisition and survey",
+   "question": "Can I use my previous year losses to offset income that was found during a tax search or inspection?",
+   "split": "train"
+  },
+  {
+   "section": 120,
+   "title": "No set off of losses against undisclosed income consequent to search, requisition and survey",
+   "question": "If my tax office finds hidden income through a survey, can I still deduct my business losses from that income?",
+   "split": "train"
+  },
+  {
+   "section": 121,
+   "title": "Submission of return for losses",
+   "question": "If I don't file a return for my loss, can I use that loss to reduce my tax in future years?",
+   "split": "train"
+  },
+  {
+   "section": 122,
+   "title": "Deductions to be made in computing total income",
+   "question": "Can I claim deductions for profits from my business more than once in the same tax year?",
+   "split": "train"
+  },
+  {
+   "section": 122,
+   "title": "Deductions to be made in computing total income",
+   "question": "If I transfer goods between my different businesses, and the price doesn’t match the market value, how does that affect my business profit calculation?",
+   "split": "train"
+  },
+  {
+   "section": 123,
+   "title": "Deduction for life insurance premia, deferred annuity, contributions to provident fund, etc",
+   "question": "Can I deduct the full amount I pay for life insurance premiums in my tax return?",
+   "split": "train"
+  },
+  {
+   "section": 123,
+   "title": "Deduction for life insurance premia, deferred annuity, contributions to provident fund, etc",
+   "question": "What is the maximum amount I can deduct for contributions to a pension scheme if I am an individual or Hindu undivided family?",
+   "split": "train"
+  },
+  {
+   "section": 124,
+   "title": "scheme of Central Government",
+   "question": "Can I claim a deduction for my employer's pension contribution if my employer is the central government?",
+   "split": "train"
+  },
+  {
+   "section": 124,
+   "title": "scheme of Central Government",
+   "question": "If I contribute to a pension scheme myself, what is the maximum amount I can claim as a deduction?",
+   "split": "train"
+  },
+  {
+   "section": 125,
+   "title": "Deduction in respect of contribution to Agnipath Scheme",
+   "question": "Can I get a tax deduction for the amount I paid into the Agnipath Scheme's fund after November 1, 2022?",
+   "split": "test"
+  },
+  {
+   "section": 125,
+   "title": "Deduction in respect of contribution to Agnipath Scheme",
+   "question": "If the government contributes money to my Agnipath fund account, can I claim that amount as a tax deduction?",
+   "split": "test"
+  },
+  {
+   "section": 126,
+   "title": "Deduction in respect of health insurance premia",
+   "question": "Can I claim a tax deduction for health insurance paid for my parents if they are senior citizens?",
+   "split": "test"
+  },
+  {
+   "section": 126,
+   "title": "Deduction in respect of health insurance premia",
+   "question": "What is the maximum amount I can claim for medical expenses on my family members under this health insurance rule?",
+   "split": "test"
+  },
+  {
+   "section": 127,
+   "title": "dependant who is a person with disability",
+   "question": "Can I get a bigger tax deduction if my dependant has a severe disability?",
+   "split": "train"
+  },
+  {
+   "section": 127,
+   "title": "dependant who is a person with disability",
+   "question": "What documents do I need to submit if I want to claim deduction for a dependant with a disability?",
+   "split": "train"
+  },
+  {
+   "section": 128,
+   "title": "Deduction in respect of medical treatment, etc",
+   "question": "Can I get a deduction for medical treatment if the doctor's prescription is from a specialist like a cardiologist?",
+   "split": "train"
+  },
+  {
+   "section": 128,
+   "title": "Deduction in respect of medical treatment, etc",
+   "question": "If I pay more than ₹40,000 for medical treatment for a senior citizen, can I claim ₹100,000 as deduction?",
+   "split": "train"
+  },
+  {
+   "section": 129,
+   "title": "Deduction in respect of interest on loan taken for higher education",
+   "question": "What types of institutions are allowed to provide loans for higher education to qualify for interest deduction?",
+   "split": "train"
+  },
+  {
+   "section": 130,
+   "title": "Deduction in respect of interest on loan taken for residential house property",
+   "question": "Can I claim a deduction for interest paid on a home loan taken after April 1, 2016?",
+   "split": "train"
+  },
+  {
+   "section": 130,
+   "title": "Deduction in respect of interest on loan taken for residential house property",
+   "question": "What is the maximum amount I can deduct for interest on a home loan for a residential property under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 131,
+   "title": "Deduction in respect of interest on loan taken for certain house property",
+   "question": "What is the maximum amount I can claim for interest on a home loan under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 132,
+   "title": "Deduction in respect of purchase of electric vehicle",
+   "question": "Can I claim a deduction for the interest paid on a loan to buy an electric vehicle?",
+   "split": "train"
+  },
+  {
+   "section": 132,
+   "title": "Deduction in respect of purchase of electric vehicle",
+   "question": "What is the maximum amount I can claim for interest on an electric vehicle loan under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 133,
+   "title": "Deduction in respect of donations to certain funds, charitable institutions, etc",
+   "question": "Can I claim a deduction for donating to the PM CARES Fund?",
+   "split": "test"
+  },
+  {
+   "section": 133,
+   "title": "Deduction in respect of donations to certain funds, charitable institutions, etc",
+   "question": "If I donate to a registered non-profit for a charitable purpose, how much of that donation can I deduct?",
+   "split": "test"
+  },
+  {
+   "section": 134,
+   "title": "Deductions in respect of rents paid",
+   "question": "Can I deduct rent payments if I live in a house that I or my spouse or child own?",
+   "split": "train"
+  },
+  {
+   "section": 134,
+   "title": "Deductions in respect of rents paid",
+   "question": "What is the maximum amount I can deduct for rent each month under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 135,
+   "title": "development",
+   "question": "Can I get a tax deduction if I donate to a research organization or university for scientific research?",
+   "split": "test"
+  },
+  {
+   "section": 135,
+   "title": "development",
+   "question": "If I give money to a social science research institution, will I get a deduction even if the institution later loses its approval?",
+   "split": "test"
+  },
+  {
+   "section": 136,
+   "title": "Deduction in respect of contributions given by companies to political parties",
+   "question": "Can a company deduct expenses for contributions made to political parties that are not in cash?",
+   "split": "test"
+  },
+  {
+   "section": 136,
+   "title": "Deduction in respect of contributions given by companies to political parties",
+   "question": "What does it mean when the term 'contribute' is used in this rule?",
+   "split": "test"
+  },
+  {
+   "section": 137,
+   "title": "Deduction in respect of contributions given by any person to political parties",
+   "question": "Can I get a tax deduction for contributing to a political party through non-cash means?",
+   "split": "train"
+  },
+  {
+   "section": 137,
+   "title": "Deduction in respect of contributions given by any person to political parties",
+   "question": "Is there a tax benefit if I donate to an electoral trust in a non-cash form?",
+   "split": "train"
+  },
+  {
+   "section": 138,
+   "title": "enterprises engaged in infrastructure development, etc",
+   "question": "Can I get a deduction for profits from infrastructure projects if I'm eligible under the old rules?",
+   "split": "train"
+  },
+  {
+   "section": 138,
+   "title": "enterprises engaged in infrastructure development, etc",
+   "question": "Will the deduction for profits from a special economic zone project be allowed only if it was allowed under the old law?",
+   "split": "train"
+  },
+  {
+   "section": 139,
+   "title": "engaged in development of Special Economic Zone",
+   "question": "Can I get a deduction for profits from developing a Special Economic Zone if the zone was set up on or after April 1, 2005?",
+   "split": "test"
+  },
+  {
+   "section": 139,
+   "title": "engaged in development of Special Economic Zone",
+   "question": "Is the deduction for SEZ development profits only available for tax years that would have qualified under the old SEZ rules if the law hadn't been repealed?",
+   "split": "test"
+  },
+  {
+   "section": 140,
+   "title": "Special provision in respect of specified business",
+   "question": "Can I claim a 100% deduction for profits from my start-up business for three consecutive years?",
+   "split": "train"
+  },
+  {
+   "section": 140,
+   "title": "Special provision in respect of specified business",
+   "question": "If I transfer goods between my start-up and another business, and the price doesn’t match the market value, how will that affect my deduction?",
+   "split": "train"
+  },
+  {
+   "section": 141,
+   "title": "Deduction in respect of profits and gains from certain industrial under-takings",
+   "question": "Can I get a deduction for profits from a business related to housing projects if the law that allowed it was repealed?",
+   "split": "train"
+  },
+  {
+   "section": 141,
+   "title": "Deduction in respect of profits and gains from certain industrial under-takings",
+   "question": "If my business is in housing and I was eligible before the repeal, can I still claim the deduction for that tax year?",
+   "split": "train"
+  },
+  {
+   "section": 142,
+   "title": "Deductions in respect of profits and gains from housing projects",
+   "question": "Can I get a deduction for profits from housing projects if I'm eligible under the old rules?",
+   "split": "train"
+  },
+  {
+   "section": 142,
+   "title": "Deductions in respect of profits and gains from housing projects",
+   "question": "Will the deduction for housing project profits be allowed only for the years when it was available before the old law was repealed?",
+   "split": "train"
+  },
+  {
+   "section": 143,
+   "title": "Special provisions in respect of certain undertakings in North-Eastern States",
+   "question": "Can I get a 100% deduction for profits from a business I started in a North-Eastern state between 2007 and 2017?",
+   "split": "train"
+  },
+  {
+   "section": 143,
+   "title": "Special provisions in respect of certain undertakings in North-Eastern States",
+   "question": "If my business is in a North-Eastern state and I expanded my plant and machinery by 25% or more, can I claim a full deduction for 10 years of profits?",
+   "split": "train"
+  },
+  {
+   "section": 144,
+   "title": "Zones",
+   "question": "Can I get a deduction for my export business if I’m an entrepreneur in a special economic zone?",
+   "split": "train"
+  },
+  {
+   "section": 145,
+   "title": "Deduction for businesses engaged in collecting and processing of bio-degradable waste",
+   "question": "Can I get a full deduction of my profits from a business that collects and processes bio-degradable waste to make bio-gas?",
+   "split": "train"
+  },
+  {
+   "section": 145,
+   "title": "Deduction for businesses engaged in collecting and processing of bio-degradable waste",
+   "question": "If I start a business to make pellets from bio-degradable waste, can I deduct all my profits for five years?",
+   "split": "train"
+  },
+  {
+   "section": 146,
+   "title": "Deduction in respect of additional employee cost",
+   "question": "Can I get a tax deduction for the extra costs of hiring new employees in my business?",
+   "split": "train"
+  },
+  {
+   "section": 146,
+   "title": "Deduction in respect of additional employee cost",
+   "question": "If I hire someone for less than 150 days and they work in apparel or footwear, will that count as an additional employee for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 147,
+   "title": "Financial Services Centre",
+   "question": "Can a bank with an offshore banking unit in a special economic zone get a 100% deduction on its income?",
+   "split": "test"
+  },
+  {
+   "section": 148,
+   "title": "Deduction in respect of certain inter-corporate dividends",
+   "question": "Can I get a deduction for dividends I receive from another Indian company if I paid dividends to investors at least one month before the return filing date?",
+   "split": "train"
+  },
+  {
+   "section": 148,
+   "title": "Deduction in respect of certain inter-corporate dividends",
+   "question": "If I already claimed a deduction for dividends last year, can I claim it again this year?",
+   "split": "train"
+  },
+  {
+   "section": 149,
+   "title": "Deduction in respect of income of co-operative societies",
+   "question": "Can a co-operative society that processes agricultural produce without using power claim a full deduction for its profits?",
+   "split": "train"
+  },
+  {
+   "section": 149,
+   "title": "Deduction in respect of income of co-operative societies",
+   "question": "If a co-operative society is involved in fishing or selling fish to its members, can it claim the full amount of profits as a deduction?",
+   "split": "train"
+  },
+  {
+   "section": 150,
+   "title": "[Deduction in respect of income of federal co-operative",
+   "question": "Is this deduction rule applicable to co-operatives that started in 2029 or later?",
+   "split": "train"
+  },
+  {
+   "section": 151,
+   "title": "than text-books",
+   "question": "Can I get a deduction for royalty income from my book if it's a textbook for schools?",
+   "split": "test"
+  },
+  {
+   "section": 151,
+   "title": "than text-books",
+   "question": "If I receive a lump sum payment for my book's copyright, how much of that can I deduct under the rules?",
+   "split": "test"
+  },
+  {
+   "section": 152,
+   "title": "Deduction in respect of royalty on patents",
+   "question": "Can I claim a deduction for royalty income from a patent registered after April 1, 2003?",
+   "split": "train"
+  },
+  {
+   "section": 152,
+   "title": "Deduction in respect of royalty on patents",
+   "question": "If I earn royalty income from a patent outside India, do I need to bring that money into India to claim the deduction?",
+   "split": "train"
+  },
+  {
+   "section": 153,
+   "title": "Deduction for interest on deposits",
+   "question": "Can I claim a deduction for interest earned on my savings account if I am not a senior citizen?",
+   "split": "test"
+  },
+  {
+   "section": 153,
+   "title": "Deduction for interest on deposits",
+   "question": "What is the maximum interest I can claim if I am a senior citizen and have deposits in a bank or post office?",
+   "split": "test"
+  },
+  {
+   "section": 154,
+   "title": "Deduction in case of a person with disability",
+   "question": "What if my disability certificate expires — can I still claim the deduction in the next year?",
+   "split": "test"
+  },
+  {
+   "section": 155,
+   "title": "Rebate to be allowed in computing income-tax",
+   "question": "Can I get a rebate on my income tax if I am an individual?",
+   "split": "train"
+  },
+  {
+   "section": 155,
+   "title": "Rebate to be allowed in computing income-tax",
+   "question": "How much can I get refunded on my income tax under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 156,
+   "title": "Rebate of income-tax in case of certain individuals",
+   "question": "Can I get relief if my salary is paid in advance or if I receive a pension that was delayed?",
+   "split": "train"
+  },
+  {
+   "section": 158,
+   "title": "in a notified country",
+   "question": "If I have a retirement account in a foreign country and withdraw the money, will my income be taxed in India when it's earned or when I take it out?",
+   "split": "train"
+  },
+  {
+   "section": 158,
+   "title": "in a notified country",
+   "question": "Can I get tax relief in India if I have a tax agreement with another country for the same income that's already taxed there?",
+   "split": "train"
+  },
+  {
+   "section": 160,
+   "title": "Countries with which no agreement exists",
+   "question": "If I have income from a country that doesn't have a double tax agreement with India, can I get a tax deduction in India based on what I already paid in that country?",
+   "split": "train"
+  },
+  {
+   "section": 160,
+   "title": "Countries with which no agreement exists",
+   "question": "Can I claim a deduction in India if I paid taxes in a foreign country on income earned there, and that country doesn't have a tax agreement with India?",
+   "split": "train"
+  },
+  {
+   "section": 162,
+   "title": "Meaning of associated enterprise",
+   "question": "If one company owns 26% or more of another company's voting shares, are they considered associated enterprises?",
+   "split": "train"
+  },
+  {
+   "section": 162,
+   "title": "Meaning of associated enterprise",
+   "question": "If a company's board is mostly appointed by another company, does that make them associated enterprises?",
+   "split": "train"
+  },
+  {
+   "section": 167,
+   "title": "Power of Board to make safe harbour rules",
+   "question": "Can the tax authorities accept a transfer price if it meets certain safe conditions?",
+   "split": "train"
+  },
+  {
+   "section": 168,
+   "title": "Advance pricing agreement",
+   "question": "If a tax agreement is found to be fraudulent, does it get canceled from the start and how does that affect the time limits for tax disputes?",
+   "split": "test"
+  },
+  {
+   "section": 169,
+   "title": "Effect to advance pricing agreement",
+   "question": "If a company has a transfer price adjustment of one crore or more, what steps must it take and what tax implications arise if the money is not repatriated?",
+   "split": "train"
+  },
+  {
+   "section": 171,
+   "title": "persons",
+   "question": "Do I need to provide a report from an accountant if I have entered into an international or specified domestic transaction?",
+   "split": "train"
+  },
+  {
+   "section": 171,
+   "title": "persons",
+   "question": "What happens if I need more than 10 days to submit the required information or document?",
+   "split": "train"
+  },
+  {
+   "section": 173,
+   "title": "Definitions of certain terms relevant to determination of arm’s length price, etc",
+   "question": "What does arm's length price mean in simple terms?",
+   "split": "test"
+  },
+  {
+   "section": 173,
+   "title": "Definitions of certain terms relevant to determination of arm’s length price, etc",
+   "question": "Does a transaction include something that is just an agreement even if it's not written down or legally enforceable?",
+   "split": "test"
+  },
+  {
+   "section": 174,
+   "title": "non-residents",
+   "question": "If a non-resident gets income through a transfer of shares, and someone else ends up getting the benefit of that income, does that mean the person who benefits is treated as if they earned that income?",
+   "split": "test"
+  },
+  {
+   "section": 174,
+   "title": "non-residents",
+   "question": "If a transfer of assets is done for a business purpose and not to avoid tax, will the income from a non-resident still be treated as the income of the person who made the transfer?",
+   "split": "test"
+  },
+  {
+   "section": 175,
+   "title": "Avoidance of tax by certain transactions in securities",
+   "question": "If I buy shares, sell them, and then buy back the same shares, is the dividend I receive still my income even if I didn't actually get it?",
+   "split": "train"
+  },
+  {
+   "section": 175,
+   "title": "Avoidance of tax by certain transactions in securities",
+   "question": "If I receive extra shares for free based on my holdings, and later sell some of them, can I ignore any loss I make on the original purchase?",
+   "split": "train"
+  },
+  {
+   "section": 176,
+   "title": "jurisdictional area",
+   "question": "If a company does business with a firm in a country where India doesn't share financial information, will that be treated as a linked company for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 176,
+   "title": "jurisdictional area",
+   "question": "If a business receives money from a foreign company in a country flagged under this rule, and can't explain where it came from, will that money be considered income for the tax year?",
+   "split": "train"
+  },
+  {
+   "section": 177,
+   "title": "Limitation on interest deduction in certain cases",
+   "question": "Can I deduct interest payments if they exceed 30% of my business's earnings before taxes?",
+   "split": "train"
+  },
+  {
+   "section": 177,
+   "title": "Limitation on interest deduction in certain cases",
+   "question": "If a foreign company's associate guarantees a loan, does that mean the interest on that loan can't be deducted?",
+   "split": "train"
+  },
+  {
+   "section": 178,
+   "title": "Applicability of General Anti-Avoidance Rule",
+   "question": "Can the tax authorities say that a tax planning strategy is invalid even if it's not clearly against the law?",
+   "split": "train"
+  },
+  {
+   "section": 178,
+   "title": "Applicability of General Anti-Avoidance Rule",
+   "question": "If a company makes a complex financial move, can the tax department still treat it as tax avoidance and adjust the tax liability?",
+   "split": "train"
+  },
+  {
+   "section": 179,
+   "title": "Impermissible avoidance arrangement",
+   "question": "What happens if an arrangement is made just to get a tax benefit even if it doesn't make sense in a normal business situation?",
+   "split": "test"
+  },
+  {
+   "section": 179,
+   "title": "Impermissible avoidance arrangement",
+   "question": "Can a tax plan be considered invalid if it uses methods that aren't normally used for real business reasons?",
+   "split": "test"
+  },
+  {
+   "section": 180,
+   "title": "Arrangement to lack commercial substance",
+   "question": "Is it possible for a financial arrangement to be considered without commercial purpose if it just moves money back and forth between parties without any real business reason?",
+   "split": "train"
+  },
+  {
+   "section": 181,
+   "title": "Consequences of impermissible avoidance arrangement. [S. 98 of the 1961 Act]",
+   "question": "If a tax arrangement is found to be an impermissible avoidance, can the tax authorities treat the parties involved as one single person?",
+   "split": "train"
+  },
+  {
+   "section": 181,
+   "title": "Consequences of impermissible avoidance arrangement. [S. 98 of the 1961 Act]",
+   "question": "Can the tax department change how a capital gain is classified as a revenue gain in a tax avoidance scheme?",
+   "split": "train"
+  },
+  {
+   "section": 182,
+   "title": "Treatment of connected person and accommodating party",
+   "question": "Can two companies that are linked to each other be treated as a single entity for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 182,
+   "title": "Treatment of connected person and accommodating party",
+   "question": "If one company is just helping another to avoid tax, can that company be ignored when checking if there's a tax benefit?",
+   "split": "test"
+  },
+  {
+   "section": 183,
+   "title": "Application of this Chapter",
+   "question": "Can I use this chapter's rules instead of other methods to calculate my tax liability?",
+   "split": "test"
+  },
+  {
+   "section": 183,
+   "title": "Application of this Chapter",
+   "question": "Are there any conditions or rules set by the government that I need to follow when using this chapter's provisions?",
+   "split": "test"
+  },
+  {
+   "section": 184,
+   "title": "Interpretation",
+   "question": "What does it mean if a company is involved in an arrangement just to get a tax benefit?",
+   "split": "train"
+  },
+  {
+   "section": 184,
+   "title": "Interpretation",
+   "question": "Does a relative of a director count as a connected person under the rules for tax arrangements?",
+   "split": "train"
+  },
+  {
+   "section": 185,
+   "title": "Mode of taking or accepting certain loans, deposits and specified sum",
+   "question": "Can I receive a loan of more than 20,000 rupees from a friend through a regular cheque if I have no other loans from them?",
+   "split": "train"
+  },
+  {
+   "section": 185,
+   "title": "Mode of taking or accepting certain loans, deposits and specified sum",
+   "question": "Is it allowed to take a loan of 2 lakh rupees from a primary agricultural credit society if I am a member?",
+   "split": "train"
+  },
+  {
+   "section": 186,
+   "title": "Mode of undertaking transactions",
+   "question": "Can I accept a payment of Rs 200,000 or more from a customer in a single day through a regular cheque?",
+   "split": "test"
+  },
+  {
+   "section": 186,
+   "title": "Mode of undertaking transactions",
+   "question": "Is it allowed to receive payments over Rs 200,000 through mobile banking or digital payment apps?",
+   "split": "test"
+  },
+  {
+   "section": 187,
+   "title": "Acceptance of payment through prescribed electronic modes",
+   "question": "Do I need to accept payments through electronic modes if my business turnover is more than fifty crore rupees?",
+   "split": "test"
+  },
+  {
+   "section": 187,
+   "title": "Acceptance of payment through prescribed electronic modes",
+   "question": "If I am a professional and my total receipts exceed fifty crore, do I have to offer electronic payment options?",
+   "split": "test"
+  },
+  {
+   "section": 188,
+   "title": "Mode of repayment of certain loans or deposits or specified advances",
+   "question": "Can I repay a loan of more than 20,000 rupees to a bank or co-operative bank using a regular cheque?",
+   "split": "train"
+  },
+  {
+   "section": 188,
+   "title": "Mode of repayment of certain loans or deposits or specified advances",
+   "question": "If I take a loan from a government institution, do I still need to follow the rules about how to repay it?",
+   "split": "train"
+  },
+  {
+   "section": 189,
+   "title": "Interpretation",
+   "question": "What does 'specified sum' mean in the context of transferring immovable property?",
+   "split": "train"
+  },
+  {
+   "section": 189,
+   "title": "Interpretation",
+   "question": "Does a 'specified advance' have to be linked to a property transfer to be considered under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 190,
+   "title": "payable",
+   "question": "If my income is not taxable, can I get a deduction from my total tax liability?",
+   "split": "test"
+  },
+  {
+   "section": 190,
+   "title": "payable",
+   "question": "How is tax calculated on the accumulated provident fund balance when the rules don't apply?",
+   "split": "test"
+  },
+  {
+   "section": 192,
+   "title": "Tax in case of block assessment of search cases",
+   "question": "Is there an additional tax added on top of the 60% tax if there are other central taxes like surcharges?",
+   "split": "test"
+  },
+  {
+   "section": 193,
+   "title": "or capital gains arising from their transfer",
+   "question": "What is the tax rate on long-term capital gains from selling Global Depository Receipts in a knowledge-based industry?",
+   "split": "train"
+  },
+  {
+   "section": 193,
+   "title": "or capital gains arising from their transfer",
+   "question": "If an employee earns dividends from Global Depository Receipts in an IT service company, can they claim deductions under other tax provisions?",
+   "split": "train"
+  },
+  {
+   "section": 194,
+   "title": "[Ss. 115B, 115BB, 115BBF, 115BBG, 115BBH and 115BBJ of the 1961 Act]",
+   "question": "What is the tax rate on winnings from lotteries or crosswords?",
+   "split": "train"
+  },
+  {
+   "section": 194,
+   "title": "[Ss. 115B, 115BB, 115BBF, 115BBG, 115BBH and 115BBJ of the 1961 Act]",
+   "question": "Can I claim any deductions for expenses when calculating royalty income from a patent registered in India?",
+   "split": "train"
+  },
+  {
+   "section": 196,
+   "title": "Tax on short-term capital gains in certain cases",
+   "question": "When I sell a long-term capital asset like land or a building that I bought before July 23, 2024, do I have to pay extra tax if the gain is calculated using indexed cost of acquisition?",
+   "split": "train"
+  },
+  {
+   "section": 198,
+   "title": "Tax on long-term capital gains in certain cases",
+   "question": "If I sell shares of a company after holding them for more than 12 months, do I have to pay tax on the gain even if it's below ₹1.25 lakh?",
+   "split": "train"
+  },
+  {
+   "section": 198,
+   "title": "Tax on long-term capital gains in certain cases",
+   "question": "Does the rule about paying tax on capital gains apply if I transfer shares through a recognised stock exchange in an international financial services centre and get paid in foreign currency?",
+   "split": "train"
+  },
+  {
+   "section": 199,
+   "title": "Tax on income of certain manufacturing domestic companies",
+   "question": "Can a company set up after March 1, 2016, and only doing manufacturing or research related to its products, opt for a 25% tax rate on its income?",
+   "split": "test"
+  },
+  {
+   "section": 199,
+   "title": "Tax on income of certain manufacturing domestic companies",
+   "question": "If a company has losses from previous years due to deductions like depreciation or bad debts, can it still claim those losses when calculating income under the 25% tax rate?",
+   "split": "test"
+  },
+  {
+   "section": 200,
+   "title": "Tax on income of certain domestic companies",
+   "question": "Can I choose to pay tax at 22% on my company's total income without deducting certain expenses like depreciation or losses?",
+   "split": "train"
+  },
+  {
+   "section": 200,
+   "title": "Tax on income of certain domestic companies",
+   "question": "If my company doesn't meet the conditions for the 22% tax option, can I still use it for future years?",
+   "split": "train"
+  },
+  {
+   "section": 201,
+   "title": "Tax on income of new manufacturing domestic companies",
+   "question": "Can a new manufacturing company in India choose a lower tax rate on its income if it started production by March 2024?",
+   "split": "test"
+  },
+  {
+   "section": 201,
+   "title": "Tax on income of new manufacturing domestic companies",
+   "question": "If a manufacturing company fails to meet the conditions like starting production by March 2024, does it lose the tax benefit for future years too?",
+   "split": "test"
+  },
+  {
+   "section": 202,
+   "title": "New tax regime for individuals, Hindu undivided family and others",
+   "question": "What is the tax rate for income between 400001 and 800000 under the new tax regime?",
+   "split": "test"
+  },
+  {
+   "section": 202,
+   "title": "New tax regime for individuals, Hindu undivided family and others",
+   "question": "Can I choose to use the new tax regime if I have income from business or profession, and if so, when and how often can I do it?",
+   "split": "test"
+  },
+  {
+   "section": 203,
+   "title": "Tax on income of certain resident co-operative societies",
+   "question": "If a co-operative society in India wants to pay tax at 22% on its total income, what conditions must it meet?",
+   "split": "train"
+  },
+  {
+   "section": 203,
+   "title": "Tax on income of certain resident co-operative societies",
+   "question": "Can a co-operative society that chooses the 22% tax rate later remove that choice for future years?",
+   "split": "train"
+  },
+  {
+   "section": 204,
+   "title": "Tax on income of certain new manufacturing co-operative societies",
+   "question": "Can a co-operative society that started manufacturing after March 31, 2024, still opt for the 15% tax rate?",
+   "split": "train"
+  },
+  {
+   "section": 204,
+   "title": "Tax on income of certain new manufacturing co-operative societies",
+   "question": "If a co-operative society fails to meet the conditions in the table, does it lose the tax option for future years?",
+   "split": "train"
+  },
+  {
+   "section": 205,
+   "title": "Conditions for tax on income of certain companies and co-operative societies",
+   "question": "Can a company that uses old machinery from before it started operate under the tax rules if the value of that machinery is less than 20% of the total machinery it uses?",
+   "split": "train"
+  },
+  {
+   "section": 205,
+   "title": "Conditions for tax on income of certain companies and co-operative societies",
+   "question": "Is the business of developing computer software considered manufacturing for tax purposes under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 206,
+   "title": "Special provision for minimum alternate tax and alternate minimum tax",
+   "question": "If a company's tax liability is less than the minimum alternate tax, what income will be used to calculate the tax?",
+   "split": "test"
+  },
+  {
+   "section": 206,
+   "title": "Special provision for minimum alternate tax and alternate minimum tax",
+   "question": "What happens to depreciation and reserves when calculating book profit for minimum alternate tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 207,
+   "title": "companies",
+   "question": "What is the tax rate on dividends received from a foreign company that are not from an international financial services centre?",
+   "split": "train"
+  },
+  {
+   "section": 207,
+   "title": "companies",
+   "question": "Is there a lower tax rate on interest earned from infrastructure debt funds in India?",
+   "split": "train"
+  },
+  {
+   "section": 208,
+   "title": "arising from their transfer",
+   "question": "What is the tax rate on long-term capital gains from selling units bought in foreign currency?",
+   "split": "train"
+  },
+  {
+   "section": 208,
+   "title": "arising from their transfer",
+   "question": "If an offshore fund only earns income from units or long-term capital gains, can it claim any deductions under Chapter VIII?",
+   "split": "train"
+  },
+  {
+   "section": 209,
+   "title": "currency or capital gains arising from their transfer",
+   "question": "Is tax applicable on long-term capital gains from selling bonds or Global Depository Receipts purchased in foreign currency?",
+   "split": "test"
+  },
+  {
+   "section": 209,
+   "title": "currency or capital gains arising from their transfer",
+   "question": "Do foreign investors need to file an income tax return if their only income is from interest or dividends on bonds or Global Depository Receipts and tax has been deducted at source?",
+   "split": "test"
+  },
+  {
+   "section": 210,
+   "title": "gains arising from their transfer",
+   "question": "What is the tax rate on short-term capital gains from selling securities for a foreign institutional investor?",
+   "split": "train"
+  },
+  {
+   "section": 210,
+   "title": "gains arising from their transfer",
+   "question": "If a specified fund earns income from securities, can it claim deductions under Chapter VIII?",
+   "split": "train"
+  },
+  {
+   "section": 211,
+   "title": "Tax on non-resident sportsmen or sports associations",
+   "question": "Is income from participating in sports in India taxable for a non-resident sportsman who is not an Indian citizen?",
+   "split": "train"
+  },
+  {
+   "section": 211,
+   "title": "Tax on non-resident sportsmen or sports associations",
+   "question": "Does a non-resident sports association have to file an income return if all its income comes from games or sports played in India and tax has been deducted at source?",
+   "split": "train"
+  },
+  {
+   "section": 212,
+   "title": "Interpretation",
+   "question": "What types of assets are considered foreign exchange assets under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 212,
+   "title": "Interpretation",
+   "question": "Does a non-resident Indian include someone who is a citizen of India or of Indian origin?",
+   "split": "train"
+  },
+  {
+   "section": 213,
+   "title": "Special provision for computation of total income of non-residents",
+   "question": "Can I claim any deductions for expenses when calculating my investment income as a non-resident Indian?",
+   "split": "train"
+  },
+  {
+   "section": 213,
+   "title": "Special provision for computation of total income of non-residents",
+   "question": "If my income includes only investment income or long-term capital gains, do I get to use any deductions under Chapter VIII?",
+   "split": "train"
+  },
+  {
+   "section": 214,
+   "title": "Tax on investment income and long-term capital gains",
+   "question": "What is the tax rate on income from investments for a non-resident Indian?",
+   "split": "test"
+  },
+  {
+   "section": 215,
+   "title": "certain cases",
+   "question": "If I sell a foreign asset and invest the money in another asset within six months, will I have to pay capital gains tax?",
+   "split": "train"
+  },
+  {
+   "section": 215,
+   "title": "certain cases",
+   "question": "If I transfer a foreign asset and then convert the new investment back to cash within three years, will I still have to pay capital gains tax?",
+   "split": "train"
+  },
+  {
+   "section": 216,
+   "title": "Return of income not to be furnished in certain cases",
+   "question": "Do I need to file a tax return if my only income is from investments or long-term capital gains?",
+   "split": "train"
+  },
+  {
+   "section": 216,
+   "title": "Return of income not to be furnished in certain cases",
+   "question": "If tax is already deducted at source on my investment or capital gains income, do I still need to file a return?",
+   "split": "train"
+  },
+  {
+   "section": 217,
+   "title": "36",
+   "question": "If a non-resident Indian becomes a resident in India and declares it in their return, will they still have to pay tax on foreign exchange assets like bonds or real estate income under the old rules?",
+   "split": "train"
+  },
+  {
+   "section": 217,
+   "title": "36",
+   "question": "Can a non-resident Indian choose not to follow the old tax rules on foreign assets and instead use the regular tax rules for a particular year?",
+   "split": "train"
+  },
+  {
+   "section": 218,
+   "title": "Services Centre unit.\b",
+   "question": "Can I choose not to follow the special tax rules for foreign exchange income and pay tax based on regular income rates instead?",
+   "split": "test"
+  },
+  {
+   "section": 219,
+   "title": "company",
+   "question": "If a foreign bank opens a branch in India and later converts it into an Indian subsidiary, will there be any tax on the capital gain from that conversion?",
+   "split": "train"
+  },
+  {
+   "section": 221,
+   "title": "Tax on income from securitisation trusts",
+   "question": "If I am an investor in a securitisation trust, is my income from that trust taxed as if I had invested directly myself?",
+   "split": "train"
+  },
+  {
+   "section": 221,
+   "title": "Tax on income from securitisation trusts",
+   "question": "If the securitisation trust doesn't pay me income by the end of the year, is it still considered as if I received it for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 224,
+   "title": "Tax on income of investment fund and its unit holders",
+   "question": "If I hold units in an investment fund, is my income from that fund treated as if I had invested directly myself?",
+   "split": "test"
+  },
+  {
+   "section": 224,
+   "title": "Tax on income of investment fund and its unit holders",
+   "question": "Can a loss from an investment fund be used to reduce my personal tax if I didn’t hold the units for at least 12 months?",
+   "split": "test"
+  },
+  {
+   "section": 225,
+   "title": "Income from business of operating qualifying ships",
+   "question": "Can a company choose to calculate its ship operating income using the rules in this part?",
+   "split": "train"
+  },
+  {
+   "section": 226,
+   "title": "Tonnage tax scheme",
+   "question": "Is a company considered to be operating a ship if it only charter a part of the ship under a slot or space charter?",
+   "split": "train"
+  },
+  {
+   "section": 226,
+   "title": "Tonnage tax scheme",
+   "question": "If a company has chartered out a ship for more than three years, is it still considered to be operating it for tonnage tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 227,
+   "title": "Computation of tonnage income",
+   "question": "How is the daily tonnage income calculated for a ship based on its net tonnage?",
+   "split": "train"
+  },
+  {
+   "section": 227,
+   "title": "Computation of tonnage income",
+   "question": "If a ship is operated for only part of the year, how is its tonnage income calculated?",
+   "split": "train"
+  },
+  {
+   "section": 228,
+   "title": "Relevant shipping income and exclusion from book profit",
+   "question": "If a shipping company makes profits from activities other than operating ships, like container leasing or on-board passenger services, are those profits included in relevant shipping income?",
+   "split": "train"
+  },
+  {
+   "section": 228,
+   "title": "Relevant shipping income and exclusion from book profit",
+   "question": "If a shipping company transfers goods or services between its shipping business and another part of its business at a price different from market value, how is the relevant shipping income calculated?",
+   "split": "train"
+  },
+  {
+   "section": 229,
+   "title": "Depreciation and gains relating to tonnage tax assets",
+   "question": "How is the written down value of qualifying ships calculated at the start of the tax year?",
+   "split": "train"
+  },
+  {
+   "section": 229,
+   "title": "Depreciation and gains relating to tonnage tax assets",
+   "question": "If a ship that was used for tonnage tax business starts being used for other purposes, how is its value transferred between the qualifying and other asset blocks?",
+   "split": "train"
+  },
+  {
+   "section": 230,
+   "title": "Exclusion of deduction, loss, set off, etc",
+   "question": "Can I carry forward losses from operating qualifying ships if my company is under the tonnage tax scheme?",
+   "split": "test"
+  },
+  {
+   "section": 230,
+   "title": "Exclusion of deduction, loss, set off, etc",
+   "question": "If a company switches to the tonnage tax scheme, can losses from its shipping business be used to offset shipping income in future years?",
+   "split": "test"
+  },
+  {
+   "section": 231,
+   "title": "Method of opting of tonnage tax scheme and validity",
+   "question": "Can a company apply for the tonnage tax scheme within three months of becoming a qualifying company?",
+   "split": "test"
+  },
+  {
+   "section": 232,
+   "title": "Certain conditions for applicability of tonnage tax scheme",
+   "question": "What happens if a company doesn't create the required reserve in two consecutive years?",
+   "split": "train"
+  },
+  {
+   "section": 232,
+   "title": "Certain conditions for applicability of tonnage tax scheme",
+   "question": "If a tonnage tax company uses its reserve for something other than buying a new ship or vessel, is that amount taxable?",
+   "split": "train"
+  },
+  {
+   "section": 234,
+   "title": "Avoidance of tax and exclusion from tonnage tax scheme",
+   "question": "If a tonnage tax company enters into a deal that gives another company a tax benefit, can it still use the tonnage tax scheme?",
+   "split": "test"
+  },
+  {
+   "section": 234,
+   "title": "Avoidance of tax and exclusion from tonnage tax scheme",
+   "question": "Can a tonnage tax company be removed from the scheme if it makes more profits than normal from activities outside of tonnage tax operations?",
+   "split": "test"
+  },
+  {
+   "section": 235,
+   "title": "Interpretation",
+   "question": "What does a bareboat charter mean in simple terms?",
+   "split": "train"
+  },
+  {
+   "section": 235,
+   "title": "Interpretation",
+   "question": "Does a ship used mainly for land-based services count as a qualifying ship?",
+   "split": "train"
+  },
+  {
+   "section": 236,
+   "title": "Income-tax authorities",
+   "question": "What are the roles of Income-tax Officers and Tax Recovery Officers under this provision?",
+   "split": "train"
+  },
+  {
+   "section": 237,
+   "title": "Appointment of income-tax authorities",
+   "question": "Who can appoint lower-ranked income tax officers like assistants or deputies?",
+   "split": "test"
+  },
+  {
+   "section": 238,
+   "title": "Control of income-tax authorities",
+   "question": "Can an income-tax authority be made to follow another income-tax authority as per a government notification?",
+   "split": "train"
+  },
+  {
+   "section": 238,
+   "title": "Control of income-tax authorities",
+   "question": "What happens if a tax authority is told by a notification to report to a different tax authority?",
+   "split": "train"
+  },
+  {
+   "section": 239,
+   "title": "Instructions to subordinate authorities",
+   "question": "Can the tax board give general guidelines to tax officers on how to assess income or handle penalties?",
+   "split": "test"
+  },
+  {
+   "section": 239,
+   "title": "Instructions to subordinate authorities",
+   "question": "Can a taxpayer apply for a refund or exemption after the deadline if the tax board decides it's in the public interest?",
+   "split": "test"
+  },
+  {
+   "section": 241,
+   "title": "Jurisdiction of income-tax authorities",
+   "question": "Can a higher tax authority tell a lower-ranking officer to handle cases in a specific area or for specific types of income?",
+   "split": "test"
+  },
+  {
+   "section": 241,
+   "title": "Jurisdiction of income-tax authorities",
+   "question": "If a notice is given to a taxpayer and they file a return within one month, can they still challenge the tax officer's authority to assess them?",
+   "split": "test"
+  },
+  {
+   "section": 243,
+   "title": "Power to transfer cases",
+   "question": "Can a tax case be moved from one tax officer to another if they are both under the same tax authority?",
+   "split": "test"
+  },
+  {
+   "section": 243,
+   "title": "Power to transfer cases",
+   "question": "If two different tax authorities are involved in a case and they agree, can one of them transfer the case without needing approval from a higher body?",
+   "split": "test"
+  },
+  {
+   "section": 244,
+   "title": "Change of incumbent of an office",
+   "question": "If a tax officer leaves a case and a new officer takes over, can the new officer pick up the case where it left off?",
+   "split": "train"
+  },
+  {
+   "section": 244,
+   "title": "Change of incumbent of an office",
+   "question": "Can a taxpayer ask for the case to be reopened or for a new hearing before the tax department finalizes their assessment?",
+   "split": "train"
+  },
+  {
+   "section": 245,
+   "title": "Faceless jurisdiction of income-tax authorities",
+   "question": "Can income-tax authorities conduct searches and inspections without meeting the taxpayer face to face?",
+   "split": "train"
+  },
+  {
+   "section": 245,
+   "title": "Faceless jurisdiction of income-tax authorities",
+   "question": "Can tax officers take documents from a person even if no case is currently being filed against them?",
+   "split": "train"
+  },
+  {
+   "section": 247,
+   "title": "Search and seizure",
+   "question": "Can tax officers search my home or office if they suspect I have hidden financial records or assets?",
+   "split": "train"
+  },
+  {
+   "section": 247,
+   "title": "Search and seizure",
+   "question": "If I have electronic files on my computer, can tax officials access them and take them if I don’t provide access?",
+   "split": "train"
+  },
+  {
+   "section": 248,
+   "title": "Powers to requisition",
+   "question": "Can the tax authority ask another government officer to hand over documents or computer files if those files were taken by another law enforcement agency?",
+   "split": "train"
+  },
+  {
+   "section": 248,
+   "title": "Powers to requisition",
+   "question": "If documents or assets are held by a different authority, can the income tax officer still get them for tax investigation purposes?",
+   "split": "train"
+  },
+  {
+   "section": 249,
+   "title": "Reasons not to be disclosed",
+   "question": "Can I get my seized assets back if I explain where I got them and pay off the taxes I owe?",
+   "split": "train"
+  },
+  {
+   "section": 249,
+   "title": "Reasons not to be disclosed",
+   "question": "What happens to the money or assets left after the taxes and penalties are paid from a seized amount?",
+   "split": "train"
+  },
+  {
+   "section": 253,
+   "title": "Powers of survey",
+   "question": "Can tax authorities enter a business location even if it's not their main office?",
+   "split": "test"
+  },
+  {
+   "section": 253,
+   "title": "Powers of survey",
+   "question": "If a company keeps its books in a different location, can the tax authority still inspect them?",
+   "split": "test"
+  },
+  {
+   "section": 254,
+   "title": "Power to collect certain information",
+   "question": "Can income-tax officials enter a business location even if it's not the main office?",
+   "split": "train"
+  },
+  {
+   "section": 254,
+   "title": "Power to collect certain information",
+   "question": "Are income-tax officials allowed to take away books, documents, or cash from a business place during an inspection?",
+   "split": "train"
+  },
+  {
+   "section": 256,
+   "title": "Power of certain income-tax authorities",
+   "question": "Can the Director General or a Commissioner investigate a taxpayer's income like an Assessing Officer does?",
+   "split": "test"
+  },
+  {
+   "section": 256,
+   "title": "Power of certain income-tax authorities",
+   "question": "Are tax investigations by the Principal Commissioner or Joint Commissioner considered legal proceedings?",
+   "split": "test"
+  },
+  {
+   "section": 257,
+   "title": "Proceedings before income-tax authorities to be judicial proceedings",
+   "question": "If I go to an income-tax authority for a tax issue, does that count as a court case?",
+   "split": "train"
+  },
+  {
+   "section": 257,
+   "title": "Proceedings before income-tax authorities to be judicial proceedings",
+   "question": "Is an income-tax authority treated like a civil court for legal purposes?",
+   "split": "train"
+  },
+  {
+   "section": 258,
+   "title": "Disclosure of information relating to assessees",
+   "question": "Can the income tax authority share details about a taxpayer with foreign exchange regulators?",
+   "split": "test"
+  },
+  {
+   "section": 258,
+   "title": "Disclosure of information relating to assessees",
+   "question": "Can a person apply to get information about a taxpayer from the income tax authority, and what happens after the request is approved?",
+   "split": "test"
+  },
+  {
+   "section": 259,
+   "title": "Power to call for information by prescribed income-tax authority",
+   "question": "Can the income tax authority ask for information from me if they are investigating a case?",
+   "split": "train"
+  },
+  {
+   "section": 259,
+   "title": "Power to call for information by prescribed income-tax authority",
+   "question": "What happens to the information I provide to the tax authority during an investigation?",
+   "split": "train"
+  },
+  {
+   "section": 260,
+   "title": "Faceless collection of information",
+   "question": "Can the government collect tax information without directly talking to the taxpayer?",
+   "split": "test"
+  },
+  {
+   "section": 260,
+   "title": "Faceless collection of information",
+   "question": "Will tax authorities work in teams to collect information instead of individually handling cases?",
+   "split": "test"
+  },
+  {
+   "section": 261,
+   "title": "Interpretation",
+   "question": "What types of assets are considered as assets for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 261,
+   "title": "Interpretation",
+   "question": "Who can be considered an authorised officer during a tax investigation?",
+   "split": "train"
+  },
+  {
+   "section": 264,
+   "title": "Scheme for submission of returns through tax return preparers",
+   "question": "Can I use a tax return preparer to file my income tax return if I am not a company and my accounts don’t need to be audited?",
+   "split": "train"
+  },
+  {
+   "section": 264,
+   "title": "Scheme for submission of returns through tax return preparers",
+   "question": "What types of people are allowed to use a tax return preparer under this scheme?",
+   "split": "train"
+  },
+  {
+   "section": 265,
+   "title": "Return by whom to be verified",
+   "question": "If an individual is mentally unable to verify their income return, who can verify it for them?",
+   "split": "train"
+  },
+  {
+   "section": 265,
+   "title": "Return by whom to be verified",
+   "question": "For a company that is being wound up by the court, who is responsible for verifying the income return?",
+   "split": "train"
+  },
+  {
+   "section": 266,
+   "title": "Self-assessment",
+   "question": "If I have already paid tax, deducted tax, or claimed relief on foreign taxes, can that be considered when calculating the tax I need to pay on my return?",
+   "split": "test"
+  },
+  {
+   "section": 266,
+   "title": "Self-assessment",
+   "question": "What happens if I don’t pay the full tax, interest, or fee when filing my return?",
+   "split": "test"
+  },
+  {
+   "section": 268,
+   "title": "Inquiry before assessment",
+   "question": "Can an assessee be asked to get their accounts audited by a qualified accountant if the business is complex or has many transactions?",
+   "split": "test"
+  },
+  {
+   "section": 268,
+   "title": "Inquiry before assessment",
+   "question": "What is the maximum time allowed for an assessee to submit a report after being directed to get their inventory valued by a cost accountant?",
+   "split": "test"
+  },
+  {
+   "section": 269,
+   "title": "Estimation of value of assets by Valuation Officer",
+   "question": "Can the tax officer ask someone to let them enter their property to check its value?",
+   "split": "train"
+  },
+  {
+   "section": 269,
+   "title": "Estimation of value of assets by Valuation Officer",
+   "question": "What happens if a person refuses to let the valuation officer inspect their property or documents?",
+   "split": "train"
+  },
+  {
+   "section": 270,
+   "title": "Assessment",
+   "question": "Can the tax authority adjust a return if there is a mistake in the numbers or if a deduction claimed is too high?",
+   "split": "train"
+  },
+  {
+   "section": 270,
+   "title": "Assessment",
+   "question": "If a taxpayer claims a loss but no tax is due, will they still get an official notice from the tax department?",
+   "split": "train"
+  },
+  {
+   "section": 271,
+   "title": "Best judgment assessment",
+   "question": "What happens if I don't file my tax return or ignore a notice from the tax department?",
+   "split": "test"
+  },
+  {
+   "section": 271,
+   "title": "Best judgment assessment",
+   "question": "Can the tax officer assess my income even if I didn't file a return or didn't respond to a notice, and how does that work?",
+   "split": "test"
+  },
+  {
+   "section": 272,
+   "title": "Power of Joint Commissioner to issue directions in certain cases",
+   "question": "Can a Joint Commissioner ask for and look at the records of an ongoing tax assessment?",
+   "split": "train"
+  },
+  {
+   "section": 273,
+   "title": "Faceless Assessment",
+   "question": "How will assessments be done without meeting the taxpayer in person?",
+   "split": "test"
+  },
+  {
+   "section": 273,
+   "title": "Faceless Assessment",
+   "question": "Can a taxpayer get a response from the tax department through email or digital messages?",
+   "split": "test"
+  },
+  {
+   "section": 274,
+   "title": "Reference to Principal Commissioner or Commissioner in certain cases",
+   "question": "Can the Assessing Officer refer a case to the Principal Commissioner if they think an arrangement is an impermissible avoidance?",
+   "split": "train"
+  },
+  {
+   "section": 274,
+   "title": "Reference to Principal Commissioner or Commissioner in certain cases",
+   "question": "If the Approving Panel finds that a tax arrangement is avoidable, does it have to give the taxpayer a chance to be heard before making a decision?",
+   "split": "train"
+  },
+  {
+   "section": 277,
+   "title": "Method of accounting in certain cases",
+   "question": "How should inventory that is not listed on a stock exchange be valued?",
+   "split": "train"
+  },
+  {
+   "section": 277,
+   "title": "Method of accounting in certain cases",
+   "question": "Do I need to include taxes paid to bring goods to their current location when calculating the value of inventory?",
+   "split": "train"
+  },
+  {
+   "section": 278,
+   "title": "Taxability of certain income",
+   "question": "When is interest on compensation considered as taxable income?",
+   "split": "test"
+  },
+  {
+   "section": 278,
+   "title": "Taxability of certain income",
+   "question": "Is a claim for price escalation considered income when it's certain it will be paid?",
+   "split": "test"
+  },
+  {
+   "section": 279,
+   "title": "Income escaping assessment",
+   "question": "Can the tax officer assess income that was not previously assessed even if they didn’t follow all the required steps?",
+   "split": "train"
+  },
+  {
+   "section": 279,
+   "title": "Income escaping assessment",
+   "question": "If a tax issue related to missed income comes up later, can the tax officer still assess it?",
+   "split": "train"
+  },
+  {
+   "section": 281,
+   "title": "Procedure before issuance of notice under section 280",
+   "question": "Do I get a chance to respond before a notice is sent if my income is suspected to have been missed in tax assessment?",
+   "split": "test"
+  },
+  {
+   "section": 282,
+   "title": "Time limit for notices under sections 280 and 281",
+   "question": "Can the tax department issue a notice for a tax year if more than four years and three months have passed, and no records show large income escaping assessment?",
+   "split": "test"
+  },
+  {
+   "section": 282,
+   "title": "Time limit for notices under sections 280 and 281",
+   "question": "If four years have passed, can the tax department still issue a show cause notice if the unassessed income is less than fifty lakh rupees?",
+   "split": "test"
+  },
+  {
+   "section": 283,
+   "title": "60",
+   "question": "Can a tax assessment be done even if it's after the usual time limit, if a court or tribunal has made a decision in a case?",
+   "split": "train"
+  },
+  {
+   "section": 283,
+   "title": "60",
+   "question": "If a panel gives directions, can the tax department issue a notice to reassess taxes based on those directions?",
+   "split": "train"
+  },
+  {
+   "section": 285,
+   "title": "Other provisions",
+   "question": "If my income was not assessed because it was missed, will I have to pay tax at the rate it would have been if it was properly assessed?",
+   "split": "test"
+  },
+  {
+   "section": 285,
+   "title": "Other provisions",
+   "question": "Can I stop a reassessment if I prove I was already assessed fairly and didn’t challenge the original assessment order?",
+   "split": "test"
+  },
+  {
+   "section": 286,
+   "title": "Time limit for completion of assessment, reassessment and recomputation",
+   "question": "If I submit an updated income return, how long does the tax authority have to complete the assessment?",
+   "split": "test"
+  },
+  {
+   "section": 286,
+   "title": "Time limit for completion of assessment, reassessment and recomputation",
+   "question": "If a court order changes an existing assessment, how long does the tax department have to act on that order?",
+   "split": "test"
+  },
+  {
+   "section": 287,
+   "title": "Rectification of mistake",
+   "question": "Can the income-tax authority change a previous order or notice if they find a mistake?",
+   "split": "train"
+  },
+  {
+   "section": 287,
+   "title": "Rectification of mistake",
+   "question": "If an amendment increases the tax I have to pay, do I get a chance to respond before it's finalized?",
+   "split": "train"
+  },
+  {
+   "section": 288,
+   "title": "Other amendments",
+   "question": "Can I get my partner's income adjusted if the remuneration was previously marked as deductible but later found not to be?",
+   "split": "train"
+  },
+  {
+   "section": 288,
+   "title": "Other amendments",
+   "question": "If income from an association is missed in my assessment, can it be added later and when?",
+   "split": "train"
+  },
+  {
+   "section": 290,
+   "title": "Modification and revision of notice in certain cases",
+   "question": "If a court reduces the tax amount due based on an insolvency order, can the tax department issue a new notice with the reduced amount?",
+   "split": "test"
+  },
+  {
+   "section": 290,
+   "title": "Modification and revision of notice in certain cases",
+   "question": "If the National Company Law Appellate Tribunal changes the original insolvency order, does that affect the tax notice issued by the income tax department?",
+   "split": "test"
+  },
+  {
+   "section": 291,
+   "title": "Intimation of loss",
+   "question": "What should I do if the tax officer finds a loss during my assessment?",
+   "split": "train"
+  },
+  {
+   "section": 291,
+   "title": "Intimation of loss",
+   "question": "Do I need to get a written notice if I’m allowed to carry forward a loss?",
+   "split": "train"
+  },
+  {
+   "section": 292,
+   "title": "Assessment of total undisclosed income as a result of search",
+   "question": "If a search is started on my case, will all previous tax assessments from before that date get cancelled?",
+   "split": "train"
+  },
+  {
+   "section": 292,
+   "title": "Assessment of total undisclosed income as a result of search",
+   "question": "How long will I have to wait after completing a pending assessment to get a new one for a search that happened later?",
+   "split": "train"
+  },
+  {
+   "section": 293,
+   "title": "Computation of total undisclosed income of block period",
+   "question": "Can income declared before a search or requisition be included in the total undisclosed income?",
+   "split": "test"
+  },
+  {
+   "section": 293,
+   "title": "Computation of total undisclosed income of block period",
+   "question": "If an assessee computes income from normal books of account before a search, is that income still considered undisclosed?",
+   "split": "test"
+  },
+  {
+   "section": 294,
+   "title": "Procedure for block assessment",
+   "question": "What happens if I submit my return after the 60-day deadline given in the notice?",
+   "split": "train"
+  },
+  {
+   "section": 294,
+   "title": "Procedure for block assessment",
+   "question": "Can I get extra time to submit my return if my accounts haven’t been audited and I request it in writing?",
+   "split": "train"
+  },
+  {
+   "section": 295,
+   "title": "Undisclosed income of any other person",
+   "question": "If money or documents linked to someone else's hidden income are seized, who gets to handle the investigation?",
+   "split": "train"
+  },
+  {
+   "section": 295,
+   "title": "Undisclosed income of any other person",
+   "question": "What happens to the time period for checking hidden income if it only relates to one tax year before the search started?",
+   "split": "train"
+  },
+  {
+   "section": 296,
+   "title": "Time-limit for completion of block assessment",
+   "question": "How long does the tax department have to complete a block assessment after a search starts?",
+   "split": "train"
+  },
+  {
+   "section": 296,
+   "title": "Time-limit for completion of block assessment",
+   "question": "If the tax department asks for information from another agency, does that delay the time limit for completing the assessment?",
+   "split": "train"
+  },
+  {
+   "section": 297,
+   "title": "Certain interests and penalties not to be levied or imposed",
+   "question": "Will I have to pay interest or penalty if my income was previously hidden and the tax authorities assessed it for a specific period?",
+   "split": "test"
+  },
+  {
+   "section": 298,
+   "title": "[S. 158BFA of the 1961 Act]",
+   "question": "What happens if I don’t submit my return of undisclosed income within the time given in the notice?",
+   "split": "test"
+  },
+  {
+   "section": 298,
+   "title": "[S. 158BFA of the 1961 Act]",
+   "question": "Can I avoid the penalty if I pay the tax shown in my return and the seized assets are adjusted against it?",
+   "split": "test"
+  },
+  {
+   "section": 300,
+   "title": "Application of other provisions of Act",
+   "question": "Does this mean all the tax rules in the Act apply to assessments done under this part?",
+   "split": "test"
+  },
+  {
+   "section": 300,
+   "title": "Application of other provisions of Act",
+   "question": "If something isn't mentioned here, does it still follow the general rules of the tax law?",
+   "split": "test"
+  },
+  {
+   "section": 301,
+   "title": "Interpretation",
+   "question": "What does a block period include for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 301,
+   "title": "Interpretation",
+   "question": "When is the last authorization considered completed for a search or requisition?",
+   "split": "test"
+  },
+  {
+   "section": 302,
+   "title": "Legal representative",
+   "question": "If someone dies, is the person who takes over their legal business or property responsible for paying taxes they would have had to pay if they were still alive?",
+   "split": "test"
+  },
+  {
+   "section": 303,
+   "title": "Representative assessee",
+   "question": "If a person is the guardian of a minor, do they have to pay income tax on the minor's income?",
+   "split": "train"
+  },
+  {
+   "section": 303,
+   "title": "Representative assessee",
+   "question": "Can a trustee who manages property for someone else be considered a taxpayer for the income received on their behalf?",
+   "split": "train"
+  },
+  {
+   "section": 304,
+   "title": "Liability of representative assessee",
+   "question": "If I am a representative assessee, am I personally responsible for paying tax on the income that belongs to someone else?",
+   "split": "test"
+  },
+  {
+   "section": 304,
+   "title": "Liability of representative assessee",
+   "question": "Can the tax authority go after my assets if the income I'm representing is taxable and I haven't paid the tax?",
+   "split": "test"
+  },
+  {
+   "section": 305,
+   "title": "Right of representative assessee to recover tax paid",
+   "question": "If I pay tax on someone else's behalf, can I get that money back from them?",
+   "split": "train"
+  },
+  {
+   "section": 305,
+   "title": "Right of representative assessee to recover tax paid",
+   "question": "If there's a disagreement about how much tax I should hold back, can I get a certificate from the tax authority to justify keeping that amount?",
+   "split": "train"
+  },
+  {
+   "section": 306,
+   "title": "Who may be regarded as agent",
+   "question": "If a person in India is working for a non-resident or has a business link with them, does that make them an agent for tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 306,
+   "title": "Who may be regarded as agent",
+   "question": "Can a broker in India be considered an agent if they work through a non-resident broker and the transactions are done in the usual way?",
+   "split": "test"
+  },
+  {
+   "section": 307,
+   "title": "Charge of tax where share of beneficiaries unknown",
+   "question": "If income is received by a trust without clearly stating who the beneficiaries are, is it taxed at the highest rate?",
+   "split": "train"
+  },
+  {
+   "section": 307,
+   "title": "Charge of tax where share of beneficiaries unknown",
+   "question": "Can a trust set up by a person for the benefit of their family members, especially those dependent on them, be taxed like an association of persons if it's the only such trust declared by them?",
+   "split": "train"
+  },
+  {
+   "section": 308,
+   "title": "Charge of tax in case of oral trust",
+   "question": "If a trustee gets income from a trust that was created without a written agreement, is tax still charged on that income?",
+   "split": "train"
+  },
+  {
+   "section": 308,
+   "title": "Charge of tax in case of oral trust",
+   "question": "What is the highest tax rate applied when income is received by a trustee for a trust that was only spoken about, not in writing?",
+   "split": "train"
+  },
+  {
+   "section": 309,
+   "title": "or body of individuals",
+   "question": "Can interest I pay on capital I borrowed to invest in an association be deducted from my income under the profits and gains of business or profession head?",
+   "split": "test"
+  },
+  {
+   "section": 310,
+   "title": "of association or body",
+   "question": "If an association of persons doesn't have to pay income tax, do the members still have to pay tax on their share of the income?",
+   "split": "train"
+  },
+  {
+   "section": 310,
+   "title": "of association or body",
+   "question": "If the association pays tax at the highest rate or more, does a member have to include their share in their personal income?",
+   "split": "train"
+  },
+  {
+   "section": 311,
+   "title": "individuals unknown, etc",
+   "question": "If I can't figure out how much each member of a group gets from the income of the group, how is tax calculated on that group?",
+   "split": "train"
+  },
+  {
+   "section": 311,
+   "title": "individuals unknown, etc",
+   "question": "If one member of a group has income from the group that is taxed at a higher rate than the maximum rate, how is tax applied to the group's total income?",
+   "split": "train"
+  },
+  {
+   "section": 312,
+   "title": "Executor",
+   "question": "When a business is passed on to a new owner, does the old owner still have to pay tax on income before the transfer?",
+   "split": "train"
+  },
+  {
+   "section": 314,
+   "title": "Effect of order of tribunal or court in respect of business reorganisation",
+   "question": "What happens if a company undergoes a merger or split and a court or tribunal issues an order on it?",
+   "split": "train"
+  },
+  {
+   "section": 314,
+   "title": "Effect of order of tribunal or court in respect of business reorganisation",
+   "question": "Do the new companies formed after a business reorganisation have to file a revised income return within six months of the order being issued?",
+   "split": "train"
+  },
+  {
+   "section": 315,
+   "title": "Assessment after partition of Hindu undivided family",
+   "question": "What happens if a Hindu family claims a partition happened during the tax year?",
+   "split": "test"
+  },
+  {
+   "section": 315,
+   "title": "Assessment after partition of Hindu undivided family",
+   "question": "If a partial partition occurs after December 31, 1978, can the tax authorities still investigate it and record a finding?",
+   "split": "test"
+  },
+  {
+   "section": 316,
+   "title": "Shipping business of non-residents",
+   "question": "If a non-resident ship carries passengers or goods from an Indian port, how much of the carriage charges are considered income for tax purposes in India?",
+   "split": "train"
+  },
+  {
+   "section": 316,
+   "title": "Shipping business of non-residents",
+   "question": "What happens if a ship’s master cannot file the return before leaving India, and how is the tax still handled?",
+   "split": "train"
+  },
+  {
+   "section": 317,
+   "title": "Assessment of persons leaving India",
+   "question": "If someone plans to leave India during the year, will their income up to the date they leave be taxed in that year?",
+   "split": "train"
+  },
+  {
+   "section": 317,
+   "title": "Assessment of persons leaving India",
+   "question": "If a company is formed for a specific event and is likely to close soon, will its income up to the closure date be taxed in the year it was formed?",
+   "split": "train"
+  },
+  {
+   "section": 319,
+   "title": "Assessment of persons likely to transfer property to avoid tax",
+   "question": "What happens if someone plans to sell or transfer their assets to avoid paying taxes?",
+   "split": "test"
+  },
+  {
+   "section": 319,
+   "title": "Assessment of persons likely to transfer property to avoid tax",
+   "question": "Can the tax authority treat someone's income as taxable even if they haven't sold anything yet, if they are planning to move or transfer assets to avoid taxes?",
+   "split": "test"
+  },
+  {
+   "section": 320,
+   "title": "Discontinued business",
+   "question": "If I stop running my business in the middle of a financial year, can my income up to that date be taxed in that same year?",
+   "split": "test"
+  },
+  {
+   "section": 320,
+   "title": "Discontinued business",
+   "question": "If a business is closed due to retirement or death of the owner, are payments received after closure treated as income for the recipient in the year they are received?",
+   "split": "test"
+  },
+  {
+   "section": 321,
+   "title": "Association dissolved or business discontinued",
+   "question": "If a group of people who run a business together shut down or dissolve, do they still have to pay tax on the income they earned before closing?",
+   "split": "train"
+  },
+  {
+   "section": 321,
+   "title": "Association dissolved or business discontinued",
+   "question": "After a business run by a group of people is dissolved, can the members or their heirs be held responsible for any tax or penalties even if the business is no longer active?",
+   "split": "train"
+  },
+  {
+   "section": 322,
+   "title": "Company in liquidation",
+   "question": "If a private company's tax is not recovered, are the directors personally responsible for paying it?",
+   "split": "test"
+  },
+  {
+   "section": 324,
+   "title": "Charge of tax in case of a firm",
+   "question": "What is the tax rate applied to a firm's total income when it is assessed as a firm?",
+   "split": "test"
+  },
+  {
+   "section": 324,
+   "title": "Charge of tax in case of a firm",
+   "question": "How is tax calculated for a firm that is assessed as a firm under this rule?",
+   "split": "test"
+  },
+  {
+   "section": 325,
+   "title": "Assessment as a firm",
+   "question": "If a partner leaves or the shares change, do I still need to submit a new partnership agreement?",
+   "split": "train"
+  },
+  {
+   "section": 326,
+   "title": "Assessment when section 325 not complied with",
+   "question": "What happens if a firm doesn't follow the rules about paying partner remuneration?",
+   "split": "train"
+  },
+  {
+   "section": 326,
+   "title": "Assessment when section 325 not complied with",
+   "question": "Can partners claim income tax on salary or bonus paid by the firm if the firm didn't follow the required rules?",
+   "split": "train"
+  },
+  {
+   "section": 327,
+   "title": "Change in constitution of a firm",
+   "question": "What happens to a firm's tax assessment if a new partner is added but one of the original partners stays in the firm?",
+   "split": "train"
+  },
+  {
+   "section": 327,
+   "title": "Change in constitution of a firm",
+   "question": "If all partners in a firm keep their shares but the percentage they own changes, does that affect the tax assessment?",
+   "split": "train"
+  },
+  {
+   "section": 328,
+   "title": "Succession of one firm by another firm",
+   "question": "If a firm is taken over by another firm, are the partners of the original firm still responsible for any tax dues that the new firm might owe?",
+   "split": "train"
+  },
+  {
+   "section": 329,
+   "title": "Joint and several liability of partners for tax payable by firm",
+   "question": "If a partner in a firm dies during the tax year, are they still responsible for the firm's tax liability?",
+   "split": "test"
+  },
+  {
+   "section": 329,
+   "title": "Joint and several liability of partners for tax payable by firm",
+   "question": "Does each partner have to pay the firm's tax penalty if the business is dissolved?",
+   "split": "test"
+  },
+  {
+   "section": 330,
+   "title": "Firm dissolved or business discontinued",
+   "question": "If a business closes down, do I still have to pay taxes on the profits from before it closed?",
+   "split": "test"
+  },
+  {
+   "section": 330,
+   "title": "Firm dissolved or business discontinued",
+   "question": "After a limited liability partnership dissolves, are the partners still responsible for any unpaid taxes or penalties?",
+   "split": "test"
+  },
+  {
+   "section": 332,
+   "title": "Application for registration",
+   "question": "Can a society registered under the Societies Registration Act, 1860 apply for registration as a non-profit organization?",
+   "split": "test"
+  },
+  {
+   "section": 333,
+   "title": "Switching over of regimes",
+   "question": "If a non-profit organisation is notified under certain schedules, does that mean it stops getting tax exemption?",
+   "split": "train"
+  },
+  {
+   "section": 333,
+   "title": "Switching over of regimes",
+   "question": "After a non-profit organisation loses its exemption, can it reapply for registration and how does that affect future tax exemptions?",
+   "split": "train"
+  },
+  {
+   "section": 336,
+   "title": "Taxable regular income",
+   "question": "If a non-profit organisation uses 85% or more of its regular income for charitable or religious purposes, is it required to pay tax on that income?",
+   "split": "train"
+  },
+  {
+   "section": 336,
+   "title": "Taxable regular income",
+   "question": "What happens if a non-profit organisation uses less than 85% of its regular income for charitable or religious purposes?",
+   "split": "train"
+  },
+  {
+   "section": 337,
+   "title": "Specified income",
+   "question": "Is anonymous donation received by a non-profit organisation taxable if it's less than ₹100,000 or 5% of total donations, whichever is higher?",
+   "split": "train"
+  },
+  {
+   "section": 337,
+   "title": "Specified income",
+   "question": "When is income from a non-profit organisation considered taxable if it's used for a related person's benefit?",
+   "split": "train"
+  },
+  {
+   "section": 338,
+   "title": "Income not to be included in regular income",
+   "question": "If a non-profit organisation in India decides not to include income used outside the country, can that be done under certain conditions?",
+   "split": "train"
+  },
+  {
+   "section": 338,
+   "title": "Income not to be included in regular income",
+   "question": "Does a non-profit organisation get to exclude donations to its corpus from its total income?",
+   "split": "train"
+  },
+  {
+   "section": 339,
+   "title": "Corpus donation",
+   "question": "If a non-profit uses money from a corpus to repay a loan, can that be counted as income application under the rules?",
+   "split": "test"
+  },
+  {
+   "section": 342,
+   "title": "Accumulated income",
+   "question": "Can a non-profit organisation keep some of its income for up to five years for a specific purpose?",
+   "split": "test"
+  },
+  {
+   "section": 344,
+   "title": "Business undertaking held as property",
+   "question": "Can a non-profit organisation do commercial activities if they are not directly related to their main goals?",
+   "split": "test"
+  },
+  {
+   "section": 344,
+   "title": "Business undertaking held as property",
+   "question": "What records must a non-profit organisation keep if it engages in commercial activities?",
+   "split": "test"
+  },
+  {
+   "section": 346,
+   "title": "carrying out advancement of any other object of general public utility",
+   "question": "Can a non-profit organisation do commercial activities if they are related to their public utility work?",
+   "split": "train"
+  },
+  {
+   "section": 346,
+   "title": "carrying out advancement of any other object of general public utility",
+   "question": "What is the maximum percentage of total income that can come from commercial activities for a non-profit organisation to remain eligible?",
+   "split": "train"
+  },
+  {
+   "section": 350,
+   "title": "Permitted modes of investment",
+   "question": "What types of investments are allowed under the tax rules?",
+   "split": "train"
+  },
+  {
+   "section": 350,
+   "title": "Permitted modes of investment",
+   "question": "Can the government allow other investment methods besides those listed in the schedule?",
+   "split": "train"
+  },
+  {
+   "section": 351,
+   "title": "Specified violation",
+   "question": "What happens if a non-profit organisation uses its funds for something other than its main purpose?",
+   "split": "train"
+  },
+  {
+   "section": 351,
+   "title": "Specified violation",
+   "question": "Can a non-profit organisation get its registration cancelled if it's found to have done something illegal or not in line with its registered activities?",
+   "split": "train"
+  },
+  {
+   "section": 353,
+   "title": "Other violations",
+   "question": "What happens if a non-profit organisation doesn't keep proper books of account or doesn't get them audited?",
+   "split": "train"
+  },
+  {
+   "section": 353,
+   "title": "Other violations",
+   "question": "Can a non-profit organisation claim deductions for expenses made from its corpus or for donations to individuals?",
+   "split": "train"
+  },
+  {
+   "section": 354,
+   "title": "Application for approval for purpose of section 133(1)(b)(ii)",
+   "question": "Can a non-profit organisation get approval to receive donations if it only spends less than 5% of its income on religious activities?",
+   "split": "test"
+  },
+  {
+   "section": 354,
+   "title": "Application for approval for purpose of section 133(1)(b)(ii)",
+   "question": "What happens if a non-profit organisation that already has provisional approval starts activities and wants formal approval?",
+   "split": "test"
+  },
+  {
+   "section": 355,
+   "title": "Interpretation",
+   "question": "What does it mean if a donation is considered anonymous?",
+   "split": "train"
+  },
+  {
+   "section": 355,
+   "title": "Interpretation",
+   "question": "Does a registered non-profit organization have to keep the name and address of donors if the donation is not for charitable purposes?",
+   "split": "train"
+  },
+  {
+   "section": 356,
+   "title": "Appealable orders before Joint Commissioner (Appeals)",
+   "question": "Can I appeal to the Joint Commissioner if the tax authority has changed my income or loss amount in an assessment order?",
+   "split": "test"
+  },
+  {
+   "section": 356,
+   "title": "Appealable orders before Joint Commissioner (Appeals)",
+   "question": "If an order to adjust my tax is made by a lower officer and I disagree, can I take it to the Joint Commissioner for review?",
+   "split": "test"
+  },
+  {
+   "section": 358,
+   "title": "Form of appeal and limitation",
+   "question": "What is the fee I have to pay when appealing if my income is more than 200,000?",
+   "split": "train"
+  },
+  {
+   "section": 358,
+   "title": "Form of appeal and limitation",
+   "question": "Can I file an appeal after the 30-day limit if I had a valid reason?",
+   "split": "train"
+  },
+  {
+   "section": 362,
+   "title": "Appeals to Appellate Tribunal",
+   "question": "What is the fee I have to pay when appealing if my income is more than 200,000 rupees?",
+   "split": "test"
+  },
+  {
+   "section": 363,
+   "title": "Orders of Appellate Tribunal",
+   "question": "Can the Appellate Tribunal change a previous order if there was a clear mistake and the taxpayer or officer points it out?",
+   "split": "train"
+  },
+  {
+   "section": 363,
+   "title": "Orders of Appellate Tribunal",
+   "question": "If an appeal is delayed, can the Appellate Tribunal extend the stay period beyond 180 days and how is that decided?",
+   "split": "train"
+  },
+  {
+   "section": 364,
+   "title": "Procedure of Appellate Tribunal",
+   "question": "Can a single member of the Appellate Tribunal decide a case if the assessee's income is less than fifty lakh?",
+   "split": "train"
+  },
+  {
+   "section": 364,
+   "title": "Procedure of Appellate Tribunal",
+   "question": "If members of a Bench disagree on a point, how is that point finally decided?",
+   "split": "train"
+  },
+  {
+   "section": 366,
+   "title": "Case before High Court to be heard by not less than two Judges",
+   "question": "If I file an appeal with the High Court, how many judges must hear my case?",
+   "split": "test"
+  },
+  {
+   "section": 366,
+   "title": "Case before High Court to be heard by not less than two Judges",
+   "question": "What happens if the High Court judges disagree on a legal point during an appeal?",
+   "split": "test"
+  },
+  {
+   "section": 367,
+   "title": "Appeal to Supreme Court",
+   "question": "What kind of cases can be sent to the Supreme Court after a high court has made a decision on a 363 order?",
+   "split": "test"
+  },
+  {
+   "section": 368,
+   "title": "Hearing before Supreme Court",
+   "question": "Can I still have to pay taxes even if I file an appeal against a tax decision?",
+   "split": "train"
+  },
+  {
+   "section": 368,
+   "title": "Hearing before Supreme Court",
+   "question": "Does the Supreme Court have the power to decide on the costs of a tax appeal?",
+   "split": "train"
+  },
+  {
+   "section": 369,
+   "title": "Tax to be paid irrespective of appeal, etc",
+   "question": "If I file an appeal to the Supreme Court, does that mean I don't have to pay the tax decided in my assessment?",
+   "split": "train"
+  },
+  {
+   "section": 369,
+   "title": "Tax to be paid irrespective of appeal, etc",
+   "question": "If the Supreme Court awards costs against me, do I still have to pay the tax as per the original assessment?",
+   "split": "train"
+  },
+  {
+   "section": 370,
+   "title": "Execution for costs awarded by Supreme Court",
+   "question": "Can a High Court send a Supreme Court's cost order to a lower court for enforcement?",
+   "split": "train"
+  },
+  {
+   "section": 370,
+   "title": "Execution for costs awarded by Supreme Court",
+   "question": "What happens if someone wants to make a lower court carry out a cost order from the Supreme Court?",
+   "split": "train"
+  },
+  {
+   "section": 371,
+   "title": "Amendment of assessment on appeal",
+   "question": "If a taxpayer doesn't get a copy of the order when it's served, does the time it takes to get the copy count toward the appeal deadline?",
+   "split": "train"
+  },
+  {
+   "section": 374,
+   "title": "Interpretation of “High Court”",
+   "question": "Which high court handles cases in Ladakh?",
+   "split": "train"
+  },
+  {
+   "section": 374,
+   "title": "Interpretation of “High Court”",
+   "question": "What high court deals with cases in Puducherry?",
+   "split": "train"
+  },
+  {
+   "section": 375,
+   "title": "High Court or Supreme Court",
+   "question": "If my tax case has the same legal issue as another case already going to a higher court, can I get permission not to raise it again in my own appeal?",
+   "split": "test"
+  },
+  {
+   "section": 376,
+   "title": "or Supreme Court",
+   "question": "Can I avoid filing an appeal if there's already a similar legal issue being decided in another case?",
+   "split": "train"
+  },
+  {
+   "section": 376,
+   "title": "or Supreme Court",
+   "question": "What happens if the final decision in another case is against the taxpayer and my case is based on the same legal issue?",
+   "split": "train"
+  },
+  {
+   "section": 377,
+   "title": "Revision of orders prejudicial to revenue",
+   "question": "Can the tax authority revise an assessment order if it thinks it was made without proper investigation?",
+   "split": "test"
+  },
+  {
+   "section": 377,
+   "title": "Revision of orders prejudicial to revenue",
+   "question": "If a tax order was changed by a court, can the tax authority still review it even after two years?",
+   "split": "test"
+  },
+  {
+   "section": 378,
+   "title": "Revision of other orders",
+   "question": "Can I ask for a review of a tax order if it was made more than one year ago?",
+   "split": "train"
+  },
+  {
+   "section": 378,
+   "title": "Revision of other orders",
+   "question": "If I missed the one-year deadline to request a review, can I still apply if I had a valid reason?",
+   "split": "train"
+  },
+  {
+   "section": 380,
+   "title": "Interpretation",
+   "question": "What does advance ruling mean in simple terms?",
+   "split": "train"
+  },
+  {
+   "section": 380,
+   "title": "Interpretation",
+   "question": "Who can apply for an advance ruling and what are the conditions?",
+   "split": "train"
+  },
+  {
+   "section": 382,
+   "title": "Vacancies, etc., not to invalidate proceedings",
+   "question": "Can I challenge a decision from the Board for Advance Rulings if there's a vacancy in the board?",
+   "split": "test"
+  },
+  {
+   "section": 382,
+   "title": "Vacancies, etc., not to invalidate proceedings",
+   "question": "Will an advance ruling be invalid if the board doesn't have enough members due to a missing member?",
+   "split": "test"
+  },
+  {
+   "section": 383,
+   "title": "Application for advance ruling",
+   "question": "What kind of fee do I need to pay when applying for an advance ruling?",
+   "split": "train"
+  },
+  {
+   "section": 384,
+   "title": "Procedure on receipt of application",
+   "question": "Can I get my tax question decided early if it's already being looked at by another tax office or tribunal?",
+   "split": "train"
+  },
+  {
+   "section": 384,
+   "title": "Procedure on receipt of application",
+   "question": "What happens if my tax issue is about avoiding taxes or involves the market value of property?",
+   "split": "train"
+  },
+  {
+   "section": 386,
+   "title": "Advance ruling to be void in certain circumstances",
+   "question": "What happens if someone gets an advance ruling by lying or giving false information?",
+   "split": "test"
+  },
+  {
+   "section": 386,
+   "title": "Advance ruling to be void in certain circumstances",
+   "question": "Can an advance ruling be completely cancelled if it was obtained through fraud?",
+   "split": "test"
+  },
+  {
+   "section": 387,
+   "title": "Powers of the Board for Advance Rulings",
+   "question": "Does a proceeding before the Board count as a judicial case for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 388,
+   "title": "Procedure of Board for Advance Rulings",
+   "question": "Does the Board have the authority to set its own rules for how it works?",
+   "split": "train"
+  },
+  {
+   "section": 390,
+   "title": "Deduction or collection at source and advance payment",
+   "question": "If I pay tax through deduction at source, does that mean I still have to pay more tax later?",
+   "split": "train"
+  },
+  {
+   "section": 390,
+   "title": "Deduction or collection at source and advance payment",
+   "question": "Can I get credit for tax paid through deduction or collection at source even if it's not directly linked to my income?",
+   "split": "train"
+  },
+  {
+   "section": 391,
+   "title": "Direct payment",
+   "question": "If income tax is not deducted at the time of payment, who is responsible for paying it directly?",
+   "split": "test"
+  },
+  {
+   "section": 391,
+   "title": "Direct payment",
+   "question": "What happens if an employer doesn't deduct tax from an employee's salary even though they are required to?",
+   "split": "test"
+  },
+  {
+   "section": 392,
+   "title": "Salary and accumulated balance due to an employee",
+   "question": "If an employee gets a non-monetary benefit like a car or accommodation, can the employer pay tax on it without deducting it from the salary?",
+   "split": "train"
+  },
+  {
+   "section": 392,
+   "title": "Salary and accumulated balance due to an employee",
+   "question": "When an employee receives a lump sum from a provident fund, is tax deducted at 10% if the amount is ₹50,000 or more and the benefit is not covered by paragraph 8 of Schedule XI?",
+   "split": "train"
+  },
+  {
+   "section": 393,
+   "title": "Tax to be deducted at source",
+   "question": "Is tax deducted on commission for insurance business if the amount exceeds 20,000 rupees?",
+   "split": "train"
+  },
+  {
+   "section": 393,
+   "title": "Tax to be deducted at source",
+   "question": "Do I need to pay tax on rent if it's less than 50,000 rupees per month?",
+   "split": "train"
+  },
+  {
+   "section": 394,
+   "title": "Collection of tax at source",
+   "question": "Is tax collected at source on the sale of timber and other forest produce, and what is the rate?",
+   "split": "train"
+  },
+  {
+   "section": 394,
+   "title": "Collection of tax at source",
+   "question": "Can a buyer in India avoid paying tax at source on goods like motor vehicles if they are using them for manufacturing or power generation?",
+   "split": "train"
+  },
+  {
+   "section": 395,
+   "title": "Certificates",
+   "question": "Can a payee apply to have tax deducted at a lower rate or not at all?",
+   "split": "train"
+  },
+  {
+   "section": 395,
+   "title": "Certificates",
+   "question": "If a certificate is issued for lower tax deduction, does the payer have to follow that rate until the certificate expires?",
+   "split": "train"
+  },
+  {
+   "section": 397,
+   "title": "Compliance and reporting",
+   "question": "Do I need a tax deduction and collection account number if I'm deducting tax on virtual digital assets?",
+   "split": "test"
+  },
+  {
+   "section": 397,
+   "title": "Compliance and reporting",
+   "question": "What happens if I don’t provide my Permanent Account Number when filing a tax deduction or collection form?",
+   "split": "test"
+  },
+  {
+   "section": 398,
+   "title": "Consequences of failure to deduct or pay or, collect or pay",
+   "question": "What happens if a company’s officer doesn’t deduct tax from employee salaries?",
+   "split": "test"
+  },
+  {
+   "section": 398,
+   "title": "Consequences of failure to deduct or pay or, collect or pay",
+   "question": "If a buyer pays tax and submits their income return with a certificate, can the seller still be considered in default?",
+   "split": "test"
+  },
+  {
+   "section": 400,
+   "title": "Power of Central Government to relax provisions of this Chapter",
+   "question": "Can the central government change the tax rate that is deducted from a payment?",
+   "split": "test"
+  },
+  {
+   "section": 400,
+   "title": "Power of Central Government to relax provisions of this Chapter",
+   "question": "If tax is already deducted from income, do I still have to pay it directly to the government?",
+   "split": "test"
+  },
+  {
+   "section": 402,
+   "title": "Interpretation",
+   "question": "What types of land are considered agricultural land in India according to this rule?",
+   "split": "train"
+  },
+  {
+   "section": 402,
+   "title": "Interpretation",
+   "question": "Does a person who buys goods for personal use fall under the buyer category for tax purposes?",
+   "split": "train"
+  },
+  {
+   "section": 403,
+   "title": "Liability for payment of advance tax",
+   "question": "Do I need to pay advance tax if I'm an adult over 60 and don't have any business or profession income?",
+   "split": "test"
+  },
+  {
+   "section": 403,
+   "title": "Liability for payment of advance tax",
+   "question": "What kind of income is considered current income for advance tax purposes?",
+   "split": "test"
+  },
+  {
+   "section": 404,
+   "title": "Conditions of liability to pay advance tax",
+   "question": "What is the minimum tax amount that triggers the need to pay advance tax during a financial year?",
+   "split": "train"
+  },
+  {
+   "section": 405,
+   "title": "Computation of advance tax",
+   "question": "How do I calculate the advance tax I need to pay for a financial year?",
+   "split": "test"
+  },
+  {
+   "section": 405,
+   "title": "Computation of advance tax",
+   "question": "Can I adjust the amount of advance tax I pay in each installment based on my estimated income?",
+   "split": "test"
+  },
+  {
+   "section": 407,
+   "title": "Payment of advance tax by assessee in pursuance of order of Assessing Officer",
+   "question": "If the tax officer says I need to pay advance tax, what is the highest income amount I have to pay tax on?",
+   "split": "train"
+  },
+  {
+   "section": 407,
+   "title": "Payment of advance tax by assessee in pursuance of order of Assessing Officer",
+   "question": "Can I pay less advance tax if I think my current income is lower than what the officer has set?",
+   "split": "train"
+  },
+  {
+   "section": 408,
+   "title": "Instalments of advance tax and due dates",
+   "question": "What is the due date for paying the final instalment of advance tax?",
+   "split": "test"
+  },
+  {
+   "section": 408,
+   "title": "Instalments of advance tax and due dates",
+   "question": "If I am a business that reports profits under a specific table, when do I need to pay my full advance tax?",
+   "split": "test"
+  },
+  {
+   "section": 409,
+   "title": "When assessee is deemed to be in default",
+   "question": "What happens if I don't pay an advance tax instalment by the due date?",
+   "split": "test"
+  },
+  {
+   "section": 409,
+   "title": "When assessee is deemed to be in default",
+   "question": "What if I don't send the intimation to the tax officer when an instalment is due?",
+   "split": "test"
+  },
+  {
+   "section": 410,
+   "title": "Credit for advance tax",
+   "question": "If I pay advance tax in January, does it count as tax paid for that financial year?",
+   "split": "test"
+  },
+  {
+   "section": 410,
+   "title": "Credit for advance tax",
+   "question": "Can I use advance tax I paid earlier to reduce my tax liability in the regular assessment?",
+   "split": "test"
+  },
+  {
+   "section": 411,
+   "title": "When tax payable and when assessee deemed in default",
+   "question": "What happens if I don't pay the tax amount mentioned in a notice within 30 days?",
+   "split": "train"
+  },
+  {
+   "section": 411,
+   "title": "When tax payable and when assessee deemed in default",
+   "question": "If I pay the tax in installments, what happens if I miss one payment?",
+   "split": "train"
+  },
+  {
+   "section": 412,
+   "title": "Penalty payable when tax in default",
+   "question": "What happens if I pay the tax late and the tax authority says I’m in default?",
+   "split": "test"
+  },
+  {
+   "section": 412,
+   "title": "Penalty payable when tax in default",
+   "question": "Can I avoid a penalty if I can prove I had good reasons for not paying the tax on time?",
+   "split": "test"
+  },
+  {
+   "section": 413,
+   "title": "Certificate by Tax Recovery Officer and validity thereof",
+   "question": "Can a tax officer recover tax by selling my property even if I haven't been sued through another method?",
+   "split": "train"
+  },
+  {
+   "section": 413,
+   "title": "Certificate by Tax Recovery Officer and validity thereof",
+   "question": "If I transferred my property to my minor child after June 1, 1973, can the tax officer still claim it as mine for tax recovery?",
+   "split": "train"
+  },
+  {
+   "section": 414,
+   "title": "Tax Recovery Officer by whom recovery is to be effected",
+   "question": "If a taxpayer has business in one place and lives in another, which tax officer is responsible for recovering the tax?",
+   "split": "train"
+  },
+  {
+   "section": 414,
+   "title": "Tax Recovery Officer by whom recovery is to be effected",
+   "question": "Can a tax officer who doesn't have the property in their area still recover the tax if they think it's better to involve another officer?",
+   "split": "train"
+  },
+  {
+   "section": 415,
+   "title": "Stay of proceedings in pursuance of certificate and amendment or cancellation thereof",
+   "question": "Can the tax officer stop recovery proceedings if the tax amount is reduced due to an appeal?",
+   "split": "test"
+  },
+  {
+   "section": 415,
+   "title": "Stay of proceedings in pursuance of certificate and amendment or cancellation thereof",
+   "question": "If a notice is issued to a bank for tax payment, do I need to show any documents to make the payment?",
+   "split": "test"
+  },
+  {
+   "section": 417,
+   "title": "Recovery through State Government",
+   "question": "Can a state government collect income tax along with local taxes in a particular area?",
+   "split": "train"
+  },
+  {
+   "section": 417,
+   "title": "Recovery through State Government",
+   "question": "If a state is responsible for collecting tax in an area, can it collect it together with municipal taxes in the same way as local rates are collected?",
+   "split": "train"
+  },
+  {
+   "section": 418,
+   "title": "Recovery of tax in pursuance of agreements with foreign countries",
+   "question": "Can tax be recovered from a foreign resident if there's a treaty between India and that country?",
+   "split": "train"
+  },
+  {
+   "section": 418,
+   "title": "Recovery of tax in pursuance of agreements with foreign countries",
+   "question": "If a person has property in India and is from a country with a tax recovery agreement, can the tax authority recover tax through a foreign agreement?",
+   "split": "train"
+  },
+  {
+   "section": 419,
+   "title": "Recovery of penalties, fine, interest and other sums",
+   "question": "What do I need to do if I am not a resident of India and want to leave the country?",
+   "split": "train"
+  },
+  {
+   "section": 419,
+   "title": "Recovery of penalties, fine, interest and other sums",
+   "question": "If I am a resident of India and planning to go abroad, do I need a certificate from the tax authority before leaving?",
+   "split": "train"
+  },
+  {
+   "section": 421,
+   "title": "Recovery by suit or under other law not affected",
+   "question": "Can the government still sue a non-resident for tax arrears even if they are recovering the tax through a method mentioned in the tax rules?",
+   "split": "train"
+  },
+  {
+   "section": 421,
+   "title": "Recovery by suit or under other law not affected",
+   "question": "If tax is being recovered from a non-resident through a specific process, does that stop the government from taking legal action to recover the arrears?",
+   "split": "train"
+  },
+  {
+   "section": 422,
+   "title": "Recovery of tax arrear in respect of non-resident from his assets",
+   "question": "Can tax owed by a non-resident be taken from their assets in India?",
+   "split": "train"
+  },
+  {
+   "section": 422,
+   "title": "Recovery of tax arrear in respect of non-resident from his assets",
+   "question": "If a non-resident hasn't filed their income return, can the tax arrears be recovered from their Indian assets?",
+   "split": "train"
+  },
+  {
+   "section": 423,
+   "title": "Interest for defaults in furnishing return of income",
+   "question": "If I file my income tax return after the due date but before the assessment is completed, how is the interest calculated?",
+   "split": "train"
+  },
+  {
+   "section": 423,
+   "title": "Interest for defaults in furnishing return of income",
+   "question": "If I didn’t file a return and later the assessment is completed, what amount of tax will be used to calculate the interest I have to pay?",
+   "split": "train"
+  },
+  {
+   "section": 424,
+   "title": "Interest for defaults in payment of advance tax",
+   "question": "If I didn't pay enough advance tax in a financial year, how is the interest calculated on the shortfall?",
+   "split": "train"
+  },
+  {
+   "section": 424,
+   "title": "Interest for defaults in payment of advance tax",
+   "question": "If my tax assessment is changed after the initial one, will I have to pay extra interest on the increased tax amount?",
+   "split": "train"
+  },
+  {
+   "section": 425,
+   "title": "Interest for deferment of advance tax",
+   "question": "Will I get interest charged if I paid at least 12% of my tax due by June 15th?",
+   "split": "train"
+  },
+  {
+   "section": 426,
+   "title": "Interest on excess refund",
+   "question": "If I get a refund and it's more than what I should have gotten in a regular assessment, do I have to pay interest on the extra amount?",
+   "split": "test"
+  },
+  {
+   "section": 426,
+   "title": "Interest on excess refund",
+   "question": "If a refund is reviewed and it's found that I was actually entitled to a smaller amount, will the interest I was charged be reduced?",
+   "split": "test"
+  },
+  {
+   "section": 427,
+   "title": "3",
+   "question": "What is the fee I have to pay if I don't submit my financial transaction statement on time?",
+   "split": "train"
+  },
+  {
+   "section": 427,
+   "title": "3",
+   "question": "If I miss the deadline for submitting my reportable account statement, how much will I be charged per day?",
+   "split": "train"
+  },
+  {
+   "section": 428,
+   "title": "Fee for default in furnishing return of income, audited accounts and reports",
+   "question": "What is the fee if I don’t file my income return on time and my total income is below 5 lakh?",
+   "split": "train"
+  },
+  {
+   "section": 428,
+   "title": "Fee for default in furnishing return of income, audited accounts and reports",
+   "question": "What fee applies if I miss the audit report deadline by more than one month?",
+   "split": "train"
+  },
+  {
+   "section": 429,
+   "title": "Fee for default relating to statement or certificate",
+   "question": "What is the fee charged if a university or college does not submit the required documents on time?",
+   "split": "train"
+  },
+  {
+   "section": 430,
+   "title": "Fee for default relating to intimation of Aadhaar number",
+   "question": "What happens if I don't share my Aadhaar number by the prescribed date?",
+   "split": "train"
+  },
+  {
+   "section": 430,
+   "title": "Fee for default relating to intimation of Aadhaar number",
+   "question": "How much fee will I have to pay if I miss the deadline to share my Aadhaar number?",
+   "split": "train"
+  },
+  {
+   "section": 431,
+   "title": "Refunds",
+   "question": "Can I get a refund if I have paid more tax than I actually owe for a year?",
+   "split": "train"
+  },
+  {
+   "section": 431,
+   "title": "Refunds",
+   "question": "Am I eligible for a refund if the tax I paid is more than what I am supposed to pay?",
+   "split": "train"
+  },
+  {
+   "section": 432,
+   "title": "Person entitled to claim refund in certain special cases",
+   "question": "If my income is included in someone else's tax return, can I get a refund for that income?",
+   "split": "train"
+  },
+  {
+   "section": 432,
+   "title": "Person entitled to claim refund in certain special cases",
+   "question": "If someone who is unable to claim a refund due to illness or death passes away, can their family or legal representative still get the refund?",
+   "split": "train"
+  },
+  {
+   "section": 434,
+   "title": "Refund for denying liability to deduct tax in certain cases",
+   "question": "Can I get a refund if I paid tax on income that I believe shouldn’t have been taxed?",
+   "split": "train"
+  },
+  {
+   "section": 434,
+   "title": "Refund for denying liability to deduct tax in certain cases",
+   "question": "How long does it take for the tax authority to decide on my refund application?",
+   "split": "train"
+  },
+  {
+   "section": 435,
+   "title": "Refund on appeal, etc",
+   "question": "If an appeal is successful and the assessment is cancelled, when will the refund be given?",
+   "split": "train"
+  },
+  {
+   "section": 435,
+   "title": "Refund on appeal, etc",
+   "question": "If the assessment is annulled, will I get a refund for the full tax I paid or only the excess amount?",
+   "split": "train"
+  },
+  {
+   "section": 436,
+   "title": "Correctness of assessment not to be questioned",
+   "question": "Can I challenge a final tax assessment if it was already approved by the tax authority?",
+   "split": "train"
+  },
+  {
+   "section": 436,
+   "title": "Correctness of assessment not to be questioned",
+   "question": "If I get a refund, can I get interest on the amount returned?",
+   "split": "train"
+  },
+  {
+   "section": 437,
+   "title": "Interest on refunds",
+   "question": "If I get a refund from advance tax or tax collected at source, when does the interest start to be calculated?",
+   "split": "train"
+  },
+  {
+   "section": 439,
+   "title": "Penalty for under-reporting and misreporting of income",
+   "question": "What happens if the income assessed is higher than what was reported in the income return?",
+   "split": "train"
+  },
+  {
+   "section": 439,
+   "title": "Penalty for under-reporting and misreporting of income",
+   "question": "If a loss is reduced or turned into income during an assessment, how is the under-reported income calculated?",
+   "split": "train"
+  },
+  {
+   "section": 440,
+   "title": "[Waiver of penalty and immunity from prosecution.]",
+   "question": "Can I avoid penalties and stop prosecution if I pay the tax and interest on time?",
+   "split": "train"
+  },
+  {
+   "section": 440,
+   "title": "[Waiver of penalty and immunity from prosecution.]",
+   "question": "What if I didn't file an appeal and pay the extra tax as required—can I still get immunity from penalties?",
+   "split": "train"
+  },
+  {
+   "section": 441,
+   "title": "Failure to keep, maintain or retain books of account, documents, etc",
+   "question": "What happens if I don’t keep my books of account as required by law?",
+   "split": "test"
+  },
+  {
+   "section": 441,
+   "title": "Failure to keep, maintain or retain books of account, documents, etc",
+   "question": "What is the fine if I don’t keep my records for the time period that the rules say I should?",
+   "split": "test"
+  },
+  {
+   "section": 442,
+   "title": "respect of certain transactions",
+   "question": "What penalty applies if a person doesn't report an international or domestic transaction they are required to report?",
+   "split": "train"
+  },
+  {
+   "section": 442,
+   "title": "respect of certain transactions",
+   "question": "Can a person be fined ₹500,000 if they don't provide the documents needed under the rules for certain transactions?",
+   "split": "train"
+  },
+  {
+   "section": 444,
+   "title": "Penalty for false entry, etc., in books of account",
+   "question": "What happens if I make a false invoice for goods I never received?",
+   "split": "train"
+  },
+  {
+   "section": 444,
+   "title": "Penalty for false entry, etc., in books of account",
+   "question": "Can someone be penalized if they trick me into making a false entry in my books of account?",
+   "split": "train"
+  },
+  {
+   "section": 445,
+   "title": "Benefits to related persons",
+   "question": "What penalty applies if a non-profit organisation is found to have used its income for a related person's benefit for the first time?",
+   "split": "train"
+  },
+  {
+   "section": 445,
+   "title": "Benefits to related persons",
+   "question": "What penalty is imposed if a non-profit organisation is found to have used its income for a related person's benefit a second time or later?",
+   "split": "train"
+  },
+  {
+   "section": 446,
+   "title": "10",
+   "question": "What is the penalty if someone doesn't submit their crypto transaction report on time?",
+   "split": "test"
+  },
+  {
+   "section": 446,
+   "title": "10",
+   "question": "What happens if a person gives false information in their crypto report and doesn't fix it?",
+   "split": "test"
+  },
+  {
+   "section": 448,
+   "title": "Penalty for failure to deduct tax at source",
+   "question": "What happens if a company doesn't deduct tax at source as required by law?",
+   "split": "train"
+  },
+  {
+   "section": 448,
+   "title": "Penalty for failure to deduct tax at source",
+   "question": "If a person fails to pay the tax they were supposed to collect from a client, what penalty can the tax authority impose?",
+   "split": "train"
+  },
+  {
+   "section": 449,
+   "title": "Penalty for failure to collect tax at source",
+   "question": "What happens if I don’t collect the full tax that is required to be collected from my customers?",
+   "split": "train"
+  },
+  {
+   "section": 449,
+   "title": "Penalty for failure to collect tax at source",
+   "question": "If I miss collecting part of the tax from a transaction, how much penalty can the tax authority charge me?",
+   "split": "train"
+  },
+  {
+   "section": 450,
+   "title": "Penalty for failure to comply with provisions of section 185",
+   "question": "What happens if someone takes a loan or deposit against the rules?",
+   "split": "train"
+  },
+  {
+   "section": 450,
+   "title": "Penalty for failure to comply with provisions of section 185",
+   "question": "If a person accepts a sum of money in violation of the rules, how much penalty can be imposed?",
+   "split": "train"
+  },
+  {
+   "section": 451,
+   "title": "Penalty for failure to comply with provisions of section 186",
+   "question": "What happens if someone receives money but doesn't follow the rules about disclosing it?",
+   "split": "train"
+  },
+  {
+   "section": 451,
+   "title": "Penalty for failure to comply with provisions of section 186",
+   "question": "Can a person be fined if they receive money in violation of the disclosure rules?",
+   "split": "train"
+  },
+  {
+   "section": 452,
+   "title": "Penalty for failure to comply with provisions of section 187",
+   "question": "What is the penalty if a business doesn't accept payments through electronic modes?",
+   "split": "train"
+  },
+  {
+   "section": 452,
+   "title": "Penalty for failure to comply with provisions of section 187",
+   "question": "How much penalty is charged each day if a company fails to provide electronic payment facilities?",
+   "split": "train"
+  },
+  {
+   "section": 453,
+   "title": "Penalty for failure to comply with provisions of section 188",
+   "question": "What happens if I repay a loan or advance not as required by the rules?",
+   "split": "test"
+  },
+  {
+   "section": 453,
+   "title": "Penalty for failure to comply with provisions of section 188",
+   "question": "Can the tax authority charge a penalty if I don’t return a loan or deposit in the correct way?",
+   "split": "test"
+  },
+  {
+   "section": 454,
+   "title": "12",
+   "question": "What is the penalty if someone doesn't submit their financial transaction statement within the time given in the notice?",
+   "split": "test"
+  },
+  {
+   "section": 454,
+   "title": "12",
+   "question": "What is the maximum penalty someone can face if they fail to submit their reportable account after the deadline?",
+   "split": "test"
+  },
+  {
+   "section": 455,
+   "title": "reportable account",
+   "question": "What penalty does a person face if they give wrong information in their statement or don't provide correct details on time?",
+   "split": "test"
+  },
+  {
+   "section": 455,
+   "title": "reportable account",
+   "question": "If a financial institution reports a wrong account due to false information from the account holder, how much extra penalty does it have to pay?",
+   "split": "test"
+  },
+  {
+   "section": 456,
+   "title": "eligible investment fund",
+   "question": "How much is the penalty if an investment fund fails to provide information as required under Schedule I?",
+   "split": "train"
+  },
+  {
+   "section": 457,
+   "title": "Penalty for failure to furnish information or document under section 171",
+   "question": "What penalty applies if a company doesn't provide the required documents for an international or specified domestic transaction?",
+   "split": "train"
+  },
+  {
+   "section": 458,
+   "title": "Penalty for failure to furnish information or document under section 506",
+   "question": "What is the penalty if a company fails to provide information about a transaction that involves transferring control or management rights?",
+   "split": "train"
+  },
+  {
+   "section": 458,
+   "title": "Penalty for failure to furnish information or document under section 506",
+   "question": "What is the penalty if a company doesn’t submit a report or submits a wrong report under the rules for reporting transactions?",
+   "split": "train"
+  },
+  {
+   "section": 459,
+   "title": "section 511",
+   "question": "What is the penalty if a company fails to submit its report within one month?",
+   "split": "train"
+  },
+  {
+   "section": 459,
+   "title": "section 511",
+   "question": "What happens if a company gives wrong information in its report and doesn't correct it after finding the mistake?",
+   "split": "train"
+  },
+  {
+   "section": 461,
+   "title": "Penalty for failure to furnish statements, etc",
+   "question": "Can I avoid the penalty if I paid the tax and interest to the government and submitted the statement within one month of the due date?",
+   "split": "train"
+  },
+  {
+   "section": 462,
+   "title": "under section 397(3)(d)",
+   "question": "How much money can be charged if someone gives wrong information in a report or certificate under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 463,
+   "title": "Penalty for furnishing incorrect information in reports or certificates",
+   "question": "What is the penalty if an accountant gives wrong information in a report or certificate?",
+   "split": "train"
+  },
+  {
+   "section": 463,
+   "title": "Penalty for furnishing incorrect information in reports or certificates",
+   "question": "How much penalty is charged for each incorrect report or certificate submitted by a merchant banker or registered valuer?",
+   "split": "train"
+  },
+  {
+   "section": 464,
+   "title": "Penalty for failure to furnish statements, etc",
+   "question": "What is the minimum penalty for not sending the required documents to a university or research institution?",
+   "split": "train"
+  },
+  {
+   "section": 464,
+   "title": "Penalty for failure to furnish statements, etc",
+   "question": "What is the maximum penalty if an institution doesn't submit the statement by the due date?",
+   "split": "train"
+  },
+  {
+   "section": 465,
+   "title": "returns or statements, allow inspections, etc",
+   "question": "What is the penalty if I don't attend a tax authority's summons to give evidence or produce my books?",
+   "split": "train"
+  },
+  {
+   "section": 465,
+   "title": "returns or statements, allow inspections, etc",
+   "question": "What happens if I don't allow them to inspect my register or take copies of entries in it?",
+   "split": "train"
+  },
+  {
+   "section": 466,
+   "title": "Penalty for failure to comply with the provisions of section 254",
+   "question": "What is the maximum penalty someone can face if they don’t follow the rules about maintaining proper records?",
+   "split": "test"
+  },
+  {
+   "section": 466,
+   "title": "Penalty for failure to comply with the provisions of section 254",
+   "question": "How much can a taxpayer be fined if they fail to follow the record-keeping requirements?",
+   "split": "test"
+  },
+  {
+   "section": 467,
+   "title": "Penalty for failure to comply with the provisions of 14[sections 262 and 397]",
+   "question": "What penalty applies if I don’t provide my PAN or Aadhaar number in a required document?",
+   "split": "train"
+  },
+  {
+   "section": 467,
+   "title": "Penalty for failure to comply with the provisions of 14[sections 262 and 397]",
+   "question": "What if I give a false PAN or Aadhaar number in a tax-related document?",
+   "split": "train"
+  },
+  {
+   "section": 468,
+   "title": "Penalty for failure to comply with the provisions of section 397",
+   "question": "What penalty is imposed if someone doesn't follow the rules about quoting their Tax Deduction and Collection Account Number?",
+   "split": "test"
+  },
+  {
+   "section": 468,
+   "title": "Penalty for failure to comply with the provisions of section 397",
+   "question": "What happens if a person puts a false Tax Deduction and Collection Account Number in a document?",
+   "split": "test"
+  },
+  {
+   "section": 469,
+   "title": "Power to reduce or waive penalty, etc., in certain cases",
+   "question": "Can I avoid a penalty if I voluntarily tell the tax department all my income details before they find out about any hidden information?",
+   "split": "train"
+  },
+  {
+   "section": 469,
+   "title": "Power to reduce or waive penalty, etc., in certain cases",
+   "question": "If I cooperate with a tax inquiry and pay the tax due, can the tax authority reduce or waive my penalty even if my income is over ₹500,000?",
+   "split": "train"
+  },
+  {
+   "section": 470,
+   "title": "Penalty not to be imposed in certain cases",
+   "question": "If I missed a tax return deadline, can I still avoid a penalty if I can show I had a good reason?",
+   "split": "test"
+  },
+  {
+   "section": 470,
+   "title": "Penalty not to be imposed in certain cases",
+   "question": "Can I get a penalty waived if I failed to file something on time and I can prove I had reasonable cause?",
+   "split": "test"
+  },
+  {
+   "section": 471,
+   "title": "Procedure",
+   "question": "Do I need to be given a chance to respond before a penalty is imposed?",
+   "split": "train"
+  },
+  {
+   "section": 471,
+   "title": "Procedure",
+   "question": "If a penalty is part of an assessment order from April 2027 onwards, does the approval for the assessment also mean the penalty is approved?",
+   "split": "train"
+  },
+  {
+   "section": 472,
+   "title": "Bar of limitation for imposing penalties",
+   "question": "Can a penalty be imposed on a taxpayer more than six months after the quarter ends if there is no appeal or revision?",
+   "split": "train"
+  },
+  {
+   "section": 472,
+   "title": "Bar of limitation for imposing penalties",
+   "question": "If a penalty order is being reviewed after an appeal or revision, is there a time limit for passing the revised penalty order?",
+   "split": "train"
+  },
+  {
+   "section": 474,
+   "title": "20",
+   "question": "What happens if I don’t let the tax officer check my books or documents?",
+   "split": "test"
+  },
+  {
+   "section": 474,
+   "title": "20",
+   "question": "Can I face a fine or jail if I hide or move my assets to avoid tax payment?",
+   "split": "test"
+  },
+  {
+   "section": 475,
+   "title": "Removal, concealment, transfer or delivery of property to prevent tax recovery",
+   "question": "What happens if someone hides or moves their assets to stop tax authorities from taking them?",
+   "split": "test"
+  },
+  {
+   "section": 475,
+   "title": "Removal, concealment, transfer or delivery of property to prevent tax recovery",
+   "question": "Can a person be fined and jailed for moving property to avoid tax recovery?",
+   "split": "test"
+  },
+  {
+   "section": 476,
+   "title": "Failure to pay tax to credit of Central Government under Chapter XIX-B",
+   "question": "What happens if I don't pay the tax collected from online game winnings to the government?",
+   "split": "train"
+  },
+  {
+   "section": 476,
+   "title": "Failure to pay tax to credit of Central Government under Chapter XIX-B",
+   "question": "If I don't pay tax on the sale of virtual digital assets, what is the punishment I might face?",
+   "split": "train"
+  },
+  {
+   "section": 478,
+   "title": "Wilful attempt to evade tax, etc",
+   "question": "What punishment applies if someone tries to hide income and the amount they are trying to hide is more than fifty lakh rupees?",
+   "split": "test"
+  },
+  {
+   "section": 478,
+   "title": "Wilful attempt to evade tax, etc",
+   "question": "If a person makes a false entry in their financial records to avoid paying tax, what are the possible penalties?",
+   "split": "test"
+  },
+  {
+   "section": 479,
+   "title": "Failure to furnish returns of income",
+   "question": "What happens if someone intentionally doesn't file their income return on time and the tax they would have paid is more than fifty lakh rupees?",
+   "split": "test"
+  },
+  {
+   "section": 479,
+   "title": "Failure to furnish returns of income",
+   "question": "If a person files a return after missing the deadline, can they still avoid punishment if their tax liability is under ten thousand rupees?",
+   "split": "test"
+  },
+  {
+   "section": 480,
+   "title": "26",
+   "question": "What punishment applies if someone doesn't submit their income return on time and the tax amount is more than fifty lakh rupees?",
+   "split": "train"
+  },
+  {
+   "section": 480,
+   "title": "26",
+   "question": "If a person fails to provide their income return on time and the tax is between ten lakh and fifty lakh rupees, what is the maximum jail time they can face?",
+   "split": "train"
+  },
+  {
+   "section": 481,
+   "title": "Failure to comply with a direction of special audit or valuation",
+   "question": "What happens if someone deliberately doesn't follow a special audit or valuation order?",
+   "split": "train"
+  },
+  {
+   "section": 481,
+   "title": "Failure to comply with a direction of special audit or valuation",
+   "question": "Can a person face both jail time and a fine for not complying with a special audit direction?",
+   "split": "train"
+  },
+  {
+   "section": 482,
+   "title": "False statement in verification, etc",
+   "question": "What happens if a person gives a false statement and the tax that would have been evaded is between ten lakh and fifty lakh rupees?",
+   "split": "train"
+  },
+  {
+   "section": 483,
+   "title": "Falsification of books of account or document, etc",
+   "question": "What happens if I make a false entry in my books of account to help someone else avoid paying taxes?",
+   "split": "train"
+  },
+  {
+   "section": 483,
+   "title": "Falsification of books of account or document, etc",
+   "question": "Do I need to prove that the other person actually avoided paying taxes to be charged with falsifying documents?",
+   "split": "train"
+  },
+  {
+   "section": 484,
+   "title": "Abetment of false return, etc",
+   "question": "What happens if someone encourages another person to submit a false tax return and the tax avoided is more than fifty lakh rupees?",
+   "split": "train"
+  },
+  {
+   "section": 484,
+   "title": "Abetment of false return, etc",
+   "question": "If a person helps someone commit tax fraud and the amount of tax avoided is between ten lakh and fifty lakh rupees, what is the punishment?",
+   "split": "train"
+  },
+  {
+   "section": 485,
+   "title": "Punishment for second and subsequent offences",
+   "question": "If someone has already been convicted of a tax-related offence under one of these sections, what happens if they are caught again?",
+   "split": "train"
+  },
+  {
+   "section": 485,
+   "title": "Punishment for second and subsequent offences",
+   "question": "What is the minimum and maximum jail time for a person who commits a second or further offence under these sections?",
+   "split": "train"
+  },
+  {
+   "section": 486,
+   "title": "Punishment not to be imposed in certain cases",
+   "question": "If a company fails to file a tax return on time, can it still be punished if it can show it had a good reason for the delay?",
+   "split": "train"
+  },
+  {
+   "section": 486,
+   "title": "Punishment not to be imposed in certain cases",
+   "question": "Can a business avoid punishment for missing a tax deadline if it can prove it had reasonable cause?",
+   "split": "train"
+  },
+  {
+   "section": 487,
+   "title": "Offences by companies",
+   "question": "If a company is found guilty of a tax offence, are the people in charge of the company also responsible?",
+   "split": "test"
+  },
+  {
+   "section": 487,
+   "title": "Offences by companies",
+   "question": "If a director of a company is found to have knowingly allowed a tax violation, can they be punished even if the company is the one officially guilty?",
+   "split": "test"
+  },
+  {
+   "section": 489,
+   "title": "Presumption as to assets, books of account, etc., in certain cases",
+   "question": "If the tax authorities find money, jewellery, or digital assets during a search, do they automatically assume the person knew about them or intended to hide them?",
+   "split": "test"
+  },
+  {
+   "section": 489,
+   "title": "Presumption as to assets, books of account, etc., in certain cases",
+   "question": "In a tax case, if the court hears evidence like digital records or computer files, does it automatically mean the person had bad intent or knowledge about the tax violation?",
+   "split": "test"
+  },
+  {
+   "section": 491,
+   "title": "Commissioner or Principal Commissioner or Commissioner",
+   "question": "If I shared information thinking the penalty might be waived, can that be used against me in a tax case?",
+   "split": "train"
+  },
+  {
+   "section": 493,
+   "title": "Proof of entries in records or documents",
+   "question": "Can I use a copy of tax records certified by the tax authority as proof in a legal case?",
+   "split": "test"
+  },
+  {
+   "section": 493,
+   "title": "Proof of entries in records or documents",
+   "question": "If a public servant gives false information to the tax department, can they be punished and who needs to approve such a prosecution?",
+   "split": "test"
+  },
+  {
+   "section": 495,
+   "title": "Special Courts",
+   "question": "Can a Special Court try both income tax offences and other crimes like theft or assault under the Bharatiya Nagarik Suraksha Sanhita during the same trial?",
+   "split": "train"
+  },
+  {
+   "section": 495,
+   "title": "Special Courts",
+   "question": "What happens if a Judicial Magistrate of the first class is being designated as a Special Court for a specific area or type of case?",
+   "split": "train"
+  },
+  {
+   "section": 496,
+   "title": "Offences triable by Special Court",
+   "question": "What are the qualifications required for someone to become a Public Prosecutor or a Special Public Prosecutor in a special court?",
+   "split": "test"
+  },
+  {
+   "section": 499,
+   "title": "Certain transfers to be void",
+   "question": "Is a sale of property done during a tax case void if the seller didn't know about the tax proceedings?",
+   "split": "train"
+  },
+  {
+   "section": 499,
+   "title": "Certain transfers to be void",
+   "question": "Will a gift of shares made before a tax officer serves notice be considered invalid if it was given without knowing about the tax case?",
+   "split": "train"
+  },
+  {
+   "section": 500,
+   "title": "Provisional attachment to protect revenue in certain cases",
+   "question": "Can a property be attached temporarily if there is a penalty likely to be more than two crore rupees?",
+   "split": "train"
+  },
+  {
+   "section": 500,
+   "title": "Provisional attachment to protect revenue in certain cases",
+   "question": "What happens if a taxpayer provides a bank guarantee for the value of attached property?",
+   "split": "train"
+  },
+  {
+   "section": 501,
+   "title": "Service of notice, generally",
+   "question": "Can I receive a tax notice by email if it's sent in the form of an electronic record?",
+   "split": "train"
+  },
+  {
+   "section": 501,
+   "title": "Service of notice, generally",
+   "question": "What are the different ways a tax notice can be delivered to a taxpayer according to the law?",
+   "split": "train"
+  },
+  {
+   "section": 502,
+   "title": "Authentication of notices and other documents",
+   "question": "What does it mean if a notice from the income tax department has the name and office of a designated authority printed on it?",
+   "split": "train"
+  },
+  {
+   "section": 502,
+   "title": "Authentication of notices and other documents",
+   "question": "Can an income tax notice be sent electronically, and if so, how is it considered valid?",
+   "split": "train"
+  },
+  {
+   "section": 503,
+   "title": "Service of notice when family is disrupted or firm etc., is dissolved",
+   "question": "If a Hindu family gets totally divided, who should I send the tax notice to?",
+   "split": "test"
+  },
+  {
+   "section": 503,
+   "title": "Service of notice when family is disrupted or firm etc., is dissolved",
+   "question": "After a business is closed down, who can I send the tax notice to?",
+   "split": "test"
+  },
+  {
+   "section": 504,
+   "title": "Service of notice in case of discontinued business",
+   "question": "Can an Assessing Officer send a notice to a person who stopped running a business?",
+   "split": "train"
+  },
+  {
+   "section": 504,
+   "title": "Service of notice in case of discontinued business",
+   "question": "If a company has stopped operating, can the tax authority send a notice to its main officer?",
+   "split": "train"
+  },
+  {
+   "section": 505,
+   "title": "Submission of statement by a non-resident having liaison office",
+   "question": "Do non-residents with a liaison office in India need to submit a statement to the tax authorities?",
+   "split": "train"
+  },
+  {
+   "section": 505,
+   "title": "Submission of statement by a non-resident having liaison office",
+   "question": "What kind of information must a non-resident with a liaison office send to the tax officer each year?",
+   "split": "train"
+  },
+  {
+   "section": 506,
+   "title": "Furnishing of information or documents by an Indian concern in certain cases",
+   "question": "If a foreign company has assets in India and owns an Indian company, do we have to share information about those assets with the tax authority?",
+   "split": "train"
+  },
+  {
+   "section": 506,
+   "title": "Furnishing of information or documents by an Indian concern in certain cases",
+   "question": "Do film producers or event managers need to report payments over ₹50,000 made to others involved in film or event production?",
+   "split": "train"
+  },
+  {
+   "section": 508,
+   "title": "account",
+   "question": "Do I need to submit a statement for crypto asset transactions if I'm a registered stock exchange or a depository?",
+   "split": "train"
+  },
+  {
+   "section": 508,
+   "title": "account",
+   "question": "If I run a government office or a public body, do I have to report any financial transactions like buying or lending money to the tax authority?",
+   "split": "train"
+  },
+  {
+   "section": 509,
+   "title": "Obligation to furnish information on transaction of crypto-asset",
+   "question": "Who needs to report crypto-asset transactions and to whom?",
+   "split": "test"
+  },
+  {
+   "section": 509,
+   "title": "Obligation to furnish information on transaction of crypto-asset",
+   "question": "What should I do if I find an error in the crypto-asset transaction details I already submitted?",
+   "split": "test"
+  },
+  {
+   "section": 510,
+   "title": "Annual information statement",
+   "question": "What does the term registered account mean in this context?",
+   "split": "train"
+  },
+  {
+   "section": 511,
+   "title": "Furnishing of report in respect of international group",
+   "question": "If a company in India is part of a global group and the parent company is not in India, do we need to tell the tax authority if we are the alternate reporting entity?",
+   "split": "train"
+  },
+  {
+   "section": 511,
+   "title": "Furnishing of report in respect of international group",
+   "question": "If the parent company of a global group is in a country that doesn’t share financial reports with India, do Indian companies in the group have to submit a report to the Indian tax authority?",
+   "split": "train"
+  },
+  {
+   "section": 512,
+   "title": "Publication of information respecting assessees in certain cases",
+   "question": "Can the government publish the names of partners or directors if they are involved in a tax case?",
+   "split": "train"
+  },
+  {
+   "section": 512,
+   "title": "Publication of information respecting assessees in certain cases",
+   "question": "Can a taxpayer appear in a tax valuation hearing through a registered valuer instead of going personally?",
+   "split": "train"
+  },
+  {
+   "section": 515,
+   "title": "Appearance by authorised representative",
+   "question": "Can a chartered accountant represent a client in an income tax hearing if they are not eligible to audit the company?",
+   "split": "train"
+  },
+  {
+   "section": 515,
+   "title": "Appearance by authorised representative",
+   "question": "Is it allowed for a relative of the taxpayer to appear on their behalf in an income tax matter?",
+   "split": "train"
+  },
+  {
+   "section": 516,
+   "title": "Rounding off of amount of total income, or amount payable or refundable",
+   "question": "What happens to the total income if it ends with a digit of five or more after rounding off?",
+   "split": "train"
+  },
+  {
+   "section": 516,
+   "title": "Rounding off of amount of total income, or amount payable or refundable",
+   "question": "If the calculated tax amount ends with a figure less than five, how is it adjusted?",
+   "split": "train"
+  },
+  {
+   "section": 517,
+   "title": "Receipt to be given",
+   "question": "Do I need to give a receipt when someone pays money under the income tax law?",
+   "split": "test"
+  },
+  {
+   "section": 517,
+   "title": "Receipt to be given",
+   "question": "What should I do if I collect money from a taxpayer under the tax rules?",
+   "split": "test"
+  },
+  {
+   "section": 518,
+   "title": "Indemnity",
+   "question": "If I pay tax on someone else's income, will I be protected from being sued or punished for doing so?",
+   "split": "train"
+  },
+  {
+   "section": 518,
+   "title": "Indemnity",
+   "question": "Am I safe from legal action if I deduct or pay tax for another person’s income under this rule?",
+   "split": "train"
+  },
+  {
+   "section": 519,
+   "title": "Power to tender immunity from prosecution",
+   "question": "Can a person be protected from being prosecuted if they reveal all details about hiding income?",
+   "split": "test"
+  },
+  {
+   "section": 519,
+   "title": "Power to tender immunity from prosecution",
+   "question": "What happens if someone refuses to give full truth after accepting immunity from prosecution?",
+   "split": "test"
+  },
+  {
+   "section": 520,
+   "title": "Cognizance of offences",
+   "question": "Can a small court like a police station or a local court handle tax-related offences?",
+   "split": "train"
+  },
+  {
+   "section": 520,
+   "title": "Cognizance of offences",
+   "question": "If someone commits a tax violation, can a lower court try the case or must it go to a higher court?",
+   "split": "train"
+  },
+  {
+   "section": 521,
+   "title": "Probation of Offenders Act, 1958 and section 401 of Bharatiya Nagarik Suraksha Sanhita, 2023, not to apply",
+   "question": "Will a person who is convicted of an offence under this act be eligible for probation if they are 18 years or older?",
+   "split": "train"
+  },
+  {
+   "section": 521,
+   "title": "Probation of Offenders Act, 1958 and section 401 of Bharatiya Nagarik Suraksha Sanhita, 2023, not to apply",
+   "question": "If someone is convicted of an offence under this act, can they still be given probation if they are under 18 years of age?",
+   "split": "train"
+  },
+  {
+   "section": 522,
+   "title": "32",
+   "question": "If I make a mistake in my tax return, will it still be considered valid?",
+   "split": "train"
+  },
+  {
+   "section": 522,
+   "title": "32",
+   "question": "Can an income tax authority's electronic approval be considered valid even if it doesn't have a digital signature?",
+   "split": "train"
+  },
+  {
+   "section": 523,
+   "title": "Notice deemed to be valid in certain circumstances",
+   "question": "If I participated in a tax inquiry or gave information to the tax authorities, can I still say the notice I received was not served properly?",
+   "split": "train"
+  },
+  {
+   "section": 523,
+   "title": "Notice deemed to be valid in certain circumstances",
+   "question": "If I objected to a notice before the tax assessment was completed, will the rule about notice being served still apply to me?",
+   "split": "train"
+  },
+  {
+   "section": 524,
+   "title": "Presumption as to assets, books of account, etc",
+   "question": "If I find my financial records during a search, can it be assumed they belong to me?",
+   "split": "train"
+  },
+  {
+   "section": 524,
+   "title": "Presumption as to assets, books of account, etc",
+   "question": "If documents are found on a computer during a search, can it be assumed the signatures on them are actually from the person who signed them?",
+   "split": "train"
+  },
+  {
+   "section": 525,
+   "title": "Authorisation and assessment in case of search or requisition",
+   "question": "Can I be searched or questioned with multiple people's names listed without it being treated like an association of persons?",
+   "split": "train"
+  },
+  {
+   "section": 526,
+   "title": "Bar of suits in civil courts",
+   "question": "Can I sue the government if they take action under the income tax law in good faith?",
+   "split": "test"
+  },
+  {
+   "section": 526,
+   "title": "Bar of suits in civil courts",
+   "question": "Is it possible to challenge a government decision made under tax rules in a civil court?",
+   "split": "test"
+  },
+  {
+   "section": 527,
+   "title": "prospecting for, extraction, etc., of mineral oils",
+   "question": "Can the government exempt or reduce tax for people involved in oil exploration or production?",
+   "split": "test"
+  },
+  {
+   "section": 527,
+   "title": "prospecting for, extraction, etc., of mineral oils",
+   "question": "Does the government have the power to change tax rules for companies working with it on oil or gas projects?",
+   "split": "test"
+  },
+  {
+   "section": 529,
+   "title": "Power to withdraw approval",
+   "question": "Can the government take back approval given to a taxpayer for something under the income tax law?",
+   "split": "train"
+  },
+  {
+   "section": 529,
+   "title": "Power to withdraw approval",
+   "question": "If a tax authority gives me permission for a certain tax benefit, can they remove that permission later and why?",
+   "split": "train"
+  },
+  {
+   "section": 530,
+   "title": "Act to have effect pending legislative provision for charge of tax",
+   "question": "If there is no law made by April 1st to charge income tax for a year, can the tax rules still apply?",
+   "split": "train"
+  },
+  {
+   "section": 530,
+   "title": "Act to have effect pending legislative provision for charge of tax",
+   "question": "Can the tax rules be changed to be more beneficial for me if there's no new law by April 1st?",
+   "split": "train"
+  },
+  {
+   "section": 531,
+   "title": "granted under section 294A of the Income-tax Act, 1961",
+   "question": "Can the government take back a tax exemption that was given to someone or a group of people?",
+   "split": "test"
+  },
+  {
+   "section": 531,
+   "title": "granted under section 294A of the Income-tax Act, 1961",
+   "question": "Can the government change or remove a reduced tax rate that was previously given to any individual or group?",
+   "split": "test"
+  },
+  {
+   "section": 532,
+   "title": "Power to frame schemes",
+   "question": "Can the government remove the need for taxpayers to interact directly with officials using technology?",
+   "split": "test"
+  },
+  {
+   "section": 532,
+   "title": "Power to frame schemes",
+   "question": "Can the government change an existing tax scheme to make it more efficient or transparent?",
+   "split": "test"
+  },
+  {
+   "section": 533,
+   "title": "Power to make rules",
+   "question": "Can the tax board make rules about how to calculate income for someone who earns part from farming and part from business?",
+   "split": "train"
+  },
+  {
+   "section": 533,
+   "title": "Power to make rules",
+   "question": "What happens if it's hard or too costly to figure out exactly how much income a person has, and the rules allow an estimate?",
+   "split": "train"
+  },
+  {
+   "section": 534,
+   "title": "Laying before Parliament",
+   "question": "What happens if both houses of parliament agree to change a rule or notification made under the income tax act before it takes effect?",
+   "split": "train"
+  },
+  {
+   "section": 534,
+   "title": "Laying before Parliament",
+   "question": "Can a rule or notification be cancelled by parliament, and if so, what happens to previous actions taken under it?",
+   "split": "train"
+  },
+  {
+   "section": 535,
+   "title": "Removal of difficulties",
+   "question": "Can the government make changes to how the tax law is applied for the financial year ending March 31, 2026?",
+   "split": "test"
+  },
+  {
+   "section": 535,
+   "title": "Removal of difficulties",
+   "question": "Is there a time limit after which the government can no longer make changes to the tax rules for the year 2026?",
+   "split": "test"
+  },
+  {
+   "section": 536,
+   "title": "Repeal and savings",
+   "question": "If I had a penalty for a tax year before April 1, 2026, can I still be penalized under the old tax rules?",
+   "split": "train"
+  },
+  {
+   "section": 536,
+   "title": "Repeal and savings",
+   "question": "If I made a deduction under the old tax law before April 1, 2026, and it was based on conditions that were later broken, do I have to include that amount in my income in a later year?",
+   "split": "train"
+  }
+ ]
+}

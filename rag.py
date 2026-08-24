@@ -488,13 +488,12 @@ def retrieve(
     Embed query, compute cosine similarity, return top-k results.
     Returns (results, max_score). If max_score < threshold, results may be empty.
     """
+    from vector_index import get_index  # FAISS, NumPy fallback
     q_emb = model.encode([query], show_progress_bar=False)
-    q_emb = q_emb / (np.linalg.norm(q_emb) or 1)
-    sims = cosine_similarity(q_emb, embeddings)[0]  # type: ignore[call-overload]
-    order = np.argsort(sims)[::-1]
+    scores, order = get_index(embeddings).search(q_emb, max(top_k, 1))
     results: List[Dict[str, Any]] = []
-    for idx in order[:top_k]:
-        score = float(sims[idx])
+    for idx, score in zip(order[:top_k], scores[:top_k]):
+        score = float(score)
         if score < threshold:
             break
         results.append({
@@ -504,7 +503,7 @@ def retrieve(
             "source": chunks[idx]["source"],
             "chunk_id": chunks[idx]["chunk_id"],
         })
-    max_score = float(sims[order[0]])
+    max_score = float(scores[0])
     return results, max_score
 
 

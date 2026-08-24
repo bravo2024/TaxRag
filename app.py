@@ -42,11 +42,14 @@ _APP_DIR = os.path.dirname(os.path.abspath(__file__))
 # CPU/free-tier friendly: lightweight bge-small retrievers (~33M params) that
 # embed fast on CPU. Heavier long-context encoders (EmbeddingGemma-300m,
 # Granite-97m 32K) were benchmarked at ~100 min to embed this corpus on a 4-core
-# CPU — impractical here — so the default is the fast tax-tuned bge-small.
+# CPU — impractical here.
+# Default = FiQA-tuned: on 277 content-based questions from held-out sections it
+# beats the tax-tuned model (Recall@5 0.773 vs 0.675). The tax-tuned model was
+# trained on section-title pairs, so it overfits title-like queries.
 EMBEDDING_MODELS = {
-    "Tax-tuned bge-small (default)": "vivekkopthsd/tax-retriever-bge-small",
+    "Finance-tuned bge-small (FiQA, default)": "vivekkopthsd/fiqa-retriever-bge-small",
     "Hinglish ST-33m (Hindi/Hinglish queries)": "vivekkopthsd/hinglish-st-33m",
-    "Finance-tuned bge-small (FiQA)": "vivekkopthsd/fiqa-retriever-bge-small",
+    "Tax-tuned bge-small (title-trained)": "vivekkopthsd/tax-retriever-bge-small",
 }
 
 # Passages run 200–500 tokens (median ~382, only ~0.2% exceed 512). The bge-small
@@ -79,6 +82,12 @@ def load_embedder(model_name: str) -> SentenceTransformer:
 @st.cache_resource(show_spinner=False)
 def load_cached_index():
     return load_index("./out")
+
+
+@st.cache_resource(show_spinner="Loading reranker (first run only)…", max_entries=1)
+def load_rerank_retriever(model_name: str, _model, _emb, _chunks):
+    from reranker import RerankRetriever
+    return RerankRetriever(_model, _emb, _chunks)
 
 
 def _emb_cache_path(model_name: str) -> str:
@@ -152,6 +161,11 @@ use_router = st.sidebar.toggle(
 
 st.sidebar.subheader("Retrieval")
 top_k = st.sidebar.slider("Passages to retrieve", 1, 10, 4)
+use_rerank = st.sidebar.toggle(
+    "Rerank passages (hybrid + cross-encoder)", value=True,
+    help="Dense + BM25 candidates, reordered by a cross-encoder. Measured on held-out "
+         "questions: top-passage accuracy ~50% -> ~75%, at ~2-3 s extra per question on CPU.",
+)
 model_choice = st.sidebar.selectbox(
     "Embedding model",
     list(EMBEDDING_MODELS.keys()),
@@ -242,9 +256,14 @@ def answer_question(question: str) -> None:
         from chat_router import chat as router_chat
         hist = [{"role": m["role"], "content": m["content"]}
                 for m in st.session_state.messages if m["role"] in ("user", "assistant")][:-1]
+        retriever = None
+        if use_rerank:
+            retriever = load_rerank_retriever(model_name, selected_model, active_emb, active_chunks)
+            retriever.threshold = active_threshold
         with st.spinner("Routing your question…"):
             r = router_chat(question, selected_model, active_emb, active_chunks,
-                            history=hist, top_k=top_k, threshold=active_threshold)
+                            history=hist, top_k=top_k, threshold=active_threshold,
+                            retriever=retriever, rerank=use_rerank)
         _render_router_result(question, r)
         return
 

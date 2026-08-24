@@ -31,3 +31,6 @@ models/
 
 # NOTE: out/index.npz and out/metrics.json ARE committed on purpose —
 # the app loads the pre-built index at startup instead of re-embedding.
+
+# Local Colab launch scripts (machine-specific paths)
+colab/*.sh

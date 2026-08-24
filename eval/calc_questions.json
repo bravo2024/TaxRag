@@ -1,0 +1,152 @@
+[
+ {
+  "q": "What is the tax on 3 lakh income under the new regime?",
+  "expected": 0,
+  "note": "below 4L, nil slab"
+ },
+ {
+  "q": "How much tax on an income of Rs 4,00,000 under new tax regime?",
+  "expected": 0,
+  "note": "exactly 4L"
+ },
+ {
+  "q": "Tax payable on 5 lakh total income, new regime",
+  "expected": 0,
+  "note": "5000 tax, full rebate"
+ },
+ {
+  "q": "Calculate tax for 7.5 lakh income under the new regime",
+  "expected": 0,
+  "note": "17500 tax, full rebate"
+ },
+ {
+  "q": "How much tax do I pay on 10 lakh income in new regime?",
+  "expected": 0,
+  "note": "40000 tax, full rebate"
+ },
+ {
+  "q": "What is the income tax on ₹12,00,000 under the new tax regime?",
+  "expected": 0,
+  "note": "60000 tax, rebate 60000"
+ },
+ {
+  "q": "Tax on 12.1 lakh income under new regime",
+  "expected": 10000,
+  "note": "61500 tax, marginal relief to 10000"
+ },
+ {
+  "q": "Compute tax for total income of 12,50,000 new regime",
+  "expected": 50000,
+  "note": "67500 tax, marginal relief to 50000"
+ },
+ {
+  "q": "What is the tax on 12.7 lakh income under the new regime?",
+  "expected": 70000,
+  "note": "70500 tax vs excess 70000 -> 70000"
+ },
+ {
+  "q": "How much tax on 13 lakh income, new regime?",
+  "expected": 75000,
+  "note": "75000 tax, no relief (tax < excess)"
+ },
+ {
+  "q": "Tax liability on 15 lakh total income in new regime",
+  "expected": 105000,
+  "note": "20000+40000+45000"
+ },
+ {
+  "q": "Calculate new regime tax for an income of 16 lakh",
+  "expected": 120000,
+  "note": "20000+40000+60000"
+ },
+ {
+  "q": "What will be my tax on 18 lakh under new regime?",
+  "expected": 160000,
+  "note": "+40000 at 20%"
+ },
+ {
+  "q": "Tax on 20 lakh income under the new regime",
+  "expected": 200000,
+  "note": "20000+40000+60000+80000"
+ },
+ {
+  "q": "how much tax on 22 lakh new regime",
+  "expected": 250000,
+  "note": "+50000 at 25%"
+ },
+ {
+  "q": "New regime tax for 24 lakh income",
+  "expected": 300000,
+  "note": "+100000 at 25%"
+ },
+ {
+  "q": "What is the tax on 30 lakh income under new tax regime?",
+  "expected": 480000,
+  "note": "300000 + 30% of 6L"
+ },
+ {
+  "q": "Tax payable on an income of 50 lakh in the new regime",
+  "expected": 1080000,
+  "note": "300000 + 30% of 26L"
+ },
+ {
+  "q": "How much tax on 1 crore income under new regime (ignore surcharge)?",
+  "expected": 2580000,
+  "note": "300000 + 30% of 76L"
+ },
+ {
+  "q": "Tax on 1.5 crore income new regime, before surcharge and cess",
+  "expected": 4080000,
+  "note": "300000 + 30% of 126L"
+ },
+ {
+  "q": "I am a salaried employee earning 12.75 lakh. How much tax under the new regime?",
+  "expected": 0,
+  "note": "std deduction 75000 -> 12L taxable"
+ },
+ {
+  "q": "My salary is 13 lakh per year. What is my tax in the new regime?",
+  "expected": 25000,
+  "note": "12.25L taxable: 63750 tax, excess 25000 -> 25000"
+ },
+ {
+  "q": "Salaried person with 15 lakh CTC, new regime tax?",
+  "expected": 93750,
+  "note": "14.25L taxable"
+ },
+ {
+  "q": "What is the tax on a salary of 20 lakh under the new regime?",
+  "expected": 185000,
+  "note": "19.25L taxable: 120000 + 20% of 3.25L"
+ },
+ {
+  "q": "Salary 10 lakh, how much income tax in new regime?",
+  "expected": 0,
+  "note": "9.25L taxable, full rebate"
+ },
+ {
+  "q": "20 lakh par kitna tax lagega new regime mein",
+  "expected": 200000,
+  "note": "Hinglish"
+ },
+ {
+  "q": "15 lakh income pe kitna tax banega new regime me",
+  "expected": 105000,
+  "note": "Hinglish"
+ },
+ {
+  "q": "Meri salary 18 lakh hai, new regime mein kitna tax lagega?",
+  "expected": 145000,
+  "note": "Hinglish salaried, 17.25L taxable"
+ },
+ {
+  "q": "What is the tax on 900k income under the new regime?",
+  "expected": 0,
+  "note": "9L, full rebate"
+ },
+ {
+  "q": "Tax on 25,00,000 income under new regime",
+  "expected": 330000,
+  "note": "300000 + 30% of 1L"
+ }
+]

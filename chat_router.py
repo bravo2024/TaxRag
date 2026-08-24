@@ -77,8 +77,32 @@ def _call_llm(messages, provider: Optional[str] = None, model: Optional[str] = N
     return None, None
 
 
-def classify_intent(query: str, history: Optional[List[Dict]] = None) -> Dict[str, Any]:
-    """Ask LLM to classify. Falls back to keyword heuristic if all LLMs down."""
+_CLASSIFIER_CACHE: Dict[int, Any] = {}
+
+
+def offline_intent(query: str, model=None) -> Dict[str, Any]:
+    """Fallback when no LLM answers: embedding classifier if an embedder is available,
+    else the keyword heuristic."""
+    if model is not None:
+        try:
+            if id(model) not in _CLASSIFIER_CACHE:
+                from intent_classifier import IntentClassifier
+                _CLASSIFIER_CACHE[id(model)] = IntentClassifier(model)
+            out = dict(_CLASSIFIER_CACHE[id(model)].predict(query))
+            # This path only runs when no LLM answered, so the GENERAL_TAX handler would
+            # just say "can't reach any LLM". Statute lookup works offline (extractive)
+            # and still escalates to GENERAL_TAX itself when retrieval finds no match.
+            if out.get("intent") == "GENERAL_TAX":
+                out["intent"] = "STATUTE_LOOKUP"
+                out["reason"] = out.get("reason", "") + "; general->statute (no LLM reachable)"
+            return out
+        except Exception as e:  # never let the fallback break routing
+            log.warning("intent classifier unavailable: %s", e)
+    return heuristic_intent(query)
+
+
+def classify_intent(query: str, history: Optional[List[Dict]] = None, model=None) -> Dict[str, Any]:
+    """Ask LLM to classify. Falls back to the offline classifier (or keywords) if all LLMs are down."""
     messages = [{"role": "system", "content": ROUTER_SYSTEM}]
     for turn in (history or [])[-2:]:
         messages.append({"role": turn["role"], "content": turn["content"][:200]})
@@ -97,7 +121,11 @@ def classify_intent(query: str, history: Optional[List[Dict]] = None) -> Dict[st
             except json.JSONDecodeError:
                 pass
 
-    # heuristic fallback
+    return offline_intent(query, model)
+
+
+def heuristic_intent(query: str) -> Dict[str, Any]:
+    """Keyword fallback used when no LLM is reachable."""
     q = query.lower().strip()
     if len(q) < 40 and any(w in q for w in ["hello", "hi ", "hey", "thanks", "thank you",
                                             "bye", "who are you", "what can you", "help"]):
@@ -175,7 +203,7 @@ def handle_statute_lookup(query, model, emb, chunks, history=None,
     if retriever is not None:
         # Hybrid RRF/rerank scores are not cosine similarity, so gate on hits
         # rather than the legacy 0.45 threshold.
-        results, max_s = retriever.retrieve(query, top_k=top_k, rerank=rerank, candidates=30)
+        results, max_s = retriever.retrieve(query, top_k=top_k, rerank=rerank, candidates=15)
         confident = len(results) > 0
     else:
         results, max_s = retrieve(query, model, emb, chunks, top_k=top_k,
@@ -199,14 +227,48 @@ def handle_statute_lookup(query, model, emb, chunks, history=None,
             "citations": citations, "provider": provider, "max_sim": float(max_s)}
 
 
+_RULES_CACHE: Dict[int, Any] = {}
+
+
+def _tax_rules(chunks):
+    key = id(chunks)
+    if key not in _RULES_CACHE:
+        from tax_calculator import load_rules
+        try:
+            _RULES_CACHE[key] = load_rules(chunks)
+        except ValueError:
+            _RULES_CACHE[key] = None
+    return _RULES_CACHE[key]
+
+
 def handle_calculation(query, model, emb, chunks, history=None,
                        retriever=None, rerank=False, top_k=5,
                        threshold=None) -> Dict[str, Any]:
+    """Tool first: new-regime questions with a parseable income go to the deterministic
+    calculator (section 202 slabs, section 156 rebate, section 19 standard deduction).
+    Everything else (old regime, no amount, deduction maths) uses the LLM path."""
+    from tax_calculator import compute_tax, format_answer, parse_calc_query
+    rules = _tax_rules(chunks)
+    parsed = parse_calc_query(query)
+    if rules is not None and parsed["income"] and not parsed["old_regime"]:
+        res = compute_tax(parsed["income"], rules, salaried=parsed["salaried"])
+        citations = [{"title": s, "source": "Income-Tax Act 2025", "score": 1.0}
+                     for s in rules.sources.values()]
+        return {"answer": format_answer(res, rules, parsed["salaried"]), "trust_tier": "grounded",
+                "intent": "CALCULATION", "citations": citations, "provider": "tax_calculator",
+                "calculation": res}
+    return handle_calculation_llm(query, model, emb, chunks, history, retriever, rerank,
+                                  top_k, threshold)
+
+
+def handle_calculation_llm(query, model, emb, chunks, history=None,
+                           retriever=None, rerank=False, top_k=5,
+                           threshold=None) -> Dict[str, Any]:
     # Calculations use a softer gate so retrieved slab rates still reach the LLM;
     # never stricter than 0.35 even if the user raised the abstention threshold.
     thr = 0.35 if threshold is None else min(threshold, 0.35)
     if retriever is not None:
-        results, max_s = retriever.retrieve(query, top_k=top_k, rerank=rerank, candidates=30)
+        results, max_s = retriever.retrieve(query, top_k=top_k, rerank=rerank, candidates=15)
         confident = len(results) > 0
     else:
         results, max_s = retrieve(query, model, emb, chunks, top_k=top_k, threshold=thr)
@@ -245,7 +307,7 @@ def chat(query: str, model, emb, chunks, history: Optional[List[Dict]] = None,
     When `retriever` (a HybridRetriever) is given, retrieval-backed handlers use
     it instead of the legacy `rag.retrieve`, with optional cross-encoder rerank.
     """
-    intent_result = classify_intent(query, history)
+    intent_result = classify_intent(query, history, model=model)
     intent = intent_result["intent"]
     log.info("intent=%s conf=%.2f (%s) via %s",
              intent, intent_result.get("confidence", 0), intent_result.get("reason", ""),

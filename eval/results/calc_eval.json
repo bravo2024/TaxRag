@@ -1,0 +1,361 @@
+{
+ "summary": {
+  "questions": 30,
+  "llm_accuracy": 0.06666666666666667,
+  "tool_accuracy": 1.0,
+  "llm_providers": [
+   "kilo-free/kilo-auto/free",
+   "static"
+  ],
+  "llm_median_seconds": 23.83,
+  "tool_median_seconds": 0.001,
+  "llm_answered": 25,
+  "llm_correct_of_answered": 3,
+  "llm_accuracy_of_answered": 0.12,
+  "llm_unreachable": 5,
+  "scorer_note": "amount on the final payable/total line (word-boundary match); audited by hand",
+  "manual_audit": {
+   "llm_answers_checked": 25,
+   "confirmed_correct": 3,
+   "failure_modes": {
+    "refused_despite_slab_table_retrieved": 2,
+    "used_outdated_pre-2025_slabs": "several (e.g. 12L, 12.7L, 1.5cr, Hinglish 18L)",
+    "ignored_section_156_rebate": "e.g. 5L, 7.5L",
+    "truncated_before_total_at_700_tokens": 3
+   },
+   "no_llm_reachable": 5
+  }
+ },
+ "rows": [
+  {
+   "q": "What is the tax on 3 lakh income under the new regime?",
+   "expected": 0,
+   "llm_correct": true,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 48.76,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nUnder the **new tax regime** (as introduced for FY 2023–24 / AY 2024–25), the tax calculation on a **₹3 lakh** income (assuming no deductions, exemptions, or special allowances) would be:\n\n- **Up to ₹3.5 lakh**: 0% (no tax)\n- **₹3.5 lakh – ₹7 lakh**: 5%\n- **₹7 lakh – ₹10 lakh**: 10%\n- **₹10 lakh – ₹12 lakh**: 15%\n- **₹12 lakh – ₹15 lakh**: 20%\n- **Above ₹15 lakh**: 30%\n\nSince ₹3 lakh falls **entirely within the first slab (up to ₹3.5 lakh)**, the **tax liability is ₹0**.\n\nHowever, please note:\n- This assumes you're referring to **total taxable income** after all deductions and exemptions.\n- If ₹3 lakh is your **gross salary**, then standard deductions or other applicable exemptions might reduce your taxable income further.\n- The new regime does **not allow most deductions** (like 80C, HRA, etc.) unless specifically chosen.\n\nAlways cross-check with a qualified Chartered Accountant for your specific case.",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.011
+  },
+  {
+   "q": "How much tax on an income of Rs 4,00,000 under new tax regime?",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "static",
+   "llm_seconds": 22.69,
+   "llm_answer": "⚠️ I can't reach any LLM right now. Please try again in a moment, or ask a specific statute question so I can search the Income-Tax Act 2025 directly.",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.002
+  },
+  {
+   "q": "Tax payable on 5 lakh total income, new regime",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 15.53,
+   "llm_answer": "To compute the tax payable on a total income of ₹5,00,000 under the **new tax regime** (as per **Section 202** of the Income-Tax Act, 2025), we apply the slab rates provided in the table under **Section 202(1)**.\n\n---\n\n### ✅ **Step-by-Step Calculation Using Section 202 Slabs**\n\n| Slab No. | Total Income Range       | Rate of Tax |\n|----------|---------------------------|-------------|\n| 1        | Up to ₹400,000            | 0%          |\n| 2        | ₹400,001 to ₹800,000      | 5%          |\n| 3        | ₹800,001 to ₹12,00,000    | 10%         |\n| 4        | ₹12,00,001 to ₹16,00,000  | 15%         |\n| 5        | ₹16,00,001 to ₹20,00,000  | 20%         |\n| 6        | ₹20,00,001 to ₹24,00,000  | 25%         |\n| 7        | Above ₹24,00,000          | 30%         |\n\n---\n\n### 🔢 **Given:**\n- **Total Income = ₹5,00,000**\n\nWe will calculate tax **slab by slab**:\n\n#### **Slab 1: Up to ₹400,000**\n- Tax = ₹0 (Nil)\n\n#### **Slab 2: ₹400,001 to ₹800,000**\n- Taxable amount in this slab = ₹5,00,000 – ₹4,00,000 = ₹1,00,000  \n- Tax = 5% of ₹1,00,000 = ₹5,000\n\n---\n\n### 🧾 **Total Tax Payable = ₹5,000**\n\n---\n\n### 📌 **Source Reference:**\n- **Section 202(1), Table under Chapter XIII** – *Income-Tax Act, 2025 (as amended by Finance Act 2026)*\n\n---\n\n### ✅ **Final Answer:**\n**Tax payable on ₹5,00,000 total income under the new tax regime is ₹5,000.**",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Calculate tax for 7.5 lakh income under the new regime",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 12.15,
+   "llm_answer": "I'll calculate the tax for an income of ₹7,50,000 under the new tax regime using the slab rates provided in Section 202.\n\n## Step-by-Step Calculation:\n\n**Given:**\n- Total Income = ₹7,50,000\n- Tax Regime = New Tax Regime (Section 202)\n\n**Slab Rates from Section 202(1):**\n1. Up to ₹400,000: Nil\n2. ₹400,001 to ₹800,000: 5%\n\n**Calculation:**\n\nSince ₹7,50,000 falls within the second slab (₹400,001 to ₹800,000):\n\n- Income up to ₹400,000: **₹0** (Nil rate)\n- Remaining income: ₹7,50,000 - ₹400,000 = ₹3,50,000\n- Tax on ₹3,50,000 @ 5% = ₹3,50,000 × 5% = **₹17,500**\n\n**Total Tax Payable = ₹0 + ₹17,500 = ₹17,500**\n\n## Final Answer:\n**Tax payable on ₹7,50,000 income under the new tax regime = ₹17,500**\n\n*Source: Section 202(1), Income-Tax Act, 2025 (as amended by Finance Act 2026)*",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "How much tax do I pay on 10 lakh income in new regime?",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "static",
+   "llm_seconds": 47.51,
+   "llm_answer": "⚠️ I can't reach any LLM right now. Please try again in a moment, or ask a specific statute question so I can search the Income-Tax Act 2025 directly.",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "What is the income tax on ₹12,00,000 under the new tax regime?",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 22.74,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nFor FY 2023-24 (AY 2024-25) under the new tax regime, the tax on ₹12,00,000 (assuming no deductions) is approximately **₹1,24,500** plus applicable cess (4% health and education cess).\n\nBreakdown:\n- Up to ₹3,00,000: 0%\n- ₹3,00,001–₹6,00,000: 5% → ₹15,000\n- ₹6,00,001–₹9,00,000: 10% → ₹30,000\n- ₹9,00,001–₹12,00,000: 15% → ₹45,000\n- ₹12,00,001–₹15,00,000: 20% → ₹60,000\n\nTotal tax before cess: ₹1,50,000  \nAfter 4% cess: ₹1,50,000 + ₹6,000 = **₹1,56,000**\n\nNote: This is a simplified calculation. Actual tax may vary based on investments, exemptions, and other factors. Always consult a CA for personalized advice.",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "Tax on 12.1 lakh income under new regime",
+   "expected": 10000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 28.24,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nFor an income of ₹12.1 lakh under the **new tax regime** (FY 2023-24 / AY 2024-25), the **income tax** (before cess and surcharge) is approximately:\n\n- Up to ₹12.1 lakh:\n  - 0–₹3 lakh: 0%\n  - ₹3–₹6 lakh: 5%\n  - ₹6–₹9 lakh: 10%\n  - ₹9–₹12 lakh: 15%\n  - ₹12–₹12.1 lakh: 20%\n\n**Tax calculation:**\n- ₹3L × 0% = ₹0  \n- ₹3L × 5% = ₹15,000  \n- ₹3L × 10% = ₹30,000  \n- ₹3L × 15% = ₹45,000  \n- ₹0.1L × 20% = ₹2,000  \n\n**Total tax ≈ ₹92,000**\n\nAdding **4% health & education cess** (~₹3,680) and **surcharge** (if applicable, e.g., 10% for income >₹12L), the total tax liability would be around **₹1,05,000–₹1,10,000**.\n\n> Note: Surcharge applies at 10% for net income between ₹12.1L–₹15L. If you have deductions (like HRA, LTA, etc.), the old regime might still be more beneficial.\n\nAlways cross-check with a CA based on your specific case.",
+   "tool_correct": true,
+   "tool_value": 10000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Compute tax for total income of 12,50,000 new regime",
+   "expected": 50000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 14.98,
+   "llm_answer": "I'll compute the tax for a total income of ₹12,50,000 under the new tax regime. However, I need to point out that the context provided doesn't contain the slab rates for the new tax regime for general individuals.\n\nThe context only contains:\n1. Section 208 - Special rates for offshore funds (10% and 12.5% rates)\n2. Section 213 - Special provisions for non-resident Indians\n3. Section 206 - Minimum alternate tax provisions\n4. Section 5 - Scope of total income\n5. Section 536 - Repeal and savings\n\nNone of these sections provide the standard income tax slab rates for the new tax regime that would apply to a regular taxpayer with ₹12,50,000 total income.\n\n**The context does not contain the applicable slab rates for computing tax under the new tax regime for general individuals.**\n\nTo compute tax on ₹12,50,000 under the new tax regime, I would need the specific slab rates as prescribed under the Income-Tax Act, 2025. These are typically found in a separate taxation slab section that isn't included in the provided context.\n\nWould you like me to:\n1. Explain the general concept of how new tax regime slab calculations work?\n2. Provide the calculation if you can share the applicable slab rates?\n3. Explain any of the specific sections mentioned in the context?\n\nFor reference, the general approach for new tax regime calculations involves applying different tax rates to different portions of income falling within specified slabs, but I cannot provide the exact computation without the specific rates from the context.",
+   "tool_correct": true,
+   "tool_value": 50000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "What is the tax on 12.7 lakh income under the new regime?",
+   "expected": 70000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 29.48,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nFor an income of ₹12.7 lakh under the **new tax regime** (as applicable for FY 2023-24 / AY 2024-25), the **income tax** is approximately **₹1,21,500**, plus **4% health and education cess** (around ₹4,860), bringing the total to roughly **₹1,26,360**.\n\nThis is an **approximate** figure based on the new regime slab rates:\n\n- Up to ₹3 lakh: 0%\n- ₹3–6 lakh: 5%\n- ₹6–9 lakh: 10%\n- ₹9–12 lakh: 15%\n- Above ₹12 lakh: 20%\n\nSince ₹12.7 lakh falls partly in the 20% slab, the tax is calculated accordingly.\n\n**Note:** This does **not** include any applicable **rebate** (which may reduce tax to zero if income is below the threshold) or **deductions** under Chapter VI-A, which are generally **not available** under the new regime unless specifically allowed.\n\nAlways confirm with a CA or use the official income tax portal calculator for exact figures.",
+   "tool_correct": true,
+   "tool_value": 70000.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "How much tax on 13 lakh income, new regime?",
+   "expected": 75000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 33.13,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nFor a total income of ₹13 lakh under the **new tax regime** (as applicable for FY 2023–24 / AY 2024–25), the income tax is calculated as follows:\n\n- Up to ₹3 lakh: **Nil**\n- ₹3–6 lakh: 5% → ₹15,000\n- ₹6–9 lakh: 10% → ₹30,000\n- ₹9–12 lakh: 15% → ₹45,000\n- ₹12–13 lakh: 20% → ₹20,000\n\n**Total tax before cess** = ₹15,000 + ₹30,000 + ₹45,000 + ₹20,000 = **₹1,10,000**\n\nAdd **4% health and education cess** on ₹1,10,000 = ₹4,400\n\n**Final tax liability ≈ ₹1,14,400**\n\nThis does **not** include any surcharge (applicable if income exceeds ₹50 lakh) or possible deductions under Chapter VI-A (like 80C, which are generally not available under the new regime unless opted out of).\n\nAlways cross-check with a CA for your specific case.",
+   "tool_correct": true,
+   "tool_value": 75000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Tax liability on 15 lakh total income in new regime",
+   "expected": 105000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 19.74,
+   "llm_answer": "I'll compute the tax liability on ₹15 lakh total income under the new tax regime. However, I need to point out that **the context provided does not contain the actual slab rates** for the new tax regime under Section 202.\n\nLet me explain what I can determine from the context:\n\n## What the Context Tells Us:\n\n**Section 202** establishes the new tax regime for individuals, HUF, and others, but the actual **slab rates are not included** in the provided text. The section only discusses:\n- The option mechanism for choosing the regime\n- Conditions for exercising the option\n- Modifications for certain cases\n\n## What's Missing:\n\nThe **slab rates** (e.g., 0%, 5%, 10%, 15%, 20%, 25%, 30% etc.) and their corresponding income thresholds are **not provided** in the context.\n\n## General Concept Explanation:\n\nUnder the new tax regime (as commonly known), the tax calculation typically follows progressive slab rates. For a total income of ₹15 lakh, the tax would generally be calculated as:\n\n1. **Apply slab rates** to different portions of income\n2. **Sum up** the tax liability from each slab\n3. **Add applicable cess** (usually 4%)\n\n## Recommendation:\n\nSince the **specific slab rates are not available in the provided context**, I cannot compute the exact tax liability. \n\n**Would you like me to:**\n1. Explain the general concept of how tax slab calculations work?\n2. Wait for you to provide the actual slab rates from Section 202?\n\nPlease provide the slab rates, and I'll be happy to compute the exact tax liability step by step with proper citations.",
+   "tool_correct": true,
+   "tool_value": 105000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Calculate new regime tax for an income of 16 lakh",
+   "expected": 120000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 31.4,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nFor an income of ₹16 lakh under the **new tax regime (AY 2024-25)**, the tax is calculated as follows:\n\n| Income Slab (₹)        | Rate | Tax (₹)     |\n|------------------------|------|-------------|\n| 0 – 3,00,000           | 0%   | 0           |\n| 3,00,001 – 6,00,000    | 5%   | 15,000      |\n| 6,00,001 – 9,00,000    | 10%  | 30,000      |\n| 9,00,001 – 12,00,000   | 15%  | 45,000      |\n| 12,00,001 – 16,00,000  | 20%  | 80,000      |\n\n**Total Income Tax:** ₹1,70,000  \n**Health & Education Cess (4%):** ₹6,800  \n**Total Tax Payable:** ₹1,76,800 (approx.)\n\n> Note: This is a rough estimate. Actual tax may vary based on investments, deductions, and cess changes. Always confirm with a CA.",
+   "tool_correct": true,
+   "tool_value": 120000.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "What will be my tax on 18 lakh under new regime?",
+   "expected": 160000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 35.23,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nUnder the **new tax regime** (as applicable for FY 2023-24 / AY 2024-25), here's an approximate breakdown of your income tax on ₹18 lakh:\n\n### Tax Calculation (New Regime Slabs):\n| Slab (₹)        | Rate (%) | Tax (₹)         |\n|------------------|----------|------------------|\n| 0 – 3,00,000     | 0        | 0                |\n| 3,00,001 – 6,00,000 | 5     | 15,000           |\n| 6,00,001 – 9,00,000 | 10    | 30,000           |\n| 9,00,001 – 12,00,000 | 15   | 45,000           |\n| 12,00,001 – 15,00,000 | 20  | 60,000           |\n| 15,00,001 – 18,00,000 | 25  | 75,000           |\n| **Total Tax**    |          | **₹2,25,000**    |\n\n### Add:\n- **Health & Education Cess**: 4% of ₹2,25,000 = ₹9,000  \n- **Total Tax Payable ≈ ₹2,34,000**\n\n> Note: This does **not** include surcharge (if applicable) or any deductions under Chapter VI-A (like 80C, HRA, etc.) which are generally **not allowed** under the new regime unless specifically permitted.\n\nAlso, if your income exceeds ₹50 lakh, a **surcharge** may apply. For ₹18 lakh, surcharge is likely **nil**.\n\n✅ **Final Estimate:",
+   "tool_correct": true,
+   "tool_value": 160000.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "Tax on 20 lakh income under the new regime",
+   "expected": 200000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 28.34,
+   "llm_answer": "# Tax Calculation for ₹20 Lakh Income Under the New Tax Regime (Section 202)\n\nBased on the **new tax regime** under **Section 202** of the Income-Tax Act, 2025 (as amended by Finance Act 2026), here's the step-by-step calculation for an income of **₹20,00,000**:\n\n---\n\n## **Tax Slabs (Section 202(1) Table):**\n\n| Sl. No. | Total Income Range         | Rate of Tax |\n|---------|----------------------------|-------------|\n| 1       | Up to ₹400,000             | 0%          |\n| 2       | ₹400,001 – ₹800,000        | 5%          |\n| 3       | ₹800,001 – ₹12,00,000      | 10%         |\n| 4       | ₹12,00,001 – ₹16,00,000    | 15%         |\n| 5       | ₹16,00,001 – ₹20,00,000    | 20%         |\n| 6       | ₹20,00,001 – ₹24,00,000    | 25%         |\n| 7       | Above ₹24,00,000           | 30%         |\n\n---\n\n## **Step-by-Step Calculation:**\n\n### **1. Income up to ₹400,000**\n- **Tax**: ₹0  \n- **Source**: Section 202(1), Sl. No. 1\n\n### **2. Income from ₹400,001 to ₹800,000 (₹400,000)**\n- **Tax**: 5% of ₹400,000 = ₹20,000  \n- **Source**: Section 202(1), Sl. No. 2\n\n### **3. Income from ₹800,001 to ₹12,00,000 (₹400,000)**\n- **Tax**: 10% of ₹400,000 = ₹40,000  \n- **Source**: Section 202(1), Sl. No. 3\n\n### **4. Income from ₹12,00,001 to ₹16,00,000 (₹400,000)**\n- **Tax**: 15% of ₹400,000 = ₹60,000  \n- **Source**: Section 202(1), Sl. No. 4\n\n### **5. Income from ₹16,",
+   "tool_correct": true,
+   "tool_value": 200000.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "how much tax on 22 lakh new regime",
+   "expected": 250000,
+   "llm_correct": true,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 18.08,
+   "llm_answer": "I'll calculate the tax on ₹22 lakh income under the new tax regime using the slab rates from Section 202.\n\n## Tax Calculation for ₹22,00,000 (New Tax Regime)\n\n**Source: Section 202(1), Table - Income-Tax Act, 2025**\n\nLet me apply the slab rates step by step:\n\n| Slab | Income Range | Rate | Calculation | Tax Amount |\n|------|-------------|------|-------------|------------|\n| 1 | ₹0 - ₹400,000 | 0% | ₹400,000 × 0% | ₹0 |\n| 2 | ₹400,001 - ₹800,000 | 5% | ₹400,000 × 5% | ₹20,000 |\n| 3 | ₹800,001 - ₹1,200,000 | 10% | ₹400,000 × 10% | ₹40,000 |\n| 4 | ₹1,200,001 - ₹1,600,000 | 15% | ₹400,000 × 15% | ₹60,000 |\n| 5 | ₹1,600,001 - ₹2,000,000 | 20% | ₹400,000 × 20% | ₹80,000 |\n| 6 | ₹2,000,001 - ₹2,200,000 | 25% | ₹200,000 × 25% | ₹50,000 |\n\n**Total Income Tax Payable: ₹2,50,000**\n\n## Summary:\n- **Total Income:** ₹22,00,000\n- **Tax Payable:** ₹2,50,000\n- **Effective Tax Rate:** ~11.36%\n\n**Note:** This calculation assumes the taxpayer has opted for the new tax regime under Section 202(1) and doesn't claim any exemptions or deductions that are not available under the new regime (as per Section 202(2)). The calculation also doesn't include applicable surcharge, cess, or any other levies that may apply.",
+   "tool_correct": true,
+   "tool_value": 250000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "New regime tax for 24 lakh income",
+   "expected": 300000,
+   "llm_correct": true,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 22.05,
+   "llm_answer": "I'll calculate the tax for a total income of ₹24,00,000 under the new tax regime using the slab rates from Section 202.\n\n## Calculation for ₹24,00,000 Income\n\n**Source: Section 202(1) - New tax regime slab rates**\n\n| Slab | Income Range | Rate | Calculation | Tax Amount |\n|------|-------------|------|-------------|------------|\n| 1 | ₹0 - ₹400,000 | 0% | - | ₹0 |\n| 2 | ₹400,001 - ₹800,000 | 5% | 5% of ₹400,000 | ₹20,000 |\n| 3 | ₹800,001 - ₹1,200,000 | 10% | 10% of ₹400,000 | ₹40,000 |\n| 4 | ₹1,200,001 - ₹1,600,000 | 15% | 15% of ₹400,000 | ₹60,000 |\n| 5 | ₹1,600,001 - ₹2,000,000 | 20% | 20% of ₹400,000 | ₹80,000 |\n| 6 | ₹2,000,001 - ₹2,400,000 | 25% | 25% of ₹400,000 | ₹100,000 |\n| 7 | Above ₹2,400,000 | 30% | 30% of ₹0 | ₹0 |\n\n**Total Tax Payable: ₹3,00,000**\n\n## Step-by-step Breakdown:\n\n1. **First ₹400,000**: Nil (Slab 1)\n2. **Next ₹400,000** (₹400,001-₹800,000): 5% × ₹400,000 = ₹20,000 (Slab 2)\n3. **Next ₹400,000** (₹800,001-₹1,200,000): 10% × ₹400,000 = ₹40,000 (Slab 3)\n4. **Next ₹400,000** (₹1,200,001-₹1,600,000): 15% × ₹400,000 = ₹60,000 (Slab 4)\n5. **Next ₹400,000** (₹1,600,001-₹2,000,000): 20% × ₹400,000 = ₹",
+   "tool_correct": true,
+   "tool_value": 300000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "What is the tax on 30 lakh income under new tax regime?",
+   "expected": 480000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 23.83,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nFor an income of ₹30 lakh under the **new tax regime (FY 2024-25 / AY 2025-26)**, the tax is calculated as follows:\n\n- **Up to ₹3 lakh**: 0%\n- **₹3 – 6 lakh**: 5%\n- **₹6 – 9 lakh**: 10%\n- **₹9 – 12 lakh**: 15%\n- **₹12 – 15 lakh**: 20%\n- **Above ₹15 lakh**: 25%\n\nApplying these slabs to ₹30 lakh:\n\n- Tax ≈ ₹4.74 lakh (before cess)\n- **Health & education cess (4%)** ≈ ₹18,960\n- **Total tax payable ≈ ₹4.93 lakh**\n\nThis is an approximate calculation. Actual tax may vary based on deductions, exemptions, and other factors. Always consult a qualified Chartered Accountant for precise computation.",
+   "tool_correct": true,
+   "tool_value": 480000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Tax payable on an income of 50 lakh in the new regime",
+   "expected": 1080000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 15.01,
+   "llm_answer": "I'll help you compute the tax payable on an income of ₹50 lakh under the new tax regime. However, I need to point out that the context provided doesn't contain the actual slab rates for the new regime.\n\nLooking at the context, I can see:\n- Section 206 deals with Minimum Alternate Tax (MAT) and Alternate Minimum Tax (AMT)\n- Section 536 deals with repeal and savings\n- Section 5 deals with scope of total income\n- But none of these sections contain the actual income tax slab rates\n\nSince the context doesn't contain the applicable slab rates for computing tax on ₹50 lakh income, I cannot perform the exact calculation.\n\nHowever, I can offer to explain the general concepts:\n\n**General New Tax Regime Structure (as commonly known):**\nThe new tax regime typically features:\n- Lower tax rates across slabs\n- Elimination of most exemptions and deductions\n- Progressive tax rates starting from 5% up to 30%\n\n**Typical New Regime Slabs (for reference):**\n- Up to ₹3 lakh: 0%\n- ₹3-6 lakh: 5%\n- ₹6-9 lakh: 10%\n- ₹9-12 lakh: 15%\n- ₹12-15 lakh: 20%\n- Above ₹15 lakh: 25%\n- Plus applicable cess and surcharge\n\nWould you like me to:\n1. Explain how the tax calculation would work conceptually with these general rates?\n2. Or do you have the specific slab rates from the new regime that you'd like me to use?\n\nPlease provide the actual slab rates from the new tax regime so I can give you an accurate step-by-step calculation.",
+   "tool_correct": true,
+   "tool_value": 1080000.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "How much tax on 1 crore income under new regime (ignore surcharge)?",
+   "expected": 2580000,
+   "llm_correct": false,
+   "llm_provider": "static",
+   "llm_seconds": 33.25,
+   "llm_answer": "⚠️ I can't reach any LLM right now. Please try again in a moment, or ask a specific statute question so I can search the Income-Tax Act 2025 directly.",
+   "tool_correct": true,
+   "tool_value": 2580000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Tax on 1.5 crore income new regime, before surcharge and cess",
+   "expected": 4080000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 22.23,
+   "llm_answer": "The provided context does not include the applicable income-tax slab rates for the \"new regime\" under the Income-Tax Act, 2025 (as amended by Finance Act 2026). The sections referenced in the context (e.g., Section 1, Section 536, Section 218) relate to repeal/savings, surcharge, and special cases, but **no slab rates for income-tax computation under the new regime are explicitly stated**. \n\nSince the required slab rates are not present in the context, I cannot compute the tax on ₹1.5 crore income. However, I can explain the **general concept** of the new tax regime (as per common knowledge) and offer to guide you further if you provide the relevant slab rates.\n\n---\n\n### General Concept (New Tax Regime, FY 2026-27):\nUnder the new tax regime (Section 115BAC, as commonly known), the slab rates for individuals (non-senior citizens) are typically structured as follows (for reference only, not from the context):\n\n| **Income Slab**       | **Rate** |\n|------------------------|----------|\n| Up to ₹2.5 lakh        | 0%       |\n| ₹2.5 lakh – ₹5 lakh    | 5%       |\n| ₹5 lakh – ₹7.5 lakh   ",
+   "tool_correct": true,
+   "tool_value": 4080000.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "I am a salaried employee earning 12.75 lakh. How much tax under the new regime?",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 15.94,
+   "llm_answer": "I'll help you calculate the tax under the new tax regime. However, I need to point out that the context provided doesn't contain the actual slab rates for the new tax regime.\n\nLooking at the context, I can see:\n- Section 536 deals with repeal and savings, including certain exemptions\n- Section 203 mentions a 22% tax rate for co-operative societies\n- Section 206 deals with minimum alternate tax provisions\n- Section 1 shows the Act came into force on April 1, 2026\n\nBut I don't see the specific income tax slab rates for individuals under the new regime in the provided context.\n\nSince the context doesn't contain the applicable slab rates for calculating income tax for a salaried individual under the new tax regime, I cannot provide you with the exact tax calculation.\n\nHowever, I can offer to explain the general concepts of how income tax calculation works under the new tax regime, including:\n- How progressive tax slabs function\n- The concept of tax deductions and exemptions\n- How to calculate tax on different portions of income\n\nWould you like me to explain these general concepts instead? Or if you have the specific slab rates from another source, I'd be happy to help you calculate the tax using those rates.",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.004
+  },
+  {
+   "q": "My salary is 13 lakh per year. What is my tax in the new regime?",
+   "expected": 25000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 30.64,
+   "llm_answer": "To calculate your tax under the **new tax regime** (Section 202), we apply the slab rates provided in the table under Section 202(1).\n\n---\n\n### **Step-by-Step Calculation**\n\nYour **salary (total income)** = ₹13,00,000\n\nWe apply the tax slabs as follows:\n\n| Slab | Range | Rate |\n|------|-------|------|\n| 1 | Up to ₹400,000 | 0% |\n| 2 | ₹400,001 – ₹800,000 | 5% |\n| 3 | ₹800,001 – ₹12,00,000 | 10% |\n| 4 | ₹12,00,001 – ₹16,00,000 | 15% |\n\nNow calculating tax on each portion:\n\n1. **Up to ₹400,000** → ₹0  \n2. **₹400,001 – ₹800,000** → ₹400,000 × 5% = ₹20,000  \n3. **₹800,001 – ₹12,00,000** → ₹400,000 × 10% = ₹40,000  \n4. **₹12,00,001 – ₹13,00,000** → ₹1,00,000 × 15% = ₹15,000  \n\n---\n\n### **Total Tax Before Rebate**\n= ₹0 + ₹20,000 + ₹40,000 + ₹15,000  \n= **₹75,000**\n\n---\n\n### **Applying Rebate Under Section 156(2)**\n\nSince your total income is **₹13,00,000**, which is **more than ₹12,00,000**, the rebate rule in **Section 156(2)(b)** applies:\n\n> *\"If total income exceeds ₹12 lakh and tax payable exceeds the amount by which income exceeds ₹12 lakh, then rebate = (Tax Payable) – (Income – ₹12 lakh)\"*\n\nSo,\n\n- Tax Payable = ₹75,000  \n- Income above ₹12 lakh = ₹13,00,000 – ₹12,00,000 = ₹1,00,000  \n\nRebate = ₹75,000 – ₹1,00,000 = **Negative value**\n\nSince the result is negative, **no rebate** is available.\n\n---\n\n### ✅ **Final Tax Liability**\n= **₹75,000**\n\n---\n\n### 🔍 Sources Used:\n- **Section 202(1)** – New tax regime slabs  \n- **Section 156(2)** – Rebate rules for income",
+   "tool_correct": true,
+   "tool_value": 25000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Salaried person with 15 lakh CTC, new regime tax?",
+   "expected": 93750,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 22.56,
+   "llm_answer": "I'll calculate the tax for a salaried person with ₹15 lakh CTC under the new tax regime using the slab rates from Section 202.\n\n## Tax Calculation under New Tax Regime (Section 202)\n\n**Given:**\n- CTC = ₹15,00,000\n- Assuming total income = ₹15,00,000 (for calculation purposes)\n\n**Slab Rates (Source: Section 202(1), Table):**\n\n| Slab | Income Range | Rate |\n|------|-------------|------|\n| 1 | Up to ₹400,000 | 0% (Nil) |\n| 2 | ₹400,001 to ₹800,000 | 5% |\n| 3 | ₹800,001 to ₹1,200,000 | 10% |\n| 4 | ₹1,200,001 to ₹1,600,000 | 15% |\n\n**Step-by-step Calculation:**\n\n1. **Income up to ₹400,000:** \n   - Tax = ₹400,000 × 0% = ₹0\n\n2. **Income from ₹400,001 to ₹800,000 (₹400,000):**\n   - Tax = ₹400,000 × 5% = ₹20,000\n\n3. **Income from ₹800,001 to ₹1,200,000 (₹400,000):**\n   - Tax = ₹400,000 × 10% = ₹40,000\n\n4. **Income from ₹1,200,001 to ₹1,500,000 (₹300,000):**\n   - Tax = ₹300,000 × 15% = ₹45,000\n\n**Total Tax Payable = ₹0 + ₹20,000 + ₹40,000 + ₹45,000 = ₹105,000**\n\n## Summary\n\nFor a salaried person with ₹15 lakh CTC under the new tax regime (Section 202):\n- **Total Income Tax Payable: ₹105,000**\n- **Effective Tax Rate: 7%**\n\n**Note:** This calculation assumes the person has opted for the new tax regime and doesn't claim any deductions under Chapter VIII-C or other specified sections mentioned in Section 202(2). The actual tax liability may vary based on specific investments, allowances, and other factors.",
+   "tool_correct": true,
+   "tool_value": 93750.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "What is the tax on a salary of 20 lakh under the new regime?",
+   "expected": 185000,
+   "llm_correct": false,
+   "llm_provider": "static",
+   "llm_seconds": 19.3,
+   "llm_answer": "⚠️ I can't reach any LLM right now. Please try again in a moment, or ask a specific statute question so I can search the Income-Tax Act 2025 directly.",
+   "tool_correct": true,
+   "tool_value": 185000.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "Salary 10 lakh, how much income tax in new regime?",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "static",
+   "llm_seconds": 38.53,
+   "llm_answer": "⚠️ I can't reach any LLM right now. Please try again in a moment, or ask a specific statute question so I can search the Income-Tax Act 2025 directly.",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.001
+  },
+  {
+   "q": "20 lakh par kitna tax lagega new regime mein",
+   "expected": 200000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 46.32,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nNew tax regime (FY 2023-24 / AY 2024-25) mein agar **₹20 lakh** taxable income (roughly ₹20 lakh total income minus standard deduction) ho, toh income tax approximately:\n\n- **₹1,12,500 – ₹1,25,000** (roughly)\n\nCalculation bhi bataun?\n\n| Slab | Rate |\n|------|------|\n| 0 – 3 lakh | 0% |\n| 3 – 6 lakh | 5% |\n| 6 – 9 lakh | 10% |\n| 9 – 12 lakh | 15% |\n| 12 – 15 lakh | 20% |\n| 15 – 18 lakh | 25% |\n| 18 – 20 lakh | 30% |\n\nIs hisaab se **₹20 lakh** par tax lagbhai:\n\n- 3–6: ₹1.5L × 5% = ₹7,500  \n- 6–9: ₹3L × 10% = ₹30,000  \n- 9–12: ₹3L × 15% = ₹45,000  \n- 12–15: ₹3L × 20% = ₹60,000  \n- 15–18: ₹3L × 25% = ₹75,000  \n- 18–20: ₹2L × 30% = ₹60,000  \n\n**Total tax ≈ ₹2,77,500**\n\nPar agar aap **new regime** mein **rebate** (₹7 lakh tak) ya **standard deduction (₹50,000)** ka fayda le rahe hain, toh effective tax kam ho sakta hai.\n\nAgar aap **rebate** lete hain (income ₹7 lakh tak), to",
+   "tool_correct": true,
+   "tool_value": 200000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "15 lakh income pe kitna tax banega new regime me",
+   "expected": 105000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 36.82,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nNew Tax Regime (FY 2024-25 / AY 2025-26) — approximate tax on ₹15 lakh total income (assuming no deductions, no HRA, standard age):\n\n- Up to ₹3 lakh: 0%\n- ₹3–6 lakh: 5% → ₹15,000\n- ₹6–9 lakh: 10% → ₹30,000\n- ₹9–12 lakh: 15% → ₹45,000\n- ₹12–15 lakh: 20% → ₹60,000\n\nTotal income tax ≈ ₹1,50,000\n\nAdd:\n- Health & Education Cess: 4% of tax ≈ ₹6,000\n- Surcharge: 10% on tax (since income > ₹12.5 lakh) ≈ ₹15,000\n\n**Total tax + cess + surcharge ≈ ₹1,71,000**\n\nThis is an **approximate** figure. Actual liability depends on investments, deductions, exemptions, and employer benefits. In the **old regime**, with standard deductions and common investments (like 80C, HRA), the tax could be lower — so compare both regimes before choosing.",
+   "tool_correct": true,
+   "tool_value": 105000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Meri salary 18 lakh hai, new regime mein kitna tax lagega?",
+   "expected": 145000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 43.98,
+   "llm_answer": "⚠️ General knowledge — verify with a qualified CA before acting.\n\nआपकी सैलरी ₹18 लाख (New Tax Regime FY 2024-25) के आधार पर आपका कर सॉफ्टवेयर आपके बैंक में ₹1,00,000-₹1,20,000 के बीच का कर बनेगा। यह मानक दरों के आधार पर अनुमानित है:\n\n- ₹0-₹3 लाख: 0%\n- ₹3-₹6 लाख: 5%\n- ₹6-₹9 लाख: 10%\n- ₹9-₹12 लाख: 15%\n- ₹12-₹15 लाख: 20%\n- ₹15-₹18 लाख: 25%\n\nइन दरों के आधार पर आपका कर लगभग ₹1,00,000-₹1,20,000 के बीच होगा। हालाँकि, आपके घरेलू खर्च (HRA), बचत (PPF, ELSS), बच्चों की शिक्षा फीस आदि के आधार पर यह कर कम हो सकता है। सटीक आंकड़े के लिए एक CA से संपर्क करें।",
+   "tool_correct": true,
+   "tool_value": 145000.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "What is the tax on 900k income under the new regime?",
+   "expected": 0,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 17.97,
+   "llm_answer": "To calculate the tax on an income of **₹900,000** under the **new tax regime** (Section 202), we use the slab rates provided in the context:\n\n---\n\n### **Step-by-Step Calculation**  \n**Income:** ₹900,000  \n\n1. **First ₹400,000**  \n   - **Rate:** 0% (Nil)  \n   - **Tax:** ₹0  \n\n2. **Next ₹400,000 (₹400,001 to ₹800,000)**  \n   - **Rate:** 5%  \n   - **Tax:** 5% of ₹400,000 = ₹20,000  \n\n3. **Remaining ₹100,000 (₹800,00",
+   "tool_correct": true,
+   "tool_value": 0.0,
+   "tool_seconds": 0.0
+  },
+  {
+   "q": "Tax on 25,00,000 income under new regime",
+   "expected": 330000,
+   "llm_correct": false,
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "llm_seconds": 18.72,
+   "llm_answer": "To calculate the tax on an income of ₹25,00,000 under the new tax regime, we'll use the slab rates provided in **Section 202** of the Income-Tax Act, 2025 (as amended by Finance Act 2026).\n\n### **Tax Calculation Steps:**\n\nWe apply the slab rates from **Section 202(1)** Table:\n\n| **Slab No.** | **Total Income Range**       | **Rate of Tax** |\n|--------------|------------------------------|-----------------|\n| 1            | Up to ₹400,000               | 0%              |\n| 2            | ₹400,001 – ₹800,000          | 5%              |\n| 3            | ₹800,001 – ₹1,200,000        | 10%             |\n| 4            | ₹1,200,001 – ₹1,600,000      | 15%             |\n| 5            | ₹1,600,001 – ₹2,000,000      | 20%             |\n| 6            | ₹2,000,001 – ₹2,400,000      | 25%             |\n| 7            | Above ₹2,400,000             | 30%             |\n\n---\n\n#### **Step-by-Step Calculation:**\n\n1. **Income up to ₹400,000:**  \n   - Tax = 0% of ₹400,000 = **₹0**\n\n2. **Income from ₹400,001 to ₹800,000 (₹400,000):**  \n   - Tax = 5% of ₹400,000 = **₹20,000**\n\n3. **Income from ₹800,001 to ₹1,200,000 (₹400,000):**  \n   - Tax = 10% of ₹400,000 = **₹40,000**\n\n4. **Income from ₹1,200,001 to ₹1,600,000 (₹400,000):**  \n   - Tax = 15% of ₹400,000 = **₹60,000**\n\n5. **Income from ₹1,600,001 to ₹2,000,000 (₹400,000):**  \n   - Tax = 20% of ₹400,000 = **₹80,000**\n\n6. **Income from ₹2,000,001",
+   "tool_correct": true,
+   "tool_value": 330000.0,
+   "tool_seconds": 0.001
+  }
+ ]
+}

@@ -1,0 +1,818 @@
+{
+ "summary": {
+  "questions": 100,
+  "llm_router_accuracy": 0.74,
+  "heuristic_accuracy": 0.47,
+  "llm_answered_share": 0.6,
+  "providers": {
+   "kilo-free/kilo-auto/free": 58,
+   "heuristic": 40,
+   "kilo-free/stepfun/step-3.7-flash:free": 2
+  },
+  "llm_per_class": {
+   "GREETING": {
+    "precision": 0.889,
+    "recall": 0.8,
+    "f1": 0.842
+   },
+   "STATUTE_LOOKUP": {
+    "precision": 0.474,
+    "recall": 0.9,
+    "f1": 0.621
+   },
+   "CALCULATION": {
+    "precision": 0.85,
+    "recall": 0.85,
+    "f1": 0.85
+   },
+   "GENERAL_TAX": {
+    "precision": 0.909,
+    "recall": 0.5,
+    "f1": 0.645
+   },
+   "OFF_TOPIC": {
+    "precision": 1.0,
+    "recall": 0.65,
+    "f1": 0.788
+   }
+  },
+  "heuristic_per_class": {
+   "GREETING": {
+    "precision": 0.846,
+    "recall": 0.55,
+    "f1": 0.667
+   },
+   "STATUTE_LOOKUP": {
+    "precision": 0.273,
+    "recall": 0.9,
+    "f1": 0.419
+   },
+   "CALCULATION": {
+    "precision": 0.812,
+    "recall": 0.65,
+    "f1": 0.722
+   },
+   "GENERAL_TAX": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "OFF_TOPIC": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1": 0.4
+   }
+  },
+  "llm_confusion": {
+   "GREETING": {
+    "GREETING": 16,
+    "STATUTE_LOOKUP": 3,
+    "CALCULATION": 1
+   },
+   "STATUTE_LOOKUP": {
+    "STATUTE_LOOKUP": 18,
+    "GENERAL_TAX": 1,
+    "CALCULATION": 1
+   },
+   "CALCULATION": {
+    "CALCULATION": 17,
+    "STATUTE_LOOKUP": 3
+   },
+   "GENERAL_TAX": {
+    "GENERAL_TAX": 10,
+    "STATUTE_LOOKUP": 9,
+    "CALCULATION": 1
+   },
+   "OFF_TOPIC": {
+    "GREETING": 2,
+    "OFF_TOPIC": 13,
+    "STATUTE_LOOKUP": 5
+   }
+  },
+  "heuristic_confusion": {
+   "GREETING": {
+    "STATUTE_LOOKUP": 8,
+    "GREETING": 11,
+    "CALCULATION": 1
+   },
+   "STATUTE_LOOKUP": {
+    "STATUTE_LOOKUP": 18,
+    "CALCULATION": 2
+   },
+   "CALCULATION": {
+    "CALCULATION": 13,
+    "STATUTE_LOOKUP": 7
+   },
+   "GENERAL_TAX": {
+    "STATUTE_LOOKUP": 20
+   },
+   "OFF_TOPIC": {
+    "GREETING": 2,
+    "OFF_TOPIC": 5,
+    "STATUTE_LOOKUP": 13
+   }
+  }
+ },
+ "rows": [
+  {
+   "q": "hi",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Hello there!",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "thanks!",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "heuristic",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "Thank you so much for the help",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "heuristic",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "bye",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "Good morning",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What can you do?",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "Who are you?",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "How can you help me?",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "namaste",
+   "intent": "GREETING",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "hey TaxRAG",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "What kinds of questions can I ask you?",
+   "intent": "GREETING",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "ok got it, thanks",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "heuristic",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "Good evening",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Are you a bot?",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What features do you have?",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "shukriya",
+   "intent": "GREETING",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Can you calculate tax for me? What else do you do?",
+   "intent": "GREETING",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "heuristic",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "hello, is anyone there?",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "heuristic",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "Great, that was helpful",
+   "intent": "GREETING",
+   "llm_pred": "GREETING",
+   "llm_provider": "heuristic",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "What does the Act say about deduction for health insurance premiums?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Which section covers set off of losses from house property?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Under the Income-Tax Act 2025, how is residential status decided?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What deduction is allowed for a person with disability under the Act?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What does section 202 say?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What standard deduction does the Act allow on salary?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What are the rules for carry forward of business losses?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Which provision deals with rebate for resident individuals?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the penalty for not furnishing a return of income?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How is income from house property computed under the Act?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "How does the Act define agricultural income?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What conditions apply to deductions for donations to charitable institutions?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the time limit for filing a revised return under the new Act?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Which deductions from salary income are listed in the Act?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Explain the provision on relief when salary is paid in arrears",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What does the Act say about tax on long-term capital gains?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "heuristic",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "Which section provides the new tax regime for individuals?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How are gifts received taxed under the Income-Tax Act 2025?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Act mein house property ki income ke baare mein kya likha hai?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the rule for clubbing income of a minor child?",
+   "intent": "STATUTE_LOOKUP",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the tax on 15 lakh under the new regime?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "calculate my tax for 9 lakh salary",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "heuristic",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "How much tax will I pay if I earn 25 lakh?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "heuristic",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "Compute tax liability on 1.2 crore income",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "tax on 700000",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "12 lakh salary pe kitna tax?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "heuristic",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "If my income is 18 lakh, what is my tax in the new regime?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How much tax for an income of Rs 30,00,000?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "Calculate income tax for 6.5 lakh",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "heuristic",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "What will my tax be on a 14 lakh CTC?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Compare my tax on 20 lakh in the old vs new regime",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "How much will I save with a 1.5 lakh 80C deduction on 10 lakh income in the old regime?",
+   "intent": "CALCULATION",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Tax payable on 50 lakh income",
+   "intent": "CALCULATION",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What tax do I owe on 11 lakh?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "work out the tax on 8 lakh income",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "What is the rebate amount if my income is 12.3 lakh?",
+   "intent": "CALCULATION",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Calculate tax for a salaried employee earning 16 lakh",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "How much tax on 4.5 lakh?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "income 22 lakh, tax kitna?",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Find the tax on 2 crore income before surcharge",
+   "intent": "CALCULATION",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "CALCULATION"
+  },
+  {
+   "q": "What is the difference between the old and new tax regime?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is TDS?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How do I file my income tax return online?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is Form 16?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "When is the usual due date for filing an ITR?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is advance tax?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What does PAN stand for?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Should I choose the new regime or the old regime?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "CALCULATION",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the difference between assessment year and financial year?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Who should use ITR-1?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How do I check my income tax refund status?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is Form 26AS?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What does taxable income mean?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Is it mandatory to link PAN with Aadhaar?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is a tax audit?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How does HRA exemption generally work?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the difference between a tax deduction and a tax exemption?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "ITR kaise file karte hain?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "GENERAL_TAX",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is capital gains tax in simple words?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What documents do I need to file my taxes?",
+   "intent": "GENERAL_TAX",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What's the weather in Delhi today?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "GREETING",
+   "llm_provider": "heuristic",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "What is the cricket score?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "OFF_TOPIC"
+  },
+  {
+   "q": "Give me a recipe for biryani",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "OFF_TOPIC"
+  },
+  {
+   "q": "Write a poem about the sea",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the capital of France?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/stepfun/step-3.7-flash:free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Best phone under 20000?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Which stock should I buy tomorrow?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Recommend a good movie",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "OFF_TOPIC"
+  },
+  {
+   "q": "Write Python code to sort a list",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How can I lose weight fast?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Tell me a joke",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "heuristic",
+   "heur_pred": "OFF_TOPIC"
+  },
+  {
+   "q": "Who won the last football world cup?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/stepfun/step-3.7-flash:free",
+   "heur_pred": "OFF_TOPIC"
+  },
+  {
+   "q": "Translate hello into French",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "GREETING",
+   "llm_provider": "heuristic",
+   "heur_pred": "GREETING"
+  },
+  {
+   "q": "How do I book a train ticket?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Suggest a good laptop for college",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What is the meaning of life?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How do I make masala chai?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "STATUTE_LOOKUP",
+   "llm_provider": "heuristic",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "Play some music",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "What are the symptoms of dengue?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  },
+  {
+   "q": "How far is the moon from the earth?",
+   "intent": "OFF_TOPIC",
+   "llm_pred": "OFF_TOPIC",
+   "llm_provider": "kilo-free/kilo-auto/free",
+   "heur_pred": "STATUTE_LOOKUP"
+  }
+ ]
+}

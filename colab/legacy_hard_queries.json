@@ -1,0 +1,402 @@
+[
+ {
+  "section": 122,
+  "question": "What does the Act say about deductions to be made in computing total income?"
+ },
+ {
+  "section": 123,
+  "question": "What is the tax benefit available for life cover premiumss, deferred annuity, contributions to PF savings scheme, etc?"
+ },
+ {
+  "section": 125,
+  "question": "How do I claim tax relief for contribution to Agnipath Scheme?"
+ },
+ {
+  "section": 126,
+  "question": "How do I claim tax relief for health cover premiumss?"
+ },
+ {
+  "section": 128,
+  "question": "How do I claim tax relief for medical treatment, etc?"
+ },
+ {
+  "section": 129,
+  "question": "How do I claim tax relief for interest on borrowing taken for college studies?"
+ },
+ {
+  "section": 130,
+  "question": "How do I claim tax relief for interest on borrowing taken for a home you live in?"
+ },
+ {
+  "section": 131,
+  "question": "How do I claim tax relief for interest on borrowing taken for certain a property you own?"
+ },
+ {
+  "section": 132,
+  "question": "How do I claim tax relief for purchase of electric vehicle?"
+ },
+ {
+  "section": 133,
+  "question": "How do I claim tax relief for charitable giving to certain funds, charitable institutions, etc?"
+ },
+ {
+  "section": 134,
+  "question": "What does the Act say about deductions in respect of rents paid?"
+ },
+ {
+  "section": 136,
+  "question": "How do I claim tax relief for contributions given by companies to political parties?"
+ },
+ {
+  "section": 137,
+  "question": "How do I claim tax relief for contributions given by any person to political parties?"
+ },
+ {
+  "section": 108,
+  "question": "How are you allowed to adjust losses under same head of income?"
+ },
+ {
+  "section": 109,
+  "question": "How are you allowed to adjust losses under any other head of income?"
+ },
+ {
+  "section": 110,
+  "question": "How is future adjustment handled for loss from a property you own?"
+ },
+ {
+  "section": 111,
+  "question": "How is future adjustment handled for loss from Capital gains?"
+ },
+ {
+  "section": 112,
+  "question": "How is future adjustment handled for business loss?"
+ },
+ {
+  "section": 114,
+  "question": "What does the Act say about set off and carry forward of losses computed in respect of specified business?"
+ },
+ {
+  "section": 115,
+  "question": "What does the Act say about set off and carry forward of losses from specified activity?"
+ },
+ {
+  "section": 119,
+  "question": "How is future adjustment handled for losses not permissible in certain cases?"
+ },
+ {
+  "section": 120,
+  "question": "What does the Act say about no set off of losses against undisclosed income consequent to search, requisition and survey?"
+ },
+ {
+  "section": 6,
+  "question": "how a person's residential status is decided?"
+ },
+ {
+  "section": 18,
+  "question": "What does the Act say about profits in lieu of salary?"
+ },
+ {
+  "section": 19,
+  "question": "What can be subtracted from salary earnings?"
+ },
+ {
+  "section": 20,
+  "question": "How is income from a property you own?"
+ },
+ {
+  "section": 22,
+  "question": "What can be subtracted from income from a property you own?"
+ },
+ {
+  "section": 26,
+  "question": "How is income from head “Profits and gains of business or profession”?"
+ },
+ {
+  "section": 27,
+  "question": "What is the method to arrive at profits and gains of business or profession?"
+ },
+ {
+  "section": 33,
+  "question": "What is the tax benefit available for depreciation?"
+ },
+ {
+  "section": 67,
+  "question": "What does the Act say about capital gains?"
+ },
+ {
+  "section": 72,
+  "question": "What does the Act say about mode of computation of profit on selling assets?"
+ },
+ {
+  "section": 82,
+  "question": "What does the Act say about profit on sale of property used for residence?"
+ },
+ {
+  "section": 85,
+  "question": "What does the Act say about capital gains not to be charged on investment in certain bonds?"
+ },
+ {
+  "section": 86,
+  "question": "What does the Act say about investment in residential house?"
+ },
+ {
+  "section": 99,
+  "question": "What does the Act say about income of individual to include income of spouse, minor child, etc?"
+ },
+ {
+  "section": 224,
+  "question": "What does the Act say about tax on income of investment fund and its unit holders?"
+ },
+ {
+  "section": 214,
+  "question": "What does the Act say about tax on investment income and long-term profit on selling assets?"
+ },
+ {
+  "section": 397,
+  "question": "What does the Act say about compliance and reporting?"
+ },
+ {
+  "section": 461,
+  "question": "What is the consequence for failure to furnish statements, etc?"
+ },
+ {
+  "section": 57,
+  "question": "What does the Act say about revenue recognition for construction and service contracts?"
+ },
+ {
+  "section": 222,
+  "question": "What does the Act say about tax on income in case of venture capital undertakings?"
+ },
+ {
+  "section": 465,
+  "question": "What does the Act say about returns or statements, allow inspections, etc?"
+ },
+ {
+  "section": 398,
+  "question": "What does the Act say about consequences of failure to deduct or pay or, collect or pay?"
+ },
+ {
+  "section": 199,
+  "question": "What does the Act say about tax on income of certain manufacturing domestic companies?"
+ },
+ {
+  "section": 142,
+  "question": "What does the Act say about deductions in respect of profits and gains from housing projects?"
+ },
+ {
+  "section": 281,
+  "question": "What does the Act say about procedure before issuance of notice under section 280?"
+ },
+ {
+  "section": 54,
+  "question": "What does the Act say about business of prospecting for mineral oils?"
+ },
+ {
+  "section": 183,
+  "question": "What does the Act say about application of this Chapter?"
+ },
+ {
+  "section": 329,
+  "question": "What does the Act say about joint and several liability of partners for tax payable by firm?"
+ },
+ {
+  "section": 84,
+  "question": "What does the Act say about charged in certain cases?"
+ },
+ {
+  "section": 150,
+  "question": "What does the Act say about [Deduction in respect of income of federal co-operative?"
+ },
+ {
+  "section": 407,
+  "question": "What does the Act say about payment of advance tax by assessee in pursuance of order of Assessing Officer?"
+ },
+ {
+  "section": 75,
+  "question": "What special rule applies to cost of acquisition in case of depreciable asset?"
+ },
+ {
+  "section": 476,
+  "question": "What does the Act say about failure to pay tax to credit of Central Government under Chapter XIX-B?"
+ },
+ {
+  "section": 400,
+  "question": "What authority exists over Central Government to relax provisions of this Chapter?"
+ },
+ {
+  "section": 297,
+  "question": "What does the Act say about certain interests and penalties not to be levied or imposed?"
+ },
+ {
+  "section": 500,
+  "question": "What does the Act say about provisional attachment to protect revenue in certain cases?"
+ },
+ {
+  "section": 260,
+  "question": "What does the Act say about faceless collection of information?"
+ },
+ {
+  "section": 434,
+  "question": "What does the Act say about refund for denying liability to deduct tax in certain cases?"
+ },
+ {
+  "section": 519,
+  "question": "What authority exists over tender immunity from prosecution?"
+ },
+ {
+  "section": 7,
+  "question": "What does the Act say about income deemed to be received and dividend deemed to be income in a tax year?"
+ },
+ {
+  "section": 201,
+  "question": "What does the Act say about tax on income of new manufacturing domestic companies?"
+ },
+ {
+  "section": 328,
+  "question": "What does the Act say about succession of one firm by another firm?"
+ },
+ {
+  "section": 30,
+  "question": "What does the Act say about deduction on certain premiums?"
+ },
+ {
+  "section": 218,
+  "question": "What does the Act say about services Centre unit.\b?"
+ },
+ {
+  "section": 194,
+  "question": "What does the Act say about [Ss. 115B, 115BB, 115BBF, 115BBG, 115BBH and 115BBJ of the 1961 Act]?"
+ },
+ {
+  "section": 21,
+  "question": "What does the Act say about determination of annual value?"
+ },
+ {
+  "section": 296,
+  "question": "What does the Act say about time-limit for completion of block assessment?"
+ },
+ {
+  "section": 17,
+  "question": "What does the Act say about it in Part V of the Banking Regulation Act, 1949 (10 of 1949); and?"
+ },
+ {
+  "section": 417,
+  "question": "What does the Act say about recovery through State Government?"
+ },
+ {
+  "section": 124,
+  "question": "What does the Act say about scheme of Central Government?"
+ },
+ {
+  "section": 79,
+  "question": "What does the Act say about than quoted share?"
+ },
+ {
+  "section": 307,
+  "question": "What does the Act say about charge of tax where share of beneficiaries unknown?"
+ },
+ {
+  "section": 280,
+  "question": "What does the Act say about issue of notice where income has escaped assessment?"
+ },
+ {
+  "section": 100,
+  "question": "What does the Act say about liability of person in respect of income included in income of another person?"
+ },
+ {
+  "section": 91,
+  "question": "What does the Act say about reference to Valuation Officer?"
+ },
+ {
+  "section": 382,
+  "question": "What does the Act say about vacancies, etc., not to invalidate proceedings?"
+ },
+ {
+  "section": 61,
+  "question": "What does the Act say about of certain business activities of certain non-residents?"
+ },
+ {
+  "section": 45,
+  "question": "What does the Act say about expenditure on scientific research?"
+ },
+ {
+  "section": 182,
+  "question": "What does the Act say about treatment of connected person and accommodating party?"
+ },
+ {
+  "section": 88,
+  "question": "What does the Act say about undertaking from urban area to any Special Economic Zone?"
+ },
+ {
+  "section": 28,
+  "question": "What does the Act say about rent, rates, taxes, repairs and cover?"
+ },
+ {
+  "section": 326,
+  "question": "What does the Act say about assessment when section 325 not complied with?"
+ },
+ {
+  "section": 141,
+  "question": "How do I claim tax relief for profits and gains from certain industrial under-takings?"
+ },
+ {
+  "section": 12,
+  "question": "What does the Act say about incomes not included in total income of political parties and electoral trusts?"
+ },
+ {
+  "section": 444,
+  "question": "What is the consequence for false entry, etc., in books of account?"
+ },
+ {
+  "section": 381,
+  "question": "What does the Act say about board for Advance Rulings?"
+ },
+ {
+  "section": 367,
+  "question": "What does the Act say about appeal to Supreme Court?"
+ },
+ {
+  "section": 153,
+  "question": "What is the tax benefit available for interest on deposits?"
+ },
+ {
+  "section": 40,
+  "question": "What special rule applies to computation of cost of acquisition of certain assets?"
+ },
+ {
+  "section": 254,
+  "question": "What authority exists over collect certain information?"
+ },
+ {
+  "section": 96,
+  "question": "What does the Act say about transfer of income without transfer of assets?"
+ },
+ {
+  "section": 243,
+  "question": "What authority exists over transfer cases?"
+ },
+ {
+  "section": 231,
+  "question": "What does the Act say about method of opting of tonnage tax scheme and validity?"
+ },
+ {
+  "section": 204,
+  "question": "What does the Act say about tax on income of certain new manufacturing co-operative societies?"
+ },
+ {
+  "section": 505,
+  "question": "What does the Act say about submission of statement by a non-resident having liaison office?"
+ },
+ {
+  "section": 523,
+  "question": "What does the Act say about notice deemed to be valid in certain circumstances?"
+ },
+ {
+  "section": 247,
+  "question": "What does the Act say about search and seizure?"
+ },
+ {
+  "section": 344,
+  "question": "What does the Act say about business undertaking held as property?"
+ }
+]
