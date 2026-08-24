@@ -73,6 +73,67 @@ LLM_PROVIDERS: Dict[str, Dict[str, Any]] = {
     },
 }
 LLM_PROVIDER_ORDER: List[str] = ["opencode-free", "groq", "nvidia-build", "kilo-free"]
+
+
+# ---------------------------------------------------------------------------
+# Live model discovery — query each provider's OpenAI-compatible /models
+# endpoint instead of trusting a hardcoded list (free models get renamed/retired).
+# Falls back to the static cfg["models"] when a provider is unreachable/keyless.
+# ---------------------------------------------------------------------------
+import time as _time
+_MODELS_CACHE: Dict[str, Tuple[float, List[str]]] = {}
+_MODELS_TTL: int = 600  # seconds
+
+
+def discover_models(provider: str, timeout: int = 10) -> List[str]:
+    """Return model ids from a provider's /models endpoint ([] if unreachable
+    or no key). Cached per provider for _MODELS_TTL seconds."""
+    cfg = LLM_PROVIDERS.get(provider)
+    if not cfg:
+        return []
+    now = _time.time()
+    hit = _MODELS_CACHE.get(provider)
+    if hit and now - hit[0] < _MODELS_TTL:
+        return hit[1]
+    key = "" if cfg.get("anonymous") else (_get_key(cfg["key_env"]) or "")
+    if not cfg.get("anonymous") and not key:
+        return []
+    ids: List[str] = []
+    try:
+        import requests
+        headers = {"Authorization": f"Bearer {key}"}
+        if cfg.get("kilo_headers"):
+            headers.update({"HTTP-Referer": "https://kilo.ai/", "X-Title": "Kilo Code"})
+        r = requests.get(f"{cfg['base'].rstrip('/')}/models", headers=headers, timeout=timeout)
+        r.raise_for_status()
+        ids = [m.get("id") for m in r.json().get("data", []) if m.get("id")]
+    except Exception as e:  # noqa: BLE001
+        log.debug("model discovery failed for %s: %s", provider, e)
+        ids = []
+    _MODELS_CACHE[provider] = (now, ids)
+    return ids
+
+
+def available_models(provider: str, free_only: bool = True) -> List[str]:
+    """Live-discovered models, curated free ones first. When free_only (default),
+    keep only models that read as free — the curated static list (all free) plus
+    any discovered id marked free (`-free`, `:free`, `/free`) — so paid/premium
+    models don't clutter the picker. Falls back to the static list if discovery
+    yields nothing or filters to empty."""
+    cfg = LLM_PROVIDERS.get(provider, {})
+    static = list(cfg.get("models", []))
+    discovered = discover_models(provider)
+    if not discovered:
+        return static
+    if not free_only:
+        front = [m for m in static if m in discovered]
+        return front + [m for m in discovered if m not in front]
+    curated = [m for m in static if m in discovered]           # known-free, still live
+    free = [m for m in discovered
+            if "free" in m.lower() and m not in curated]
+    return (curated + free) or static
+
+
 # Optional single custom endpoint (takes priority when set).
 LLM_BASE_URL: Optional[str] = os.environ.get("OPENAI_BASE_URL")
 LLM_API_KEY: Optional[str] = os.environ.get("OPENAI_API_KEY")
@@ -536,8 +597,11 @@ def synthesize_answer(
         if not cfg.get("anonymous") and not key:
             continue
         models = list(cfg["models"])
-        if pname == provider and model and model in models:
-            models.remove(model)
+        if pname == provider and model:
+            # honor a user-picked model even if it came from live discovery
+            # (i.e. isn't in the static list)
+            if model in models:
+                models.remove(model)
             models.insert(0, model)
         for m in models:
             try:

@@ -14,8 +14,16 @@ out_mini/
 .DS_Store
 .ipynb_checkpoints/
 
-# Hugging Face model cache
+# Hugging Face model cache + local model downloads
 .hf_cache/
+models/
+
+# AI / IDE tool artifacts
+.omo/
+.codegraph/
+
+# Stray root-level index duplicate (out/index.npz is the committed one)
+/index.npz
 
 # Local secrets — never commit API keys
 .streamlit/secrets.toml
